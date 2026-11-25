@@ -1,4 +1,4 @@
-# cedear-rotation-ml
+# rotacion_cartera
 
 Rotación trimestral de CEDEARs con machine learning sobre el **subyacente** (acción en USD), con contexto
 fundamental (SEC EDGAR). El sistema es semi-automático: cada semana publica el ranking, la cartera objetivo y un semáforo
