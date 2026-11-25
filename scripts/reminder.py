@@ -88,6 +88,13 @@ def main():
         body.append(f"Web: {SITE}")
     body.append(f"Señal completa: https://github.com/{REPO}/blob/main/signals/latest.md")
     body += ["", "Esto no es asesoramiento financiero."]
+    corto = lambda d: f"{DIAS[d.weekday()][:3]} {d.day}/{d.month}"
+    wa = [f"Rotación CEDEARs: mañana ({corto(reb)}) es el rebalanceo.",
+          f"Cartera objetivo: {', '.join(picks)}."]
+    if held:
+        wa.append(f"Comprar: {', '.join(buy) or 'nada'}. Vender: {', '.join(sell) or 'nada'}.")
+    wa.append(f"Ejecutar en la apertura del {corto(execd)}, con la señal del cierre de mañana. Detalle en el mail.")
+    open(os.path.join(ROOT, "reminder_whatsapp.txt"), "w").write("\n".join(wa))
     open(os.path.join(ROOT, "reminder_subject.txt"), "w").write(subject)
     open(os.path.join(ROOT, "reminder_body.md"), "w").write("\n".join(body) + "\n")
     print(subject)
