@@ -1,31 +1,31 @@
 puesto,ticker,score,E4,sorpresa_%,ret_3m,dist_max_52s,en_cartera,semaforo,contexto
-1,INTC,0.941,0.917,30.29,-0.43526654078690585,-0.6310039643677599,✅,🟡,EPS estimado baja -16% en 30d; precio objetivo +74%
-2,MRNA,0.925,0.9,50.0,0.5528471722953794,-0.17583644237918217,✅,🔴,calidad EDGAR baja; EPS estimado baja -9% en 30d; sin ganancias esperadas; margen operativo negativo; precio objetivo -26% bajo el precio
-3,AMD,0.921,0.95,7.44,-0.18530642706907596,-0.4020202547416839,✅,🟢,EPS estimado sube +11% en 30d; precio objetivo +67%
-4,ORCL,0.861,0.833,10.45,-0.3156962009947316,-0.5795492794077508,✅,🟡,precio objetivo +128%; ⚠️ earnings el 2026-12-14
-5,MRVL,0.83,1.0,0.99,-0.4837969258199535,-0.6060171896080468,✅,🟢,calidad EDGAR alta; precio objetivo +141%; ⚠️ earnings el 2026-12-01
-6,NVDA,0.805,0.783,8.36,-0.36508992633374826,-0.39564870432100185,,🟢,calidad EDGAR alta; EPS estimado sube +4% en 30d; precio objetivo +68%
-7,ASML,0.764,0.667,9.86,-0.2637302005908879,-0.3570614624424703,,🟢,EPS estimado sube +9% en 30d; precio objetivo +66%
+1,INTC,0.941,0.917,30.29,-0.43526654078690585,-0.6310039643677599,✅,🟡,Analistas bajan el EPS estimado 16% en 30 días; Precio objetivo de consenso 74% arriba del precio actual
+2,MRNA,0.925,0.9,50.0,0.5528471722953794,-0.17583644237918217,✅,🔴,Calidad contable baja (SEC EDGAR); Analistas bajan el EPS estimado 9% en 30 días; Sin ganancias esperadas (P/E forward negativo); Margen operativo negativo; Precio objetivo de consenso 26% debajo del precio actual
+3,AMD,0.921,0.95,7.44,-0.18530642706907596,-0.4020202547416839,✅,🟢,Analistas suben el EPS estimado 11% en 30 días; Precio objetivo de consenso 67% arriba del precio actual
+4,ORCL,0.861,0.833,10.45,-0.3156962009947316,-0.5795492794077508,✅,🟡,Precio objetivo de consenso 128% arriba del precio actual; Presenta balance el 14/12/2026
+5,MRVL,0.83,1.0,0.99,-0.4837969258199535,-0.6060171896080468,✅,🟢,Calidad contable alta (SEC EDGAR); Precio objetivo de consenso 141% arriba del precio actual; Presenta balance el 01/12/2026
+6,NVDA,0.805,0.783,8.36,-0.36508992633374826,-0.39564870432100185,,🟢,Calidad contable alta (SEC EDGAR); Analistas suben el EPS estimado 4% en 30 días; Precio objetivo de consenso 68% arriba del precio actual
+7,ASML,0.764,0.667,9.86,-0.2637302005908879,-0.3570614624424703,,🟢,Analistas suben el EPS estimado 9% en 30 días; Precio objetivo de consenso 66% arriba del precio actual
 8,GLOB,0.709,0.833,0.24,0.2539208739816219,-0.29265553001903566,,🟡,
-9,UNH,0.707,0.583,13.26,-0.12034750098669922,-0.203605592272319,,🟡,calidad EDGAR baja; precio objetivo +39%
-10,PBR,0.625,0.65,2.52,-0.11589041095890407,-0.38321865443425074,,🟡,precio objetivo +40%
-11,VIST,0.611,0.767,-7.29,-0.2913185060003044,-0.3685804290220821,,🟢,EPS estimado sube +18% en 30d; precio objetivo +82%
-12,BABA,0.552,0.65,-26.53,-0.27048405589345803,-0.516710331618683,,🟡,precio objetivo +86%
-13,AVGO,0.521,0.5,2.53,-0.22411054047920476,-0.4004397540518234,,🟢,calidad EDGAR alta; precio objetivo +82%; ⚠️ earnings el 2026-12-09
-14,MELI,0.495,0.567,-4.75,-0.24818337640813148,-0.3675076488017429,,🟡,calidad EDGAR alta; EPS estimado baja -7% en 30d; precio objetivo +48%
-15,TSM,0.486,0.5,1.67,-0.21847418965366694,-0.3144246640039028,,🟢,EPS estimado sube +7% en 30d; precio objetivo +76%
-16,TSLA,0.475,0.383,6.4,0.03948560378504329,-0.24712198653627426,,🔴,calidad EDGAR baja
+9,UNH,0.707,0.583,13.26,-0.12034750098669922,-0.203605592272319,,🟡,Calidad contable baja (SEC EDGAR); Precio objetivo de consenso 39% arriba del precio actual
+10,PBR,0.625,0.65,2.52,-0.11589041095890407,-0.38321865443425074,,🟡,Precio objetivo de consenso 40% arriba del precio actual
+11,VIST,0.611,0.767,-7.29,-0.2913185060003044,-0.3685804290220821,,🟢,Analistas suben el EPS estimado 18% en 30 días; Precio objetivo de consenso 82% arriba del precio actual
+12,BABA,0.552,0.65,-26.53,-0.27048405589345803,-0.516710331618683,,🟡,Precio objetivo de consenso 86% arriba del precio actual
+13,AVGO,0.521,0.5,2.53,-0.22411054047920476,-0.4004397540518234,,🟢,Calidad contable alta (SEC EDGAR); Precio objetivo de consenso 82% arriba del precio actual; Presenta balance el 09/12/2026
+14,MELI,0.495,0.567,-4.75,-0.24818337640813148,-0.3675076488017429,,🟡,Calidad contable alta (SEC EDGAR); Analistas bajan el EPS estimado 7% en 30 días; Precio objetivo de consenso 48% arriba del precio actual
+15,TSM,0.486,0.5,1.67,-0.21847418965366694,-0.3144246640039028,,🟢,Analistas suben el EPS estimado 7% en 30 días; Precio objetivo de consenso 76% arriba del precio actual
+16,TSLA,0.475,0.383,6.4,0.03948560378504329,-0.24712198653627426,,🔴,Calidad contable baja (SEC EDGAR)
 17,IBM,0.468,0.467,2.71,0.025678876252347882,-0.25074021360821896,,🟡,
-18,META,0.443,0.55,-29.33,0.050609747473457034,-0.2289895598159465,,🟡,precio objetivo +41%
-19,MSFT,0.411,0.367,3.59,-0.031286731564084125,-0.1197223591190466,,🟢,calidad EDGAR alta; EPS estimado sube +2% en 30d; precio objetivo +30%
-20,GOOGL,0.359,0.483,-29.54,-0.20597756169710213,-0.32778971095492027,,🟡,precio objetivo +46%
-21,AAPL,0.341,0.25,5.8,0.12285643881770292,-0.00929070115978814,,🔴,calidad EDGAR baja; EPS estimado baja -2% en 30d; precio objetivo -2% bajo el precio
-22,AMZN,0.341,0.383,-3.47,-0.047803069234251594,-0.1408703455727548,,🟡,precio objetivo +34%
+18,META,0.443,0.55,-29.33,0.050609747473457034,-0.2289895598159465,,🟡,Precio objetivo de consenso 41% arriba del precio actual
+19,MSFT,0.411,0.367,3.59,-0.031286731564084125,-0.1197223591190466,,🟢,Calidad contable alta (SEC EDGAR); Analistas suben el EPS estimado 2% en 30 días; Precio objetivo de consenso 30% arriba del precio actual
+20,GOOGL,0.359,0.483,-29.54,-0.20597756169710213,-0.32778971095492027,,🟡,Precio objetivo de consenso 46% arriba del precio actual
+21,AAPL,0.341,0.25,5.8,0.12285643881770292,-0.00929070115978814,,🔴,Calidad contable baja (SEC EDGAR); Analistas bajan el EPS estimado 2% en 30 días; Precio objetivo de consenso 2% debajo del precio actual
+22,AMZN,0.341,0.383,-3.47,-0.047803069234251594,-0.1408703455727548,,🟡,Precio objetivo de consenso 34% arriba del precio actual
 23,WMT,0.316,0.267,2.16,0.2873428711100905,-0.01314234953068183,,🟡,
 24,JPM,0.288,0.317,-3.24,-0.10455492257939103,-0.13142959677470933,,🟡,
 25,QQQ,0.288,0.25,,-0.13443192017873018,-0.1792116168268879,,⚪,ETF
 26,MCD,0.27,0.15,5.63,0.10824069927131141,-0.1444769636717116,,🟡,
-27,PEP,0.232,0.183,1.95,0.050214663778962665,-0.12250241752294722,,🔴,precio objetivo -3% bajo el precio
+27,PEP,0.232,0.183,1.95,0.050214663778962665,-0.12250241752294722,,🔴,Precio objetivo de consenso 3% debajo del precio actual
 28,KO,0.202,0.117,3.3,0.1148546823022687,-0.00784083209165165,,🟡,
 29,V,0.164,0.133,1.14,0.11422481595195766,-0.031022343990034562,,🟡,
 30,GLD,0.15,0.1,,-0.24029819346476777,-0.3525912646008219,,⚪,ETF

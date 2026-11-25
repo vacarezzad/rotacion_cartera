@@ -56,6 +56,21 @@ def stats(e):
             "total": e.iloc[-1] / e.iloc[0] - 1}
 
 
+def notes(ctx):
+    """Separa el contexto del semáforo en ítems con tono: pos (a favor), neg (en contra), warn (aviso)."""
+    if not isinstance(ctx, str) or not ctx.strip() or ctx.strip() == "ETF":
+        return [{"tone": "", "text": "ETF: sin semáforo fundamental"}] if ctx == "ETF" else []
+    out = []
+    for t in [x.strip() for x in ctx.split(";") if x.strip()]:
+        t = t[0].upper() + t[1:]
+        low = t.lower()
+        tone = ("warn" if "balance" in low else
+                "neg" if any(w in low for w in ["baja", "bajan", "sin ganancias", "negativo", "debajo"]) else
+                "pos" if any(w in low for w in ["alta", "suben", "arriba"]) else "")
+        out.append({"tone": tone, "text": t})
+    return out
+
+
 def signal_files():
     return sorted(f for f in glob.glob(os.path.join(ROOT, "signals", "*.csv")) if os.path.basename(f)[:4].isdigit())
 
@@ -79,7 +94,7 @@ def export_signal():
                      "surprise": None if pd.isna(r["sorpresa_%"]) else r["sorpresa_%"] / 100,
                      "ret3m": r.ret_3m, "vsHigh": r.dist_max_52s, "pick": r.ticker in picks,
                      "held": r.ticker in held, "light": r.semaforo,
-                     "context": "" if pd.isna(r.contexto) else str(r.contexto),
+                     "notes": notes(r.contexto),
                      "last": None if c is None else c.iloc[-1], "spark": spark})
     sell = [t for t in held if t not in picks]
     buy = [t for t in picks if t not in held]

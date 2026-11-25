@@ -34,6 +34,11 @@
     return g;
   }
 
+  function noteList(items, cls) {
+    if (!items?.length) return null;
+    return el("ul", { class: `notes ${cls || ""}` }, items.map((n) => el("li", { class: n.tone, text: n.text })));
+  }
+
   function action(r, sig) {
     if (sig.held.length === 0) return r.pick ? el("span", { class: "act buy", text: "Comprar" }) : null;
     if (r.pick && r.held) return el("span", { class: "act keep", text: "Mantener" });
@@ -72,13 +77,13 @@
         el("dt", { text: "vs máximo 52 sem." }), el("dd", { text: pct(r.vsHigh, 0) }),
         el("dt", { text: "Sorpresa earnings" }), el("dd", { text: pct(r.surprise, 1, true) })),
       action(r, sig),
-      r.context ? el("p", { class: "pick-ctx", text: r.context }) : null)));
+      noteList(r.notes))));
     const what = sig.held.length
       ? `Cartera anotada: ${sig.held.join(", ")}. ${sig.buy.length ? `Comprar ${sig.buy.join(", ")}.` : ""} ${sig.sell.length ? `Vender ${sig.sell.join(", ")}.` : "No hay que vender nada."} Lo que ya tenés se mantiene mientras siga en el top ${sig.k + 2}.`
-      : `Todavía no hay cartera anotada en portfolio.json, así que la señal arma la cartera desde cero: 20% en cada uno.`;
+      : `Todavía no anotaste tu cartera en portfolio.json, así que la señal la arma desde cero.`;
     return block("cartera", "Cartera objetivo", `Top ${sig.k}, 20% cada uno. ${what}`, cards,
       sells.length ? el("p", { class: "note warn", text: `Salen de la cartera: ${sells.map((r) => `${r.ticker} (#${r.rank})`).join(", ")}.` }) : null,
-      el("p", { class: "note", text: "El semáforo es contexto fundamental (calidad contable SEC EDGAR, revisiones de EPS, rentabilidad, precio objetivo y earnings próximos). No cambia el ranking. Gráfico: precio del último año en USD." }));
+      el("p", { class: "note", text: "El semáforo es contexto fundamental (calidad contable SEC EDGAR, revisiones del EPS estimado, rentabilidad, precio objetivo y próximos balances). No cambia el ranking. El gráfico muestra el precio del último año en USD." }));
   }
 
   function ranking(d) {
@@ -93,7 +98,7 @@
       { label: "vs máx. 52s", num: true, value: (r) => pct(r.vsHigh, 0) },
       { label: "1 año", value: (r) => spark(r.spark) },
       { label: "Semáforo", value: (r) => light(r.light) },
-      { label: "Contexto", value: (r) => r.context || "" },
+      { label: "Contexto", value: (r) => noteList(r.notes, "compact") || "" },
     ], sig.rows, (r) => [r.pick ? "is-pick" : "", r.rank === sig.k + 2 ? "cut" : ""].join(" "));
     t.querySelectorAll("tbody tr").forEach((tr) => tr.lastElementChild.classList.add("ctx"));
     return block("ranking", "Ranking completo", `Los ${sig.rows.length} CEDEARs ordenados por score = 75% modelo E4 + 25% sorpresa del último balance. La línea marca el top ${sig.k + 2}: lo que ya está en cartera se mantiene mientras no caiga debajo.`, t);

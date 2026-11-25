@@ -81,34 +81,34 @@ def semaforo(t, edgar_last, edgar_rank, snap, details, today):
     q = edgar_rank.get(t, np.nan)
     if not np.isnan(q):
         if q >= 0.6:
-            pos += 1; notes.append("calidad EDGAR alta")
+            pos += 1; notes.append("Calidad contable alta (SEC EDGAR)")
         elif q <= 0.4:
-            neg += 1; notes.append("calidad EDGAR baja")
+            neg += 1; notes.append("Calidad contable baja (SEC EDGAR)")
     d = details.get(t) or {}
     et = (d.get("eps_trend") or {}).get("+1y") or (d.get("eps_trend") or {}).get("0y")
     if isinstance(et, dict) and et.get("current") and et.get("30daysAgo"):
         rev = et["current"] / et["30daysAgo"] - 1 if et["30daysAgo"] else np.nan
         if rev > 0.02:
-            pos += 1; notes.append(f"EPS estimado sube {rev:+.0%} en 30d")
+            pos += 1; notes.append(f"Analistas suben el EPS estimado {abs(rev):.0%} en 30 días")
         elif rev < -0.02:
-            neg += 1; notes.append(f"EPS estimado baja {rev:+.0%} en 30d")
+            neg += 1; notes.append(f"Analistas bajan el EPS estimado {abs(rev):.0%} en 30 días")
     if t in snap.index:
         s = snap.loc[t]
         if pd.notna(s.get("forwardPE")) and s["forwardPE"] < 0:
-            neg += 1; notes.append("sin ganancias esperadas")
+            neg += 1; notes.append("Sin ganancias esperadas (P/E forward negativo)")
         if pd.notna(s.get("operatingMargins")) and s["operatingMargins"] < 0:
-            neg += 1; notes.append("margen operativo negativo")
+            neg += 1; notes.append("Margen operativo negativo")
         if pd.notna(s.get("targetMeanPrice")) and pd.notna(s.get("currentPrice")) and s["currentPrice"]:
             up = s["targetMeanPrice"] / s["currentPrice"] - 1
             if up < 0:
-                neg += 1; notes.append(f"precio objetivo {up:+.0%} bajo el precio")
+                neg += 1; notes.append(f"Precio objetivo de consenso {abs(up):.0%} debajo del precio actual")
             elif up > 0.3:
-                pos += 1; notes.append(f"precio objetivo {up:+.0%}")
+                pos += 1; notes.append(f"Precio objetivo de consenso {up:.0%} arriba del precio actual")
     ed = d.get("earnings_dates") or {}
     fut = sorted(pd.Timestamp(k[:10]) for k, v in ed.items() if (v or {}).get("Reported EPS") is None)
     fut = [x for x in fut if x >= today.normalize()]
     if fut and (fut[0] - today.normalize()).days <= 21:
-        notes.append(f"⚠️ earnings el {fut[0].date()}")
+        notes.append(f"Presenta balance el {fut[0]:%d/%m/%Y}")
     color = "🔴" if neg >= 2 or (neg >= 1 and pos == 0) else ("🟢" if pos >= 2 and neg == 0 else "🟡")
     return color, "; ".join(notes)
 
