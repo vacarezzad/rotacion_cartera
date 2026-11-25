@@ -43,6 +43,13 @@ jobs:
         env:
           WHATSAPP_PHONE: ${{ secrets.WHATSAPP_PHONE }}
           WHATSAPP_APIKEY: ${{ secrets.WHATSAPP_APIKEY }}
+      - name: Telegram (si hay credenciales)
+        if: steps.check.outputs.send == 'true'
+        continue-on-error: true
+        run: python scripts/send_telegram.py
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
       - name: Issue en GitHub (te llega por mail como notificación)
         if: steps.check.outputs.send == 'true'
         env:
