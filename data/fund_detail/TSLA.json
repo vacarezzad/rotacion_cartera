@@ -1,0 +1,285 @@
+{
+ "earnings_dates": {
+  "2027-01-27 16:00:00-05:00": {
+   "EPS Estimate": 0.5,
+   "Reported EPS": null,
+   "Surprise(%)": null
+  },
+  "2026-10-21 16:00:00-04:00": {
+   "EPS Estimate": 0.45,
+   "Reported EPS": 0.48,
+   "Surprise(%)": 6.4
+  },
+  "2026-07-22 16:00:00-04:00": {
+   "EPS Estimate": 0.54,
+   "Reported EPS": 0.33,
+   "Surprise(%)": -39.15
+  },
+  "2026-04-22 16:00:00-04:00": {
+   "EPS Estimate": 0.35,
+   "Reported EPS": 0.41,
+   "Surprise(%)": 17.15
+  },
+  "2026-01-28 16:00:00-05:00": {
+   "EPS Estimate": 0.45,
+   "Reported EPS": 0.5,
+   "Surprise(%)": 10.96
+  },
+  "2025-10-22 16:00:00-04:00": {
+   "EPS Estimate": 0.56,
+   "Reported EPS": 0.5,
+   "Surprise(%)": -10.53
+  },
+  "2025-07-23 16:00:00-04:00": {
+   "EPS Estimate": 0.4,
+   "Reported EPS": 0.4,
+   "Surprise(%)": -1.11
+  },
+  "2025-04-22 16:00:00-04:00": {
+   "EPS Estimate": 0.41,
+   "Reported EPS": 0.27,
+   "Surprise(%)": -34.89
+  }
+ },
+ "upgrades_downgrades": {
+  "2026-11-05 21:25:25": {
+   "Firm": "GLJ Research",
+   "ToGrade": "Sell",
+   "FromGrade": "Sell",
+   "Action": "reit",
+   "priceTargetAction": "Maintains",
+   "currentPriceTarget": 24.86,
+   "priorPriceTarget": 24.86
+  },
+  "2026-10-26 13:05:56": {
+   "Firm": "Barclays",
+   "ToGrade": "Overweight",
+   "FromGrade": "Equal-Weight",
+   "Action": "up",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 450.0,
+   "priorPriceTarget": 370.0
+  },
+  "2026-10-22 19:42:25": {
+   "Firm": "UBS",
+   "ToGrade": "Neutral",
+   "FromGrade": "Neutral",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 425.0,
+   "priorPriceTarget": 391.0
+  },
+  "2026-10-22 18:41:45": {
+   "Firm": "CLSA",
+   "ToGrade": "Hold",
+   "FromGrade": "Underperform",
+   "Action": "up",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 400.0,
+   "priorPriceTarget": 310.0
+  },
+  "2026-10-22 18:08:28": {
+   "Firm": "Canaccord Genuity",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 442.0,
+   "priorPriceTarget": 410.0
+  },
+  "2026-10-22 17:39:08": {
+   "Firm": "Morgan Stanley",
+   "ToGrade": "Equal-Weight",
+   "FromGrade": "Equal-Weight",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 410.0,
+   "priorPriceTarget": 400.0
+  },
+  "2026-10-22 16:43:01": {
+   "Firm": "BNP Paribas",
+   "ToGrade": "Neutral",
+   "FromGrade": "Underperform",
+   "Action": "up",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 420.0,
+   "priorPriceTarget": 266.0
+  },
+  "2026-10-22 16:08:49": {
+   "Firm": "RBC Capital",
+   "ToGrade": "Outperform",
+   "FromGrade": "Outperform",
+   "Action": "reit",
+   "priceTargetAction": "Maintains",
+   "currentPriceTarget": 480.0,
+   "priorPriceTarget": 480.0
+  },
+  "2026-10-22 13:53:04": {
+   "Firm": "JP Morgan",
+   "ToGrade": "Neutral",
+   "FromGrade": "Neutral",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 430.0,
+   "priorPriceTarget": 415.0
+  },
+  "2026-10-22 13:35:58": {
+   "Firm": "TD Cowen",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "reit",
+   "priceTargetAction": "Maintains",
+   "currentPriceTarget": 460.0,
+   "priorPriceTarget": 460.0
+  },
+  "2026-10-22 13:16:43": {
+   "Firm": "Piper Sandler",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 475.0,
+   "priorPriceTarget": 450.0
+  },
+  "2026-10-22 13:08:45": {
+   "Firm": "StoneX",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "reit",
+   "priceTargetAction": "Maintains",
+   "currentPriceTarget": 475.0,
+   "priorPriceTarget": 475.0
+  },
+  "2026-10-22 12:25:04": {
+   "Firm": "GLJ Research",
+   "ToGrade": "Sell",
+   "FromGrade": "Sell",
+   "Action": "reit",
+   "priceTargetAction": "Maintains",
+   "currentPriceTarget": 24.86,
+   "priorPriceTarget": 24.86
+  },
+  "2026-10-22 12:08:56": {
+   "Firm": "Mizuho",
+   "ToGrade": "Outperform",
+   "FromGrade": "Outperform",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 460.0,
+   "priorPriceTarget": 450.0
+  },
+  "2026-10-22 10:44:00": {
+   "Firm": "Cantor Fitzgerald",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "reit",
+   "priceTargetAction": "Maintains",
+   "currentPriceTarget": 485.0,
+   "priorPriceTarget": 485.0
+  }
+ },
+ "quarterly_income": {
+  "2026-09-30": {
+   "Total Revenue": 28046000000.0,
+   "Gross Profit": 5494000000.0,
+   "Operating Income": 718000000.0,
+   "Net Income": 787000000.0,
+   "Diluted EPS": 0.22
+  },
+  "2026-06-30": {
+   "Total Revenue": 28236000000.0,
+   "Gross Profit": 4751000000.0,
+   "Operating Income": 398000000.0,
+   "Net Income": 1114000000.0,
+   "Diluted EPS": 0.32
+  },
+  "2026-03-31": {
+   "Total Revenue": 22387000000.0,
+   "Gross Profit": 4720000000.0,
+   "Operating Income": 941000000.0,
+   "Net Income": 477000000.0,
+   "Diluted EPS": 0.13
+  },
+  "2025-12-31": {
+   "Total Revenue": 24901000000.0,
+   "Gross Profit": 5009000000.0,
+   "Operating Income": 1571000000.0,
+   "Net Income": 840000000.0,
+   "Diluted EPS": 0.24
+  },
+  "2025-09-30": {
+   "Total Revenue": 28095000000.0,
+   "Gross Profit": 5054000000.0,
+   "Operating Income": 1862000000.0,
+   "Net Income": 1373000000.0,
+   "Diluted EPS": 0.39
+  },
+  "2025-06-30": {
+   "Total Revenue": null,
+   "Gross Profit": null,
+   "Operating Income": null,
+   "Net Income": null,
+   "Diluted EPS": null
+  }
+ },
+ "eps_trend": {
+  "0q": {
+   "current": 0.50473,
+   "7daysAgo": 0.49897,
+   "30daysAgo": 0.50058,
+   "60daysAgo": 0.48987,
+   "90daysAgo": 0.48823,
+   "currency": "USD",
+   "methodology": "normalized"
+  },
+  "+1q": {
+   "current": 0.45643,
+   "7daysAgo": 0.46,
+   "30daysAgo": 0.46,
+   "60daysAgo": 0.50414,
+   "90daysAgo": 0.52595,
+   "currency": "USD",
+   "methodology": "normalized"
+  },
+  "0y": {
+   "current": 1.72866,
+   "7daysAgo": 1.72424,
+   "30daysAgo": 1.76193,
+   "60daysAgo": 1.76146,
+   "90daysAgo": 1.76971,
+   "currency": "USD",
+   "methodology": "normalized"
+  },
+  "+1y": {
+   "current": 2.16378,
+   "7daysAgo": 2.15922,
+   "30daysAgo": 2.1773,
+   "60daysAgo": 2.26874,
+   "90daysAgo": 2.25195,
+   "currency": "USD",
+   "methodology": "normalized"
+  }
+ },
+ "growth_estimates": {
+  "0q": {
+   "stockTrend": 0.0095,
+   "indexTrend": 0.3018
+  },
+  "+1q": {
+   "stockTrend": 0.113199994,
+   "indexTrend": 0.2754
+  },
+  "0y": {
+   "stockTrend": 0.0414,
+   "indexTrend": 0.3368
+  },
+  "+1y": {
+   "stockTrend": 0.2517,
+   "indexTrend": 0.1688
+  },
+  "LTG": {
+   "stockTrend": null,
+   "indexTrend": 0.122
+  }
+ }
+}

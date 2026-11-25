@@ -1,0 +1,285 @@
+{
+ "earnings_dates": {
+  "2027-02-24 16:00:00-05:00": {
+   "EPS Estimate": 2.88,
+   "Reported EPS": null,
+   "Surprise(%)": null
+  },
+  "2026-11-17 16:00:00-05:00": {
+   "EPS Estimate": 2.47,
+   "Reported EPS": 2.68,
+   "Surprise(%)": 8.36
+  },
+  "2026-08-26 16:00:00-04:00": {
+   "EPS Estimate": 2.09,
+   "Reported EPS": 2.22,
+   "Surprise(%)": 6.16
+  },
+  "2026-05-20 16:00:00-04:00": {
+   "EPS Estimate": 1.77,
+   "Reported EPS": 1.87,
+   "Surprise(%)": 5.54
+  },
+  "2026-02-25 16:00:00-05:00": {
+   "EPS Estimate": 1.54,
+   "Reported EPS": 1.62,
+   "Surprise(%)": 5.32
+  },
+  "2025-11-19 16:00:00-05:00": {
+   "EPS Estimate": 1.26,
+   "Reported EPS": 1.3,
+   "Surprise(%)": 3.46
+  },
+  "2025-08-27 16:00:00-04:00": {
+   "EPS Estimate": 1.01,
+   "Reported EPS": 1.05,
+   "Surprise(%)": 4.1
+  },
+  "2025-05-28 16:00:00-04:00": {
+   "EPS Estimate": 0.75,
+   "Reported EPS": 0.81,
+   "Surprise(%)": 8.02
+  }
+ },
+ "upgrades_downgrades": {
+  "2026-11-12 18:17:25": {
+   "Firm": "Melius Research",
+   "ToGrade": "Hold",
+   "FromGrade": "Buy",
+   "Action": "down",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 185.0,
+   "priorPriceTarget": 315.0
+  },
+  "2026-11-12 18:13:07": {
+   "Firm": "DA Davidson",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 200.0,
+   "priorPriceTarget": 300.0
+  },
+  "2026-11-12 17:52:20": {
+   "Firm": "Craig-Hallum",
+   "ToGrade": "Hold",
+   "FromGrade": "Buy",
+   "Action": "down",
+   "priceTargetAction": "Announces",
+   "currentPriceTarget": 180.0,
+   "priorPriceTarget": 0.0
+  },
+  "2026-11-12 17:46:29": {
+   "Firm": "B of A Securities",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 280.0,
+   "priorPriceTarget": 350.0
+  },
+  "2026-11-12 16:53:12": {
+   "Firm": "BMO Capital",
+   "ToGrade": "Outperform",
+   "FromGrade": "Outperform",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 240.0,
+   "priorPriceTarget": 340.0
+  },
+  "2026-11-12 16:51:26": {
+   "Firm": "Baird",
+   "ToGrade": "Neutral",
+   "FromGrade": "Neutral",
+   "Action": "reit",
+   "priceTargetAction": "Maintains",
+   "currentPriceTarget": 200.0,
+   "priorPriceTarget": 200.0
+  },
+  "2026-11-12 16:47:08": {
+   "Firm": "Goldman Sachs",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 220.0,
+   "priorPriceTarget": 300.0
+  },
+  "2026-11-12 15:56:51": {
+   "Firm": "Citigroup",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 225.0,
+   "priorPriceTarget": 285.0
+  },
+  "2026-11-12 15:36:18": {
+   "Firm": "Needham",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 200.0,
+   "priorPriceTarget": 300.0
+  },
+  "2026-11-12 15:32:20": {
+   "Firm": "StoneX",
+   "ToGrade": "Hold",
+   "FromGrade": "Buy",
+   "Action": "down",
+   "priceTargetAction": "",
+   "currentPriceTarget": 0.0,
+   "priorPriceTarget": 0.0
+  },
+  "2026-11-12 14:13:44": {
+   "Firm": "Stifel",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 205.0,
+   "priorPriceTarget": 315.0
+  },
+  "2026-11-12 13:20:52": {
+   "Firm": "RBC Capital",
+   "ToGrade": "Outperform",
+   "FromGrade": "Outperform",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 230.0,
+   "priorPriceTarget": 330.0
+  },
+  "2026-11-12 12:41:49": {
+   "Firm": "William Blair",
+   "ToGrade": "Market Perform",
+   "FromGrade": "Outperform",
+   "Action": "down",
+   "priceTargetAction": "",
+   "currentPriceTarget": 0.0,
+   "priorPriceTarget": 0.0
+  },
+  "2026-11-12 12:37:56": {
+   "Firm": "Keybanc",
+   "ToGrade": "Sector Weight",
+   "FromGrade": "Overweight",
+   "Action": "down",
+   "priceTargetAction": "",
+   "currentPriceTarget": 0.0,
+   "priorPriceTarget": 0.0
+  },
+  "2026-11-12 12:05:47": {
+   "Firm": "Bernstein",
+   "ToGrade": "Market Perform",
+   "FromGrade": "Outperform",
+   "Action": "down",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 200.0,
+   "priorPriceTarget": 400.0
+  }
+ },
+ "quarterly_income": {
+  "2026-10-31": {
+   "Total Revenue": null,
+   "Gross Profit": null,
+   "Operating Income": null,
+   "Net Income": null,
+   "Diluted EPS": 2.7
+  },
+  "2026-07-31": {
+   "Total Revenue": 96221000000.0,
+   "Gross Profit": 72142000000.0,
+   "Operating Income": 63734000000.0,
+   "Net Income": 59688000000.0,
+   "Diluted EPS": 2.46
+  },
+  "2026-04-30": {
+   "Total Revenue": 81615000000.0,
+   "Gross Profit": 61157000000.0,
+   "Operating Income": 53536000000.0,
+   "Net Income": 58321000000.0,
+   "Diluted EPS": 2.39
+  },
+  "2026-01-31": {
+   "Total Revenue": 68127000000.0,
+   "Gross Profit": 51093000000.0,
+   "Operating Income": 44299000000.0,
+   "Net Income": 42960000000.0,
+   "Diluted EPS": 1.76
+  },
+  "2025-10-31": {
+   "Total Revenue": 57006000000.0,
+   "Gross Profit": 41849000000.0,
+   "Operating Income": 36010000000.0,
+   "Net Income": 31910000000.0,
+   "Diluted EPS": 1.3
+  },
+  "2025-07-31": {
+   "Total Revenue": 46743000000.0,
+   "Gross Profit": 33853000000.0,
+   "Operating Income": 28440000000.0,
+   "Net Income": 26422000000.0,
+   "Diluted EPS": null
+  }
+ },
+ "eps_trend": {
+  "0q": {
+   "current": 2.88028,
+   "7daysAgo": 2.7613,
+   "30daysAgo": 2.74622,
+   "60daysAgo": 2.74295,
+   "90daysAgo": 2.70696,
+   "currency": "USD",
+   "methodology": "normalized"
+  },
+  "+1q": {
+   "current": 3.33106,
+   "7daysAgo": 3.20634,
+   "30daysAgo": 3.20003,
+   "60daysAgo": 3.17003,
+   "90daysAgo": 2.89156,
+   "currency": "USD",
+   "methodology": "normalized"
+  },
+  "0y": {
+   "current": 9.66925,
+   "7daysAgo": 9.34836,
+   "30daysAgo": 9.31242,
+   "60daysAgo": 9.30713,
+   "90daysAgo": 9.05163,
+   "currency": "USD",
+   "methodology": "normalized"
+  },
+  "+1y": {
+   "current": 16.60528,
+   "7daysAgo": 15.90883,
+   "30daysAgo": 15.9146,
+   "60daysAgo": 15.68263,
+   "90daysAgo": 12.99922,
+   "currency": "USD",
+   "methodology": "normalized"
+  }
+ },
+ "growth_estimates": {
+  "0q": {
+   "stockTrend": 0.77800006,
+   "indexTrend": 0.3018
+  },
+  "+1q": {
+   "stockTrend": 0.78129995,
+   "indexTrend": 0.2754
+  },
+  "0y": {
+   "stockTrend": 1.0271,
+   "indexTrend": 0.3368
+  },
+  "+1y": {
+   "stockTrend": 0.71730006,
+   "indexTrend": 0.1688
+  },
+  "LTG": {
+   "stockTrend": null,
+   "indexTrend": 0.122
+  }
+ }
+}

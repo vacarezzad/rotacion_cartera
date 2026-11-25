@@ -1,0 +1,285 @@
+{
+ "earnings_dates": {
+  "2027-01-28 16:00:00-05:00": {
+   "EPS Estimate": 2.91,
+   "Reported EPS": null,
+   "Surprise(%)": null
+  },
+  "2026-11-02 16:00:00-05:00": {
+   "EPS Estimate": 1.98,
+   "Reported EPS": 2.1,
+   "Surprise(%)": 5.8
+  },
+  "2026-07-30 16:00:00-04:00": {
+   "EPS Estimate": 1.89,
+   "Reported EPS": 2.02,
+   "Surprise(%)": 6.74
+  },
+  "2026-04-30 16:00:00-04:00": {
+   "EPS Estimate": 1.94,
+   "Reported EPS": 2.01,
+   "Surprise(%)": 3.46
+  },
+  "2026-01-29 16:00:00-05:00": {
+   "EPS Estimate": 2.67,
+   "Reported EPS": 2.84,
+   "Surprise(%)": 6.25
+  },
+  "2025-10-30 16:00:00-04:00": {
+   "EPS Estimate": 1.77,
+   "Reported EPS": 1.85,
+   "Surprise(%)": 4.52
+  },
+  "2025-07-31 16:00:00-04:00": {
+   "EPS Estimate": 1.43,
+   "Reported EPS": 1.57,
+   "Surprise(%)": 9.48
+  },
+  "2025-05-01 16:00:00-04:00": {
+   "EPS Estimate": 1.62,
+   "Reported EPS": 1.65,
+   "Surprise(%)": 1.69
+  }
+ },
+ "upgrades_downgrades": {
+  "2026-11-11 13:02:36": {
+   "Firm": "China Renaissance",
+   "ToGrade": "Buy",
+   "FromGrade": "Hold",
+   "Action": "up",
+   "priceTargetAction": "Announces",
+   "currentPriceTarget": 425.0,
+   "priorPriceTarget": 0.0
+  },
+  "2026-11-04 09:04:41": {
+   "Firm": "Bernstein",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 380.0,
+   "priorPriceTarget": 370.0
+  },
+  "2026-11-03 18:16:44": {
+   "Firm": "JP Morgan",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 355.0,
+   "priorPriceTarget": 360.0
+  },
+  "2026-11-03 15:48:58": {
+   "Firm": "UBS",
+   "ToGrade": "Neutral",
+   "FromGrade": "Neutral",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 340.0,
+   "priorPriceTarget": 296.0
+  },
+  "2026-11-03 14:17:08": {
+   "Firm": "Argus Research",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 400.0,
+   "priorPriceTarget": 375.0
+  },
+  "2026-11-03 14:12:11": {
+   "Firm": "Barclays",
+   "ToGrade": "Underweight",
+   "FromGrade": "Underweight",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 261.0,
+   "priorPriceTarget": 245.0
+  },
+  "2026-11-03 14:09:11": {
+   "Firm": "TD Cowen",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 390.0,
+   "priorPriceTarget": 400.0
+  },
+  "2026-11-03 13:59:23": {
+   "Firm": "DA Davidson",
+   "ToGrade": "Neutral",
+   "FromGrade": "Neutral",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 295.0,
+   "priorPriceTarget": 270.0
+  },
+  "2026-11-03 13:45:57": {
+   "Firm": "Keybanc",
+   "ToGrade": "Underweight",
+   "FromGrade": "Underweight",
+   "Action": "reit",
+   "priceTargetAction": "Maintains",
+   "currentPriceTarget": 250.0,
+   "priorPriceTarget": 250.0
+  },
+  "2026-11-03 12:32:06": {
+   "Firm": "Rosenblatt",
+   "ToGrade": "Neutral",
+   "FromGrade": "Neutral",
+   "Action": "main",
+   "priceTargetAction": "Maintains",
+   "currentPriceTarget": 303.0,
+   "priorPriceTarget": 303.0
+  },
+  "2026-11-03 11:57:24": {
+   "Firm": "Baird",
+   "ToGrade": "Outperform",
+   "FromGrade": "Outperform",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 340.0,
+   "priorPriceTarget": 330.0
+  },
+  "2026-11-03 10:37:39": {
+   "Firm": "Morgan Stanley",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 350.0,
+   "priorPriceTarget": 355.0
+  },
+  "2026-10-20 18:00:28": {
+   "Firm": "MoffettNathanson",
+   "ToGrade": "Neutral",
+   "FromGrade": "Neutral",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 283.0,
+   "priorPriceTarget": 304.0
+  },
+  "2026-10-20 09:46:57": {
+   "Firm": "Loop Capital",
+   "ToGrade": "Hold",
+   "FromGrade": "Buy",
+   "Action": "down",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 330.0,
+   "priorPriceTarget": 370.0
+  },
+  "2026-10-12 18:47:46": {
+   "Firm": "JP Morgan",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 360.0,
+   "priorPriceTarget": 340.0
+  }
+ },
+ "quarterly_income": {
+  "2026-09-30": {
+   "Total Revenue": 114477000000.0,
+   "Gross Profit": 54820000000.0,
+   "Operating Income": 35631000000.0,
+   "Net Income": 30711000000.0,
+   "Diluted EPS": null
+  },
+  "2026-06-30": {
+   "Total Revenue": 109417000000.0,
+   "Gross Profit": 54770000000.0,
+   "Operating Income": 35695000000.0,
+   "Net Income": 29789000000.0,
+   "Diluted EPS": 2.02
+  },
+  "2026-03-31": {
+   "Total Revenue": 111184000000.0,
+   "Gross Profit": 54781000000.0,
+   "Operating Income": 35885000000.0,
+   "Net Income": 29578000000.0,
+   "Diluted EPS": 2.01
+  },
+  "2025-12-31": {
+   "Total Revenue": 143756000000.0,
+   "Gross Profit": 69231000000.0,
+   "Operating Income": 50852000000.0,
+   "Net Income": 42097000000.0,
+   "Diluted EPS": 2.84
+  },
+  "2025-09-30": {
+   "Total Revenue": 102466000000.0,
+   "Gross Profit": 48341000000.0,
+   "Operating Income": 32427000000.0,
+   "Net Income": 27466000000.0,
+   "Diluted EPS": 1.85
+  },
+  "2025-06-30": {
+   "Total Revenue": null,
+   "Gross Profit": null,
+   "Operating Income": null,
+   "Net Income": null,
+   "Diluted EPS": 1.57
+  }
+ },
+ "eps_trend": {
+  "0q": {
+   "current": 2.91173,
+   "7daysAgo": 2.91173,
+   "30daysAgo": 2.89774,
+   "60daysAgo": 2.90471,
+   "90daysAgo": 2.90859,
+   "currency": "USD",
+   "methodology": "gaap"
+  },
+  "+1q": {
+   "current": 2.15037,
+   "7daysAgo": 2.15037,
+   "30daysAgo": 2.22931,
+   "60daysAgo": 2.23749,
+   "90daysAgo": 2.20715,
+   "currency": "USD",
+   "methodology": "gaap"
+  },
+  "0y": {
+   "current": 9.42944,
+   "7daysAgo": 9.42944,
+   "30daysAgo": 9.58385,
+   "60daysAgo": 9.60132,
+   "90daysAgo": 9.5528,
+   "currency": "USD",
+   "methodology": "gaap"
+  },
+  "+1y": {
+   "current": 10.59913,
+   "7daysAgo": 10.59799,
+   "30daysAgo": 10.84359,
+   "60daysAgo": 10.83463,
+   "90daysAgo": 10.75054,
+   "currency": "USD",
+   "methodology": "gaap"
+  }
+ },
+ "growth_estimates": {
+  "0q": {
+   "stockTrend": 0.0248,
+   "indexTrend": 0.3018
+  },
+  "+1q": {
+   "stockTrend": 0.0699,
+   "indexTrend": 0.2754
+  },
+  "0y": {
+   "stockTrend": 0.048899997,
+   "indexTrend": 0.3368
+  },
+  "+1y": {
+   "stockTrend": 0.1224,
+   "indexTrend": 0.1688
+  },
+  "LTG": {
+   "stockTrend": null,
+   "indexTrend": 0.122
+  }
+ }
+}

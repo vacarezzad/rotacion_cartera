@@ -1,0 +1,285 @@
+{
+ "earnings_dates": {
+  "2027-01-14 08:00:00-05:00": {
+   "EPS Estimate": 5.16,
+   "Reported EPS": null,
+   "Surprise(%)": null
+  },
+  "2026-10-15 02:00:00-04:00": {
+   "EPS Estimate": 4.52,
+   "Reported EPS": 4.6,
+   "Surprise(%)": 1.67
+  },
+  "2026-07-16 02:00:00-04:00": {
+   "EPS Estimate": 3.89,
+   "Reported EPS": 4.31,
+   "Surprise(%)": 10.89
+  },
+  "2026-04-15 20:00:00-04:00": {
+   "EPS Estimate": 3.33,
+   "Reported EPS": 3.49,
+   "Surprise(%)": 4.68
+  },
+  "2026-01-15 01:00:00-05:00": {
+   "EPS Estimate": 2.98,
+   "Reported EPS": 3.14,
+   "Surprise(%)": 5.53
+  },
+  "2025-10-15 20:00:00-04:00": {
+   "EPS Estimate": 2.63,
+   "Reported EPS": 2.92,
+   "Surprise(%)": 11.23
+  },
+  "2025-07-17 02:00:00-04:00": {
+   "EPS Estimate": 2.31,
+   "Reported EPS": 2.47,
+   "Surprise(%)": 6.79
+  },
+  "2025-04-17 01:00:00-04:00": {
+   "EPS Estimate": 2.05,
+   "Reported EPS": 2.12,
+   "Surprise(%)": 3.21
+  }
+ },
+ "upgrades_downgrades": {
+  "2026-11-04 09:09:17": {
+   "Firm": "Bernstein",
+   "ToGrade": "Outperform",
+   "FromGrade": "Outperform",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 600.0,
+   "priorPriceTarget": 554.0
+  },
+  "2026-10-16 19:15:56": {
+   "Firm": "Barclays",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 670.0,
+   "priorPriceTarget": 665.0
+  },
+  "2026-10-16 17:37:38": {
+   "Firm": "DA Davidson",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Maintains",
+   "currentPriceTarget": 500.0,
+   "priorPriceTarget": 500.0
+  },
+  "2026-10-15 11:48:22": {
+   "Firm": "Needham",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 560.0,
+   "priorPriceTarget": 530.0
+  },
+  "2026-10-06 14:34:26": {
+   "Firm": "Barclays",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 665.0,
+   "priorPriceTarget": 650.0
+  },
+  "2026-09-02 17:52:52": {
+   "Firm": "Stifel",
+   "ToGrade": "Buy",
+   "FromGrade": "",
+   "Action": "init",
+   "priceTargetAction": "Announces",
+   "currentPriceTarget": 515.0,
+   "priorPriceTarget": 0.0
+  },
+  "2026-08-11 18:11:47": {
+   "Firm": "Bernstein",
+   "ToGrade": "Outperform",
+   "FromGrade": "Outperform",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 554.0,
+   "priorPriceTarget": 430.0
+  },
+  "2026-07-27 09:39:28": {
+   "Firm": "Needham",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 530.0,
+   "priorPriceTarget": 480.0
+  },
+  "2026-07-17 19:08:41": {
+   "Firm": "DA Davidson",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 500.0,
+   "priorPriceTarget": 450.0
+  },
+  "2026-07-17 14:32:00": {
+   "Firm": "TD Cowen",
+   "ToGrade": "Hold",
+   "FromGrade": "Hold",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 440.0,
+   "priorPriceTarget": 400.0
+  },
+  "2026-07-17 12:18:56": {
+   "Firm": "Barclays",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 650.0,
+   "priorPriceTarget": 625.0
+  },
+  "2026-07-16 13:46:00": {
+   "Firm": "Susquehanna",
+   "ToGrade": "Positive",
+   "FromGrade": "Positive",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 600.0,
+   "priorPriceTarget": 575.0
+  },
+  "2026-06-24 17:20:25": {
+   "Firm": "B of A Securities",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 590.0,
+   "priorPriceTarget": 490.0
+  },
+  "2026-06-22 16:11:49": {
+   "Firm": "Susquehanna",
+   "ToGrade": "Positive",
+   "FromGrade": "Positive",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 575.0,
+   "priorPriceTarget": 500.0
+  },
+  "2026-04-22 13:31:03": {
+   "Firm": "Barclays",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 470.0,
+   "priorPriceTarget": 450.0
+  }
+ },
+ "quarterly_income": {
+  "2026-09-30": {
+   "Total Revenue": 1494243284000.0,
+   "Gross Profit": 992378650000.0,
+   "Operating Income": 876431811000.0,
+   "Net Income": 763064422000.0,
+   "Diluted EPS": 147.15
+  },
+  "2026-06-30": {
+   "Total Revenue": 1270380250000.0,
+   "Gross Profit": 860310695000.0,
+   "Operating Income": 766568191000.0,
+   "Net Income": 706561938000.0,
+   "Diluted EPS": 136.25
+  },
+  "2026-03-31": {
+   "Total Revenue": 1134103440000.0,
+   "Gross Profit": 751295421000.0,
+   "Operating Income": 658948859000.0,
+   "Net Income": 572479752000.0,
+   "Diluted EPS": 110.4
+  },
+  "2025-12-31": {
+   "Total Revenue": 1046090449000.0,
+   "Gross Profit": 651986857000.0,
+   "Operating Income": 564880854000.0,
+   "Net Income": 485465363000.0,
+   "Diluted EPS": 97.5
+  },
+  "2025-09-30": {
+   "Total Revenue": 989918318000.0,
+   "Gross Profit": 588542829000.0,
+   "Operating Income": 500685080000.0,
+   "Net Income": 452301407000.0,
+   "Diluted EPS": 87.2
+  },
+  "2025-06-30": {
+   "Total Revenue": null,
+   "Gross Profit": null,
+   "Operating Income": null,
+   "Net Income": null,
+   "Diluted EPS": null
+  }
+ },
+ "eps_trend": {
+  "0q": {
+   "current": 5.1641,
+   "7daysAgo": 5.04936,
+   "30daysAgo": 4.96547,
+   "60daysAgo": 4.96788,
+   "90daysAgo": 4.9585,
+   "currency": "USD",
+   "methodology": "normalized"
+  },
+  "+1q": {
+   "current": 5.19402,
+   "7daysAgo": 5.05694,
+   "30daysAgo": 4.96747,
+   "60daysAgo": 4.95592,
+   "90daysAgo": 4.89148,
+   "currency": "USD",
+   "methodology": "normalized"
+  },
+  "0y": {
+   "current": 17.50426,
+   "7daysAgo": 17.03445,
+   "30daysAgo": 16.92658,
+   "60daysAgo": 16.89017,
+   "90daysAgo": 16.69542,
+   "currency": "USD",
+   "methodology": "normalized"
+  },
+  "+1y": {
+   "current": 23.38529,
+   "7daysAgo": 22.29861,
+   "30daysAgo": 21.91887,
+   "60daysAgo": 21.77452,
+   "90daysAgo": 21.28402,
+   "currency": "USD",
+   "methodology": "normalized"
+  }
+ },
+ "growth_estimates": {
+  "0q": {
+   "stockTrend": 0.6446,
+   "indexTrend": 0.3018
+  },
+  "+1q": {
+   "stockTrend": 0.48830003,
+   "indexTrend": 0.2754
+  },
+  "0y": {
+   "stockTrend": 0.6436,
+   "indexTrend": 0.3368
+  },
+  "+1y": {
+   "stockTrend": 0.336,
+   "indexTrend": 0.1688
+  },
+  "LTG": {
+   "stockTrend": null,
+   "indexTrend": 0.122
+  }
+ }
+}

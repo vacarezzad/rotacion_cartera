@@ -1,0 +1,278 @@
+{
+ "earnings_dates": {
+  "2027-02-25 16:00:00-05:00": {
+   "EPS Estimate": 10.14,
+   "Reported EPS": null,
+   "Surprise(%)": null
+  },
+  "2026-11-04 16:00:00-05:00": {
+   "EPS Estimate": 9.27,
+   "Reported EPS": 8.83,
+   "Surprise(%)": -4.75
+  },
+  "2026-08-05 16:00:00-04:00": {
+   "EPS Estimate": 8.89,
+   "Reported EPS": 9.19,
+   "Surprise(%)": 3.39
+  },
+  "2026-05-07 16:00:00-04:00": {
+   "EPS Estimate": 8.47,
+   "Reported EPS": 8.23,
+   "Surprise(%)": -2.88
+  },
+  "2026-02-24 16:00:00-05:00": {
+   "EPS Estimate": 11.43,
+   "Reported EPS": 11.03,
+   "Surprise(%)": -3.52
+  },
+  "2025-10-28 20:00:00-04:00": {
+   "EPS Estimate": 9.37,
+   "Reported EPS": 8.32,
+   "Surprise(%)": -11.2
+  },
+  "2025-08-04 16:00:00-04:00": {
+   "EPS Estimate": 11.75,
+   "Reported EPS": 10.31,
+   "Surprise(%)": -12.24
+  },
+  "2025-05-07 16:00:00-04:00": {
+   "EPS Estimate": 7.99,
+   "Reported EPS": 9.74,
+   "Surprise(%)": 21.9
+  }
+ },
+ "upgrades_downgrades": {
+  "2026-11-11 21:04:32": {
+   "Firm": "UBS",
+   "ToGrade": "Neutral",
+   "FromGrade": "Neutral",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 1600.0,
+   "priorPriceTarget": 1750.0
+  },
+  "2026-11-09 20:26:15": {
+   "Firm": "JP Morgan",
+   "ToGrade": "Neutral",
+   "FromGrade": "Neutral",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 1850.0,
+   "priorPriceTarget": 2150.0
+  },
+  "2026-11-05 20:48:35": {
+   "Firm": "Scotiabank",
+   "ToGrade": "Sector Outperform",
+   "FromGrade": "Sector Outperform",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 2300.0,
+   "priorPriceTarget": 2800.0
+  },
+  "2026-11-05 16:42:12": {
+   "Firm": "StoneX",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 2258.0,
+   "priorPriceTarget": 2380.0
+  },
+  "2026-11-05 12:06:05": {
+   "Firm": "Cantor Fitzgerald",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 2000.0,
+   "priorPriceTarget": 2200.0
+  },
+  "2026-11-05 09:54:14": {
+   "Firm": "BTIG",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 2050.0,
+   "priorPriceTarget": 2150.0
+  },
+  "2026-10-27 20:28:43": {
+   "Firm": "Citigroup",
+   "ToGrade": "Buy",
+   "FromGrade": "Neutral",
+   "Action": "up",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 2050.0,
+   "priorPriceTarget": 2100.0
+  },
+  "2026-10-27 09:56:41": {
+   "Firm": "BTIG",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "reit",
+   "priceTargetAction": "Maintains",
+   "currentPriceTarget": 2150.0,
+   "priorPriceTarget": 2150.0
+  },
+  "2026-10-13 20:27:43": {
+   "Firm": "Citigroup",
+   "ToGrade": "Neutral",
+   "FromGrade": "Neutral",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 2100.0,
+   "priorPriceTarget": 2150.0
+  },
+  "2026-10-12 11:06:29": {
+   "Firm": "Cantor Fitzgerald",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 2200.0,
+   "priorPriceTarget": 2300.0
+  },
+  "2026-10-06 15:47:30": {
+   "Firm": "Susquehanna",
+   "ToGrade": "Positive",
+   "FromGrade": "Positive",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 2500.0,
+   "priorPriceTarget": 2400.0
+  },
+  "2026-09-03 09:08:16": {
+   "Firm": "BTIG",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "reit",
+   "priceTargetAction": "Maintains",
+   "currentPriceTarget": 2150.0,
+   "priorPriceTarget": 2150.0
+  },
+  "2026-08-11 14:20:49": {
+   "Firm": "JP Morgan",
+   "ToGrade": "Neutral",
+   "FromGrade": "Neutral",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 2150.0,
+   "priorPriceTarget": 1900.0
+  },
+  "2026-08-06 12:02:40": {
+   "Firm": "Cantor Fitzgerald",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 2300.0,
+   "priorPriceTarget": 2150.0
+  },
+  "2026-08-06 09:37:26": {
+   "Firm": "BTIG",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "reit",
+   "priceTargetAction": "Maintains",
+   "currentPriceTarget": 2150.0,
+   "priorPriceTarget": 2150.0
+  }
+ },
+ "quarterly_income": {
+  "2026-09-30": {
+   "Total Revenue": 10750000000.0,
+   "Gross Profit": 4384000000.0,
+   "Operating Income": 676000000.0,
+   "Net Income": 448000000.0,
+   "Diluted EPS": 8.83
+  },
+  "2026-06-30": {
+   "Total Revenue": 10169000000.0,
+   "Gross Profit": 4159000000.0,
+   "Operating Income": 683000000.0,
+   "Net Income": 466000000.0,
+   "Diluted EPS": 9.19
+  },
+  "2026-03-31": {
+   "Total Revenue": 8845000000.0,
+   "Gross Profit": 3862000000.0,
+   "Operating Income": 611000000.0,
+   "Net Income": 417000000.0,
+   "Diluted EPS": 8.23
+  },
+  "2025-12-31": {
+   "Total Revenue": 8759000000.0,
+   "Gross Profit": 3784000000.0,
+   "Operating Income": 889000000.0,
+   "Net Income": 559000000.0,
+   "Diluted EPS": 11.03
+  },
+  "2025-09-30": {
+   "Total Revenue": 7409000000.0,
+   "Gross Profit": 3209000000.0,
+   "Operating Income": 724000000.0,
+   "Net Income": 421000000.0,
+   "Diluted EPS": 8.32
+  }
+ },
+ "eps_trend": {
+  "0q": {
+   "current": 10.13711,
+   "7daysAgo": 10.05493,
+   "30daysAgo": 11.25233,
+   "60daysAgo": 11.13156,
+   "90daysAgo": 11.13156,
+   "currency": "USD",
+   "methodology": "gaap"
+  },
+  "+1q": {
+   "current": 10.09166,
+   "7daysAgo": 10.135,
+   "30daysAgo": 10.82681,
+   "60daysAgo": 10.82515,
+   "90daysAgo": 10.82515,
+   "currency": "USD",
+   "methodology": "gaap"
+  },
+  "0y": {
+   "current": 36.5907,
+   "7daysAgo": 36.49852,
+   "30daysAgo": 38.34781,
+   "60daysAgo": 38.02576,
+   "90daysAgo": 38.30553,
+   "currency": "USD",
+   "methodology": "gaap"
+  },
+  "+1y": {
+   "current": 51.89361,
+   "7daysAgo": 52.7491,
+   "30daysAgo": 55.70303,
+   "60daysAgo": 55.76779,
+   "90daysAgo": 55.98684,
+   "currency": "USD",
+   "methodology": "gaap"
+  }
+ },
+ "growth_estimates": {
+  "0q": {
+   "stockTrend": -0.091000006,
+   "indexTrend": 0.3018
+  },
+  "+1q": {
+   "stockTrend": 0.16770001,
+   "indexTrend": 0.2754
+  },
+  "0y": {
+   "stockTrend": -0.0696,
+   "indexTrend": 0.3368
+  },
+  "+1y": {
+   "stockTrend": 0.4448,
+   "indexTrend": 0.1688
+  },
+  "LTG": {
+   "stockTrend": null,
+   "indexTrend": 0.122
+  }
+ }
+}

@@ -1,0 +1,285 @@
+{
+ "earnings_dates": {
+  "2027-02-03 16:00:00-05:00": {
+   "EPS Estimate": 3.19,
+   "Reported EPS": null,
+   "Surprise(%)": null
+  },
+  "2026-10-28 16:00:00-04:00": {
+   "EPS Estimate": 3.01,
+   "Reported EPS": 2.12,
+   "Surprise(%)": -29.54
+  },
+  "2026-07-22 16:00:00-04:00": {
+   "EPS Estimate": 2.9,
+   "Reported EPS": 9.11,
+   "Surprise(%)": 214.23
+  },
+  "2026-04-29 16:00:00-04:00": {
+   "EPS Estimate": 2.67,
+   "Reported EPS": 5.11,
+   "Surprise(%)": 91.59
+  },
+  "2026-02-04 16:00:00-05:00": {
+   "EPS Estimate": 2.64,
+   "Reported EPS": 2.82,
+   "Surprise(%)": 7.01
+  },
+  "2025-10-29 16:00:00-04:00": {
+   "EPS Estimate": 2.26,
+   "Reported EPS": 2.87,
+   "Surprise(%)": 26.88
+  },
+  "2025-07-23 16:00:00-04:00": {
+   "EPS Estimate": 2.19,
+   "Reported EPS": 2.31,
+   "Surprise(%)": 5.67
+  },
+  "2025-04-24 16:00:00-04:00": {
+   "EPS Estimate": 2.01,
+   "Reported EPS": 2.81,
+   "Surprise(%)": 39.84
+  }
+ },
+ "upgrades_downgrades": {
+  "2026-11-02 14:40:07": {
+   "Firm": "Wells Fargo",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 365.0,
+   "priorPriceTarget": 371.0
+  },
+  "2026-10-30 21:07:24": {
+   "Firm": "Citigroup",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 375.0,
+   "priorPriceTarget": 447.0
+  },
+  "2026-10-30 18:23:26": {
+   "Firm": "Wells Fargo",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 371.0,
+   "priorPriceTarget": 417.0
+  },
+  "2026-10-29 21:47:33": {
+   "Firm": "Bernstein",
+   "ToGrade": "Market Perform",
+   "FromGrade": "Market Perform",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 325.0,
+   "priorPriceTarget": 385.0
+  },
+  "2026-10-29 19:03:42": {
+   "Firm": "RBC Capital",
+   "ToGrade": "Outperform",
+   "FromGrade": "Outperform",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 400.0,
+   "priorPriceTarget": 425.0
+  },
+  "2026-10-29 18:37:36": {
+   "Firm": "UBS",
+   "ToGrade": "Neutral",
+   "FromGrade": "Neutral",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 332.0,
+   "priorPriceTarget": 380.0
+  },
+  "2026-10-29 17:24:37": {
+   "Firm": "Morgan Stanley",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 375.0,
+   "priorPriceTarget": 400.0
+  },
+  "2026-10-29 15:52:47": {
+   "Firm": "DA Davidson",
+   "ToGrade": "Neutral",
+   "FromGrade": "Neutral",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 300.0,
+   "priorPriceTarget": 350.0
+  },
+  "2026-10-29 15:22:51": {
+   "Firm": "Citizens",
+   "ToGrade": "Market Perform",
+   "FromGrade": "Market Outperform",
+   "Action": "down",
+   "priceTargetAction": "",
+   "currentPriceTarget": 0.0,
+   "priorPriceTarget": 0.0
+  },
+  "2026-10-29 14:50:24": {
+   "Firm": "Barclays",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 405.0,
+   "priorPriceTarget": 425.0
+  },
+  "2026-10-29 14:49:21": {
+   "Firm": "Wedbush",
+   "ToGrade": "Outperform",
+   "FromGrade": "Outperform",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 387.0,
+   "priorPriceTarget": 445.0
+  },
+  "2026-10-29 14:29:20": {
+   "Firm": "Truist Securities",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 410.0,
+   "priorPriceTarget": 420.0
+  },
+  "2026-10-29 14:22:30": {
+   "Firm": "Guggenheim",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "reit",
+   "priceTargetAction": "Maintains",
+   "currentPriceTarget": 450.0,
+   "priorPriceTarget": 450.0
+  },
+  "2026-10-29 13:36:51": {
+   "Firm": "Piper Sandler",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 345.0,
+   "priorPriceTarget": 400.0
+  },
+  "2026-10-29 13:24:08": {
+   "Firm": "Keybanc",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 385.0,
+   "priorPriceTarget": 410.0
+  }
+ },
+ "quarterly_income": {
+  "2026-09-30": {
+   "Total Revenue": 127577000000.0,
+   "Gross Profit": 76158000000.0,
+   "Operating Income": 40576000000.0,
+   "Net Income": 26468000000.0,
+   "Diluted EPS": 2.12
+  },
+  "2026-06-30": {
+   "Total Revenue": 119796000000.0,
+   "Gross Profit": 73853000000.0,
+   "Operating Income": 40770000000.0,
+   "Net Income": 112193000000.0,
+   "Diluted EPS": 9.11
+  },
+  "2026-03-31": {
+   "Total Revenue": 109896000000.0,
+   "Gross Profit": 68625000000.0,
+   "Operating Income": 39696000000.0,
+   "Net Income": 62578000000.0,
+   "Diluted EPS": 5.11
+  },
+  "2025-12-31": {
+   "Total Revenue": 113829000000.0,
+   "Gross Profit": 68062000000.0,
+   "Operating Income": 35934000000.0,
+   "Net Income": 34455000000.0,
+   "Diluted EPS": 2.82
+  },
+  "2025-09-30": {
+   "Total Revenue": 102346000000.0,
+   "Gross Profit": 60977000000.0,
+   "Operating Income": 31228000000.0,
+   "Net Income": 34979000000.0,
+   "Diluted EPS": 2.87
+  },
+  "2025-06-30": {
+   "Total Revenue": null,
+   "Gross Profit": null,
+   "Operating Income": null,
+   "Net Income": null,
+   "Diluted EPS": null
+  }
+ },
+ "eps_trend": {
+  "0q": {
+   "current": 3.19133,
+   "7daysAgo": 3.21346,
+   "30daysAgo": 3.34602,
+   "60daysAgo": 3.34037,
+   "90daysAgo": 3.33268,
+   "currency": "USD",
+   "methodology": "gaap"
+  },
+  "+1q": {
+   "current": 3.33221,
+   "7daysAgo": 3.33263,
+   "30daysAgo": 3.41786,
+   "60daysAgo": 3.4211,
+   "90daysAgo": 3.40486,
+   "currency": "USD",
+   "methodology": "gaap"
+  },
+  "0y": {
+   "current": 19.53935,
+   "7daysAgo": 19.5759,
+   "30daysAgo": 20.60065,
+   "60daysAgo": 20.62484,
+   "90daysAgo": 20.59812,
+   "currency": "USD",
+   "methodology": "gaap"
+  },
+  "+1y": {
+   "current": 14.89727,
+   "7daysAgo": 14.93162,
+   "30daysAgo": 15.14796,
+   "60daysAgo": 14.9221,
+   "90daysAgo": 14.83929,
+   "currency": "USD",
+   "methodology": "gaap"
+  }
+ },
+ "growth_estimates": {
+  "0q": {
+   "stockTrend": 0.15359999,
+   "indexTrend": 0.3018
+  },
+  "+1q": {
+   "stockTrend": 0.2204,
+   "indexTrend": 0.2754
+  },
+  "0y": {
+   "stockTrend": 0.21090001,
+   "indexTrend": 0.3368
+  },
+  "+1y": {
+   "stockTrend": 0.1685,
+   "indexTrend": 0.1688
+  },
+  "LTG": {
+   "stockTrend": null,
+   "indexTrend": 0.122
+  }
+ }
+}

@@ -1,0 +1,285 @@
+{
+ "earnings_dates": {
+  "2027-02-12 08:00:00-05:00": {
+   "EPS Estimate": -2.13,
+   "Reported EPS": null,
+   "Surprise(%)": null
+  },
+  "2026-11-06 06:00:00-05:00": {
+   "EPS Estimate": -1.25,
+   "Reported EPS": 0.38,
+   "Surprise(%)": 130.29
+  },
+  "2026-07-31 07:00:00-04:00": {
+   "EPS Estimate": -2.06,
+   "Reported EPS": -1.97,
+   "Surprise(%)": 4.33
+  },
+  "2026-04-30 20:00:00-04:00": {
+   "EPS Estimate": -3.88,
+   "Reported EPS": -3.4,
+   "Surprise(%)": 12.37
+  },
+  "2026-02-13 07:00:00-05:00": {
+   "EPS Estimate": -2.64,
+   "Reported EPS": -2.11,
+   "Surprise(%)": 20.18
+  },
+  "2025-11-06 07:00:00-05:00": {
+   "EPS Estimate": -2.16,
+   "Reported EPS": -0.51,
+   "Surprise(%)": 76.42
+  },
+  "2025-08-01 07:00:00-04:00": {
+   "EPS Estimate": -3.0,
+   "Reported EPS": -2.13,
+   "Surprise(%)": 28.96
+  },
+  "2025-05-01 06:00:00-04:00": {
+   "EPS Estimate": -3.11,
+   "Reported EPS": -2.52,
+   "Surprise(%)": 18.89
+  }
+ },
+ "upgrades_downgrades": {
+  "2026-11-09 17:48:01": {
+   "Firm": "Goldman Sachs",
+   "ToGrade": "Neutral",
+   "FromGrade": "Neutral",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 195.0,
+   "priorPriceTarget": 137.0
+  },
+  "2026-11-09 17:12:22": {
+   "Firm": "Piper Sandler",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "reit",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 305.0,
+   "priorPriceTarget": 230.0
+  },
+  "2026-10-27 12:47:59": {
+   "Firm": "William Blair",
+   "ToGrade": "Market Perform",
+   "FromGrade": "Outperform",
+   "Action": "down",
+   "priceTargetAction": "",
+   "currentPriceTarget": 0.0,
+   "priorPriceTarget": 0.0
+  },
+  "2026-10-26 14:01:01": {
+   "Firm": "Piper Sandler",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "reit",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 230.0,
+   "priorPriceTarget": 167.0
+  },
+  "2026-10-21 15:03:16": {
+   "Firm": "TD Cowen",
+   "ToGrade": "Hold",
+   "FromGrade": "Hold",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 90.0,
+   "priorPriceTarget": 40.0
+  },
+  "2026-10-15 11:22:56": {
+   "Firm": "Goldman Sachs",
+   "ToGrade": "Neutral",
+   "FromGrade": "Neutral",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 137.0,
+   "priorPriceTarget": 120.0
+  },
+  "2026-10-07 14:51:01": {
+   "Firm": "Morgan Stanley",
+   "ToGrade": "Equal-Weight",
+   "FromGrade": "Equal-Weight",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 95.0,
+   "priorPriceTarget": 89.0
+  },
+  "2026-09-30 10:21:51": {
+   "Firm": "Citigroup",
+   "ToGrade": "Sell",
+   "FromGrade": "Neutral",
+   "Action": "down",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 80.0,
+   "priorPriceTarget": 60.0
+  },
+  "2026-09-03 11:50:06": {
+   "Firm": "Rothschild & Co",
+   "ToGrade": "Sell",
+   "FromGrade": "Neutral",
+   "Action": "down",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 81.0,
+   "priorPriceTarget": 40.0
+  },
+  "2026-08-28 11:49:28": {
+   "Firm": "Argus Research",
+   "ToGrade": "Buy",
+   "FromGrade": "Hold",
+   "Action": "up",
+   "priceTargetAction": "Announces",
+   "currentPriceTarget": 180.0,
+   "priorPriceTarget": 0.0
+  },
+  "2026-08-25 14:28:41": {
+   "Firm": "Wolfe Research",
+   "ToGrade": "Peer Perform",
+   "FromGrade": "Underperform",
+   "Action": "up",
+   "priceTargetAction": "",
+   "currentPriceTarget": 0.0,
+   "priorPriceTarget": 0.0
+  },
+  "2026-08-24 18:41:07": {
+   "Firm": "Barclays",
+   "ToGrade": "Equal-Weight",
+   "FromGrade": "Equal-Weight",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 125.0,
+   "priorPriceTarget": 48.0
+  },
+  "2026-08-21 16:06:57": {
+   "Firm": "JP Morgan",
+   "ToGrade": "Underweight",
+   "FromGrade": "Underweight",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 77.0,
+   "priorPriceTarget": 40.0
+  },
+  "2026-08-20 17:57:00": {
+   "Firm": "Goldman Sachs",
+   "ToGrade": "Neutral",
+   "FromGrade": "Neutral",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 120.0,
+   "priorPriceTarget": 67.0
+  },
+  "2026-08-20 15:53:40": {
+   "Firm": "UBS",
+   "ToGrade": "Neutral",
+   "FromGrade": "Neutral",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 150.0,
+   "priorPriceTarget": 50.0
+  }
+ },
+ "quarterly_income": {
+  "2026-09-30": {
+   "Total Revenue": 1312000000.0,
+   "Gross Profit": 994000000.0,
+   "Operating Income": 130000000.0,
+   "Net Income": 162000000.0,
+   "Diluted EPS": 0.38
+  },
+  "2026-06-30": {
+   "Total Revenue": 143000000.0,
+   "Gross Profit": 50000000.0,
+   "Operating Income": -815000000.0,
+   "Net Income": -782000000.0,
+   "Diluted EPS": -1.97
+  },
+  "2026-03-31": {
+   "Total Revenue": 389000000.0,
+   "Gross Profit": -566000000.0,
+   "Operating Income": -1388000000.0,
+   "Net Income": -1343000000.0,
+   "Diluted EPS": -3.4
+  },
+  "2025-12-31": {
+   "Total Revenue": 676000000.0,
+   "Gross Profit": 224000000.0,
+   "Operating Income": -857000000.0,
+   "Net Income": -826000000.0,
+   "Diluted EPS": -2.11
+  },
+  "2025-09-30": {
+   "Total Revenue": 1002000000.0,
+   "Gross Profit": 795000000.0,
+   "Operating Income": -260000000.0,
+   "Net Income": -200000000.0,
+   "Diluted EPS": -0.51
+  },
+  "2025-06-30": {
+   "Total Revenue": null,
+   "Gross Profit": null,
+   "Operating Income": null,
+   "Net Income": null,
+   "Diluted EPS": null
+  }
+ },
+ "eps_trend": {
+  "0q": {
+   "current": -2.13479,
+   "7daysAgo": -2.1438,
+   "30daysAgo": -1.86156,
+   "60daysAgo": -1.74156,
+   "90daysAgo": -1.8687,
+   "currency": "USD",
+   "methodology": "gaap"
+  },
+  "+1q": {
+   "current": -1.75512,
+   "7daysAgo": -1.72586,
+   "30daysAgo": -1.8482,
+   "60daysAgo": -1.848,
+   "90daysAgo": -1.854,
+   "currency": "USD",
+   "methodology": "gaap"
+  },
+  "0y": {
+   "current": -7.29196,
+   "7daysAgo": -7.36261,
+   "30daysAgo": -8.49442,
+   "60daysAgo": -8.3833,
+   "90daysAgo": -8.54354,
+   "currency": "USD",
+   "methodology": "gaap"
+  },
+  "+1y": {
+   "current": -4.44656,
+   "7daysAgo": -4.42646,
+   "30daysAgo": -4.87548,
+   "60daysAgo": -4.78698,
+   "90daysAgo": -4.92145,
+   "currency": "USD",
+   "methodology": "gaap"
+  }
+ },
+ "growth_estimates": {
+  "0q": {
+   "stockTrend": -0.056500003,
+   "indexTrend": 0.3018
+  },
+  "+1q": {
+   "stockTrend": 0.4659,
+   "indexTrend": 0.2754
+  },
+  "0y": {
+   "stockTrend": -0.0067000003,
+   "indexTrend": 0.3368
+  },
+  "+1y": {
+   "stockTrend": 0.4269,
+   "indexTrend": 0.1688
+  },
+  "LTG": {
+   "stockTrend": null,
+   "indexTrend": 0.122
+  }
+ }
+}

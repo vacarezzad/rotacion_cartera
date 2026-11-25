@@ -1,0 +1,285 @@
+{
+ "earnings_dates": {
+  "2027-02-25 16:00:00-05:00": {
+   "EPS Estimate": 1.47,
+   "Reported EPS": null,
+   "Surprise(%)": null
+  },
+  "2026-11-19 16:00:00-05:00": {
+   "EPS Estimate": 1.48,
+   "Reported EPS": 1.48,
+   "Surprise(%)": 0.24
+  },
+  "2026-08-13 16:00:00-04:00": {
+   "EPS Estimate": 1.5,
+   "Reported EPS": 1.4,
+   "Surprise(%)": -6.46
+  },
+  "2026-05-14 16:00:00-04:00": {
+   "EPS Estimate": 1.5,
+   "Reported EPS": 1.5,
+   "Surprise(%)": 0.05
+  },
+  "2026-02-26 16:00:00-05:00": {
+   "EPS Estimate": 1.54,
+   "Reported EPS": 1.54,
+   "Surprise(%)": -0.19
+  },
+  "2025-11-13 16:00:00-05:00": {
+   "EPS Estimate": 1.55,
+   "Reported EPS": 1.53,
+   "Surprise(%)": -1.09
+  },
+  "2025-08-14 16:00:00-04:00": {
+   "EPS Estimate": 1.52,
+   "Reported EPS": 1.53,
+   "Surprise(%)": 0.58
+  },
+  "2025-05-15 16:00:00-04:00": {
+   "EPS Estimate": 1.58,
+   "Reported EPS": 1.5,
+   "Surprise(%)": -5.19
+  }
+ },
+ "upgrades_downgrades": {
+  "2026-11-11 14:41:08": {
+   "Firm": "Guggenheim",
+   "ToGrade": "Neutral",
+   "FromGrade": "Buy",
+   "Action": "down",
+   "priceTargetAction": "",
+   "currentPriceTarget": 0.0,
+   "priorPriceTarget": 0.0
+  },
+  "2026-10-26 18:31:12": {
+   "Firm": "Citigroup",
+   "ToGrade": "Neutral",
+   "FromGrade": "Neutral",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 46.0,
+   "priorPriceTarget": 37.0
+  },
+  "2026-10-26 14:09:31": {
+   "Firm": "Wells Fargo",
+   "ToGrade": "Equal-Weight",
+   "FromGrade": "Equal-Weight",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 48.0,
+   "priorPriceTarget": 39.0
+  },
+  "2026-10-13 15:10:06": {
+   "Firm": "Wells Fargo",
+   "ToGrade": "Equal-Weight",
+   "FromGrade": "Equal-Weight",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 39.0,
+   "priorPriceTarget": 42.0
+  },
+  "2026-10-06 13:03:48": {
+   "Firm": "Mizuho",
+   "ToGrade": "Outperform",
+   "FromGrade": "Outperform",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 51.0,
+   "priorPriceTarget": 59.0
+  },
+  "2026-08-14 18:13:48": {
+   "Firm": "UBS",
+   "ToGrade": "Neutral",
+   "FromGrade": "Neutral",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 43.0,
+   "priorPriceTarget": 50.0
+  },
+  "2026-08-14 17:44:15": {
+   "Firm": "Truist Securities",
+   "ToGrade": "Hold",
+   "FromGrade": "Hold",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 38.0,
+   "priorPriceTarget": 44.0
+  },
+  "2026-08-14 16:22:01": {
+   "Firm": "JP Morgan",
+   "ToGrade": "Neutral",
+   "FromGrade": "Neutral",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 44.0,
+   "priorPriceTarget": 47.0
+  },
+  "2026-08-14 16:00:36": {
+   "Firm": "TD Cowen",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 45.0,
+   "priorPriceTarget": 47.0
+  },
+  "2026-08-14 13:57:55": {
+   "Firm": "Susquehanna",
+   "ToGrade": "Positive",
+   "FromGrade": "Positive",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 70.0,
+   "priorPriceTarget": 78.0
+  },
+  "2026-08-14 13:29:40": {
+   "Firm": "Guggenheim",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 50.0,
+   "priorPriceTarget": 55.0
+  },
+  "2026-08-14 13:03:19": {
+   "Firm": "Wedbush",
+   "ToGrade": "Neutral",
+   "FromGrade": "Outperform",
+   "Action": "down",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 37.0,
+   "priorPriceTarget": 54.0
+  },
+  "2026-08-14 12:19:09": {
+   "Firm": "Goldman Sachs",
+   "ToGrade": "Neutral",
+   "FromGrade": "Neutral",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 52.0,
+   "priorPriceTarget": 60.0
+  },
+  "2026-08-14 10:22:30": {
+   "Firm": "Needham",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 45.0,
+   "priorPriceTarget": 50.0
+  },
+  "2026-07-27 16:29:43": {
+   "Firm": "Citigroup",
+   "ToGrade": "Neutral",
+   "FromGrade": "Neutral",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 37.0,
+   "priorPriceTarget": 42.0
+  }
+ },
+ "quarterly_income": {
+  "2026-09-30": {
+   "Total Revenue": 611135000.0,
+   "Gross Profit": 208659000.0,
+   "Operating Income": 54828000.0,
+   "Net Income": 15479000.0,
+   "Diluted EPS": 0.32
+  },
+  "2026-06-30": {
+   "Total Revenue": 614417000.0,
+   "Gross Profit": 208236000.0,
+   "Operating Income": 53893000.0,
+   "Net Income": 1767000.0,
+   "Diluted EPS": 0.04
+  },
+  "2026-03-31": {
+   "Total Revenue": 607085000.0,
+   "Gross Profit": 209481000.0,
+   "Operating Income": 52466000.0,
+   "Net Income": 36979000.0,
+   "Diluted EPS": 0.85
+  },
+  "2025-12-31": {
+   "Total Revenue": 612469000.0,
+   "Gross Profit": 213661000.0,
+   "Operating Income": 58568000.0,
+   "Net Income": 41959000.0,
+   "Diluted EPS": 0.93
+  },
+  "2025-09-30": {
+   "Total Revenue": 617143000.0,
+   "Gross Profit": 214759000.0,
+   "Operating Income": 63092000.0,
+   "Net Income": 34188000.0,
+   "Diluted EPS": 0.73
+  },
+  "2025-06-30": {
+   "Total Revenue": null,
+   "Gross Profit": null,
+   "Operating Income": null,
+   "Net Income": null,
+   "Diluted EPS": null
+  }
+ },
+ "eps_trend": {
+  "0q": {
+   "current": 1.48297,
+   "7daysAgo": 1.51686,
+   "30daysAgo": 1.51668,
+   "60daysAgo": 1.52566,
+   "90daysAgo": 1.52566,
+   "currency": "USD",
+   "methodology": "normalized"
+  },
+  "+1q": {
+   "current": 1.4458,
+   "7daysAgo": 1.47534,
+   "30daysAgo": 1.48628,
+   "60daysAgo": 1.48439,
+   "90daysAgo": 1.48439,
+   "currency": "USD",
+   "methodology": "normalized"
+  },
+  "0y": {
+   "current": 5.85883,
+   "7daysAgo": 5.89052,
+   "30daysAgo": 5.89041,
+   "60daysAgo": 5.91484,
+   "90daysAgo": 5.94531,
+   "currency": "USD",
+   "methodology": "normalized"
+  },
+  "+1y": {
+   "current": 6.13237,
+   "7daysAgo": 6.15181,
+   "30daysAgo": 6.16276,
+   "60daysAgo": 6.20025,
+   "90daysAgo": 6.26323,
+   "currency": "USD",
+   "methodology": "normalized"
+  }
+ },
+ "growth_estimates": {
+  "0q": {
+   "stockTrend": -0.037,
+   "indexTrend": 0.3018
+  },
+  "+1q": {
+   "stockTrend": -0.0361,
+   "indexTrend": 0.2754
+  },
+  "0y": {
+   "stockTrend": -0.0458,
+   "indexTrend": 0.3368
+  },
+  "+1y": {
+   "stockTrend": 0.0467,
+   "indexTrend": 0.1688
+  },
+  "LTG": {
+   "stockTrend": null,
+   "indexTrend": 0.122
+  }
+ }
+}

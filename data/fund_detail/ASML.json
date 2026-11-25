@@ -1,0 +1,278 @@
+{
+ "earnings_dates": {
+  "2027-01-27 08:00:00-05:00": {
+   "EPS Estimate": 15.39,
+   "Reported EPS": null,
+   "Surprise(%)": null
+  },
+  "2026-10-14 01:00:00-04:00": {
+   "EPS Estimate": 10.76,
+   "Reported EPS": 11.82,
+   "Surprise(%)": 9.86
+  },
+  "2026-07-13 20:00:00-04:00": {
+   "EPS Estimate": 6.95,
+   "Reported EPS": 7.58,
+   "Surprise(%)": 9.09
+  },
+  "2026-04-14 20:00:00-04:00": {
+   "EPS Estimate": 6.62,
+   "Reported EPS": 7.15,
+   "Surprise(%)": 7.99
+  },
+  "2026-01-27 19:00:00-05:00": {
+   "EPS Estimate": 7.55,
+   "Reported EPS": 7.34,
+   "Surprise(%)": -2.72
+  },
+  "2025-10-15 01:00:00-04:00": {
+   "EPS Estimate": 5.37,
+   "Reported EPS": 5.49,
+   "Surprise(%)": 2.14
+  },
+  "2025-07-16 01:00:00-04:00": {
+   "EPS Estimate": 5.25,
+   "Reported EPS": 5.9,
+   "Surprise(%)": 12.36
+  },
+  "2025-04-16 01:00:00-04:00": {
+   "EPS Estimate": 5.79,
+   "Reported EPS": 6.0,
+   "Surprise(%)": 3.71
+  }
+ },
+ "upgrades_downgrades": {
+  "2026-10-15 15:41:15": {
+   "Firm": "JP Morgan",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 2350.0,
+   "priorPriceTarget": 2400.0
+  },
+  "2026-07-16 18:20:12": {
+   "Firm": "JP Morgan",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 2400.0,
+   "priorPriceTarget": 2200.0
+  },
+  "2026-07-16 14:57:42": {
+   "Firm": "Wells Fargo",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 2500.0,
+   "priorPriceTarget": 2200.0
+  },
+  "2026-07-16 14:43:25": {
+   "Firm": "RBC Capital",
+   "ToGrade": "Outperform",
+   "FromGrade": "Outperform",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 2100.0,
+   "priorPriceTarget": 2000.0
+  },
+  "2026-07-14 14:14:57": {
+   "Firm": "RBC Capital",
+   "ToGrade": "Outperform",
+   "FromGrade": "Outperform",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 2000.0,
+   "priorPriceTarget": 1700.0
+  },
+  "2026-07-06 14:34:05": {
+   "Firm": "Bernstein",
+   "ToGrade": "Outperform",
+   "FromGrade": "Outperform",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 2623.0,
+   "priorPriceTarget": 1971.0
+  },
+  "2026-06-22 13:19:02": {
+   "Firm": "B of A Securities",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 2345.0,
+   "priorPriceTarget": 2268.0
+  },
+  "2026-06-22 13:09:40": {
+   "Firm": "Wells Fargo",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 2200.0,
+   "priorPriceTarget": 1750.0
+  },
+  "2026-06-03 15:33:04": {
+   "Firm": "JP Morgan",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 2200.0,
+   "priorPriceTarget": 1813.0
+  },
+  "2026-04-16 17:48:07": {
+   "Firm": "Wells Fargo",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 1750.0,
+   "priorPriceTarget": 1650.0
+  },
+  "2026-04-16 13:43:40": {
+   "Firm": "RBC Capital",
+   "ToGrade": "Outperform",
+   "FromGrade": "Outperform",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 1700.0,
+   "priorPriceTarget": 1625.0
+  },
+  "2026-03-26 14:00:08": {
+   "Firm": "Bernstein",
+   "ToGrade": "Outperform",
+   "FromGrade": "Outperform",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 1971.0,
+   "priorPriceTarget": 1911.0
+  },
+  "2026-01-29 15:24:50": {
+   "Firm": "RBC Capital",
+   "ToGrade": "Outperform",
+   "FromGrade": "Outperform",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 1625.0,
+   "priorPriceTarget": 1550.0
+  },
+  "2026-01-29 14:51:15": {
+   "Firm": "Wells Fargo",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 1650.0,
+   "priorPriceTarget": 1450.0
+  },
+  "2026-01-29 13:52:03": {
+   "Firm": "Barclays",
+   "ToGrade": "Overweight",
+   "FromGrade": "Equal-Weight",
+   "Action": "up",
+   "priceTargetAction": "",
+   "currentPriceTarget": 0.0,
+   "priorPriceTarget": 0.0
+  }
+ },
+ "quarterly_income": {
+  "2026-09-30": {
+   "Total Revenue": 11662000000.0,
+   "Gross Profit": 6699800000.0,
+   "Operating Income": 5172800000.0,
+   "Net Income": 4960400000.0,
+   "Diluted EPS": 12.93
+  },
+  "2026-06-30": {
+   "Total Revenue": 9326500000.0,
+   "Gross Profit": 5035400000.0,
+   "Operating Income": 3456100000.0,
+   "Net Income": 2917600000.0,
+   "Diluted EPS": 7.58
+  },
+  "2026-03-31": {
+   "Total Revenue": 8766900000.0,
+   "Gross Profit": 4645000000.0,
+   "Operating Income": 3157800000.0,
+   "Net Income": 2756700000.0,
+   "Diluted EPS": 7.15
+  },
+  "2025-12-31": {
+   "Total Revenue": 9718100000.0,
+   "Gross Profit": 5068600000.0,
+   "Operating Income": 3431100000.0,
+   "Net Income": 2839600000.0,
+   "Diluted EPS": 7.34
+  },
+  "2025-09-30": {
+   "Total Revenue": 7516000000.0,
+   "Gross Profit": 3880300000.0,
+   "Operating Income": 2468400000.0,
+   "Net Income": 2124500000.0,
+   "Diluted EPS": 5.48
+  }
+ },
+ "eps_trend": {
+  "0q": {
+   "current": 15.38838,
+   "7daysAgo": 13.27016,
+   "30daysAgo": 13.14231,
+   "60daysAgo": 13.14231,
+   "90daysAgo": 13.14231,
+   "currency": "EUR",
+   "methodology": "normalized"
+  },
+  "+1q": {
+   "current": 12.93818,
+   "7daysAgo": 12.08608,
+   "30daysAgo": 12.08608,
+   "60daysAgo": 12.08608,
+   "90daysAgo": 12.08608,
+   "currency": "EUR",
+   "methodology": "normalized"
+  },
+  "0y": {
+   "current": 41.41393,
+   "7daysAgo": 41.20818,
+   "30daysAgo": 38.34441,
+   "60daysAgo": 38.1896,
+   "90daysAgo": 38.05023,
+   "currency": "EUR",
+   "methodology": "normalized"
+  },
+  "+1y": {
+   "current": 56.43418,
+   "7daysAgo": 55.929,
+   "30daysAgo": 51.73157,
+   "60daysAgo": 51.70991,
+   "90daysAgo": 51.08756,
+   "currency": "EUR",
+   "methodology": "normalized"
+  }
+ },
+ "growth_estimates": {
+  "0q": {
+   "stockTrend": 1.0965,
+   "indexTrend": 0.3018
+  },
+  "+1q": {
+   "stockTrend": 0.8095,
+   "indexTrend": 0.2754
+  },
+  "0y": {
+   "stockTrend": 0.676,
+   "indexTrend": 0.3368
+  },
+  "+1y": {
+   "stockTrend": 0.36270002,
+   "indexTrend": 0.1688
+  },
+  "LTG": {
+   "stockTrend": null,
+   "indexTrend": 0.122
+  }
+ }
+}

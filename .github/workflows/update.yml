@@ -1,0 +1,39 @@
+name: Datos + señal semanal
+
+on:
+  schedule:
+    - cron: "30 22 * * 5"     # viernes 19:30 (Buenos Aires), después del cierre de EE.UU.
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install --no-cache-dir -r requirements.txt yfinance
+      - name: Precios (yfinance)
+        run: python scripts/download_prices.py
+      - name: Fundamentals y earnings (yfinance)
+        run: python scripts/download_fundamentals.py
+        continue-on-error: true
+      - name: SEC EDGAR
+        run: python scripts/download_edgar.py
+        continue-on-error: true
+        env:
+          SEC_UA: ${{ secrets.SEC_UA }}
+      - name: Señal + semáforo
+        run: python make_signal.py
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data signals
+          git commit -m "datos + señal $(date -u +%F) [skip ci]" || echo "sin cambios"
+          for i in 1 2 3; do git pull --rebase -q && git push && break || sleep 10; done

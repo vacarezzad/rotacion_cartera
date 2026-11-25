@@ -1,0 +1,4 @@
+setup,auc_test
+original: label pasado + split aleatorio,0.9939944985386744
+label futuro + split aleatorio,0.6980320742524819
+label futuro + split temporal (honesto),0.5361377161986238

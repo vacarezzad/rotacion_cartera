@@ -1,0 +1,278 @@
+{
+ "earnings_dates": {
+  "2027-02-17 08:00:00-05:00": {
+   "EPS Estimate": 15.18,
+   "Reported EPS": null,
+   "Surprise(%)": null
+  },
+  "2026-11-19 05:00:00-05:00": {
+   "EPS Estimate": 11.03,
+   "Reported EPS": 8.1,
+   "Surprise(%)": -26.53
+  },
+  "2026-08-20 05:00:00-04:00": {
+   "EPS Estimate": 10.82,
+   "Reported EPS": 8.52,
+   "Surprise(%)": -21.26
+  },
+  "2026-05-13 05:00:00-04:00": {
+   "EPS Estimate": 5.74,
+   "Reported EPS": 0.62,
+   "Surprise(%)": -89.2
+  },
+  "2026-03-19 05:00:00-04:00": {
+   "EPS Estimate": 10.94,
+   "Reported EPS": 7.09,
+   "Surprise(%)": -35.18
+  },
+  "2025-11-25 05:00:00-05:00": {
+   "EPS Estimate": 5.78,
+   "Reported EPS": 4.36,
+   "Surprise(%)": -24.55
+  },
+  "2025-08-29 05:00:00-04:00": {
+   "EPS Estimate": 15.47,
+   "Reported EPS": 14.75,
+   "Surprise(%)": -4.66
+  },
+  "2025-05-15 05:00:00-04:00": {
+   "EPS Estimate": 12.81,
+   "Reported EPS": 12.52,
+   "Surprise(%)": -2.3
+  }
+ },
+ "upgrades_downgrades": {
+  "2026-10-12 16:16:03": {
+   "Firm": "JP Morgan",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 200.0,
+   "priorPriceTarget": 210.0
+  },
+  "2026-10-08 21:31:23": {
+   "Firm": "Citigroup",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 193.0,
+   "priorPriceTarget": 190.0
+  },
+  "2026-08-28 15:21:58": {
+   "Firm": "Susquehanna",
+   "ToGrade": "Positive",
+   "FromGrade": "Positive",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 190.0,
+   "priorPriceTarget": 185.0
+  },
+  "2026-08-21 15:55:10": {
+   "Firm": "JP Morgan",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 210.0,
+   "priorPriceTarget": 205.0
+  },
+  "2026-08-21 14:57:15": {
+   "Firm": "Barclays",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 200.0,
+   "priorPriceTarget": 195.0
+  },
+  "2026-08-21 12:24:14": {
+   "Firm": "Baird",
+   "ToGrade": "Outperform",
+   "FromGrade": "Outperform",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 160.0,
+   "priorPriceTarget": 164.0
+  },
+  "2026-05-15 13:47:31": {
+   "Firm": "Susquehanna",
+   "ToGrade": "Positive",
+   "FromGrade": "Positive",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 185.0,
+   "priorPriceTarget": 170.0
+  },
+  "2026-05-14 16:09:29": {
+   "Firm": "JP Morgan",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 205.0,
+   "priorPriceTarget": 200.0
+  },
+  "2026-05-14 13:23:09": {
+   "Firm": "Barclays",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 195.0,
+   "priorPriceTarget": 186.0
+  },
+  "2026-05-14 12:03:05": {
+   "Firm": "Mizuho",
+   "ToGrade": "Outperform",
+   "FromGrade": "Outperform",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 195.0,
+   "priorPriceTarget": 190.0
+  },
+  "2026-04-14 14:28:42": {
+   "Firm": "Barclays",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 186.0,
+   "priorPriceTarget": 190.0
+  },
+  "2026-03-26 15:18:44": {
+   "Firm": "Susquehanna",
+   "ToGrade": "Positive",
+   "FromGrade": "Positive",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 170.0,
+   "priorPriceTarget": 190.0
+  },
+  "2026-03-20 19:02:00": {
+   "Firm": "JP Morgan",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 205.0,
+   "priorPriceTarget": 215.0
+  },
+  "2026-03-20 13:19:42": {
+   "Firm": "Mizuho",
+   "ToGrade": "Outperform",
+   "FromGrade": "Outperform",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 190.0,
+   "priorPriceTarget": 195.0
+  },
+  "2026-03-20 13:13:24": {
+   "Firm": "Barclays",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 190.0,
+   "priorPriceTarget": 195.0
+  }
+ },
+ "quarterly_income": {
+  "2026-09-30": {
+   "Total Revenue": 271519000000.0,
+   "Gross Profit": 103043000000.0,
+   "Operating Income": 29116000000.0,
+   "Net Income": 64577000000.0,
+   "Diluted EPS": 25.92
+  },
+  "2026-06-30": {
+   "Total Revenue": 268953000000.0,
+   "Gross Profit": 102857000000.0,
+   "Operating Income": 19619000000.0,
+   "Net Income": 10614000000.0,
+   "Diluted EPS": 3.68
+  },
+  "2026-03-31": {
+   "Total Revenue": 243380000000.0,
+   "Gross Profit": 83988000000.0,
+   "Operating Income": -848000000.0,
+   "Net Income": 25541000000.0,
+   "Diluted EPS": 10.4
+  },
+  "2025-12-31": {
+   "Total Revenue": 284843000000.0,
+   "Gross Profit": 115309000000.0,
+   "Operating Income": 20160000000.0,
+   "Net Income": 16383000000.0,
+   "Diluted EPS": 5.92
+  },
+  "2025-09-30": {
+   "Total Revenue": 247795000000.0,
+   "Gross Profit": 97014000000.0,
+   "Operating Income": 5365000000.0,
+   "Net Income": 21019000000.0,
+   "Diluted EPS": 8.72
+  }
+ },
+ "eps_trend": {
+  "0q": {
+   "current": 15.18461,
+   "7daysAgo": 15.00699,
+   "30daysAgo": 14.77419,
+   "60daysAgo": 14.6642,
+   "90daysAgo": 15.17622,
+   "currency": "CNY",
+   "methodology": "normalized"
+  },
+  "+1q": {
+   "current": 11.5624,
+   "7daysAgo": 10.70672,
+   "30daysAgo": 10.92885,
+   "60daysAgo": 10.92645,
+   "90daysAgo": 11.28523,
+   "currency": "CNY",
+   "methodology": "normalized"
+  },
+  "0y": {
+   "current": 43.69325,
+   "7daysAgo": 44.2488,
+   "30daysAgo": 44.45182,
+   "60daysAgo": 44.05284,
+   "90daysAgo": 44.68037,
+   "currency": "CNY",
+   "methodology": "normalized"
+  },
+  "+1y": {
+   "current": 61.08442,
+   "7daysAgo": 61.65126,
+   "30daysAgo": 62.05017,
+   "60daysAgo": 61.75665,
+   "90daysAgo": 62.55615,
+   "currency": "CNY",
+   "methodology": "normalized"
+  }
+ },
+ "growth_estimates": {
+  "0q": {
+   "stockTrend": 1.1417,
+   "indexTrend": 0.3018
+  },
+  "+1q": {
+   "stockTrend": 17.649,
+   "indexTrend": 0.2754
+  },
+  "0y": {
+   "stockTrend": 0.6303,
+   "indexTrend": 0.3368
+  },
+  "+1y": {
+   "stockTrend": 0.398,
+   "indexTrend": 0.1688
+  },
+  "LTG": {
+   "stockTrend": null,
+   "indexTrend": 0.122
+  }
+ }
+}

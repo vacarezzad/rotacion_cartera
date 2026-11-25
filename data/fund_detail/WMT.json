@@ -1,0 +1,285 @@
+{
+ "earnings_dates": {
+  "2027-02-18 08:00:00-05:00": {
+   "EPS Estimate": 0.78,
+   "Reported EPS": null,
+   "Surprise(%)": null
+  },
+  "2026-11-19 06:00:00-05:00": {
+   "EPS Estimate": 0.64,
+   "Reported EPS": 0.65,
+   "Surprise(%)": 2.16
+  },
+  "2026-08-20 06:00:00-04:00": {
+   "EPS Estimate": 0.74,
+   "Reported EPS": 0.81,
+   "Surprise(%)": 9.27
+  },
+  "2026-05-21 06:00:00-04:00": {
+   "EPS Estimate": 0.66,
+   "Reported EPS": 0.66,
+   "Surprise(%)": 0.19
+  },
+  "2026-02-19 06:00:00-05:00": {
+   "EPS Estimate": 0.73,
+   "Reported EPS": 0.74,
+   "Surprise(%)": 1.79
+  },
+  "2025-11-20 06:00:00-05:00": {
+   "EPS Estimate": 0.6,
+   "Reported EPS": 0.62,
+   "Surprise(%)": 3.11
+  },
+  "2025-08-21 06:00:00-04:00": {
+   "EPS Estimate": 0.74,
+   "Reported EPS": 0.68,
+   "Surprise(%)": -7.97
+  },
+  "2025-05-15 06:00:00-04:00": {
+   "EPS Estimate": 0.58,
+   "Reported EPS": 0.61,
+   "Surprise(%)": 5.64
+  }
+ },
+ "upgrades_downgrades": {
+  "2026-11-12 11:45:19": {
+   "Firm": "BTIG",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "reit",
+   "priceTargetAction": "Maintains",
+   "currentPriceTarget": 140.0,
+   "priorPriceTarget": 140.0
+  },
+  "2026-11-10 17:42:19": {
+   "Firm": "Mizuho",
+   "ToGrade": "Outperform",
+   "FromGrade": "Outperform",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 135.0,
+   "priorPriceTarget": 125.0
+  },
+  "2026-11-09 20:59:37": {
+   "Firm": "UBS",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 149.0,
+   "priorPriceTarget": 130.0
+  },
+  "2026-11-09 20:31:57": {
+   "Firm": "JP Morgan",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 145.0,
+   "priorPriceTarget": 125.0
+  },
+  "2026-10-20 12:45:50": {
+   "Firm": "Evercore ISI Group",
+   "ToGrade": "Outperform",
+   "FromGrade": "Outperform",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 130.0,
+   "priorPriceTarget": 125.0
+  },
+  "2026-10-15 10:29:32": {
+   "Firm": "Deutsche Bank",
+   "ToGrade": "Buy",
+   "FromGrade": "Hold",
+   "Action": "up",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 136.0,
+   "priorPriceTarget": 113.0
+  },
+  "2026-09-29 12:42:41": {
+   "Firm": "Mizuho",
+   "ToGrade": "Outperform",
+   "FromGrade": "Outperform",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 125.0,
+   "priorPriceTarget": 130.0
+  },
+  "2026-09-10 15:17:47": {
+   "Firm": "DA Davidson",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Maintains",
+   "currentPriceTarget": 132.0,
+   "priorPriceTarget": 132.0
+  },
+  "2026-09-10 13:10:20": {
+   "Firm": "BTIG",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "reit",
+   "priceTargetAction": "Maintains",
+   "currentPriceTarget": 140.0,
+   "priorPriceTarget": 140.0
+  },
+  "2026-08-31 13:24:19": {
+   "Firm": "Tigress Financial",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 155.0,
+   "priorPriceTarget": 155.0
+  },
+  "2026-08-21 20:07:51": {
+   "Firm": "Telsey Advisory Group",
+   "ToGrade": "Outperform",
+   "FromGrade": "Outperform",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 130.0,
+   "priorPriceTarget": 140.0
+  },
+  "2026-08-21 19:50:06": {
+   "Firm": "Citigroup",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 132.0,
+   "priorPriceTarget": 147.0
+  },
+  "2026-08-21 17:54:09": {
+   "Firm": "BNP Paribas",
+   "ToGrade": "Outperform",
+   "FromGrade": "Outperform",
+   "Action": "reit",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 137.0,
+   "priorPriceTarget": 146.0
+  },
+  "2026-08-21 17:31:27": {
+   "Firm": "Truist Securities",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 114.0,
+   "priorPriceTarget": 140.0
+  },
+  "2026-08-21 17:01:04": {
+   "Firm": "Piper Sandler",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "reit",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 128.0,
+   "priorPriceTarget": 137.0
+  }
+ },
+ "quarterly_income": {
+  "2026-10-31": {
+   "Total Revenue": null,
+   "Gross Profit": null,
+   "Operating Income": null,
+   "Net Income": null,
+   "Diluted EPS": 0.62
+  },
+  "2026-07-31": {
+   "Total Revenue": 187937000000.0,
+   "Gross Profit": 49133000000.0,
+   "Operating Income": 9383000000.0,
+   "Net Income": 6366000000.0,
+   "Diluted EPS": 0.8
+  },
+  "2026-04-30": {
+   "Total Revenue": 177751000000.0,
+   "Gross Profit": 44693000000.0,
+   "Operating Income": 7493000000.0,
+   "Net Income": 5330000000.0,
+   "Diluted EPS": 0.67
+  },
+  "2026-01-31": {
+   "Total Revenue": 190656000000.0,
+   "Gross Profit": 47041000000.0,
+   "Operating Income": 8708000000.0,
+   "Net Income": 4237000000.0,
+   "Diluted EPS": 0.53
+  },
+  "2025-10-31": {
+   "Total Revenue": 179496000000.0,
+   "Gross Profit": 44790000000.0,
+   "Operating Income": 6696000000.0,
+   "Net Income": 6143000000.0,
+   "Diluted EPS": 0.77
+  },
+  "2025-07-31": {
+   "Total Revenue": 177402000000.0,
+   "Gross Profit": 44631000000.0,
+   "Operating Income": 7286000000.0,
+   "Net Income": 7026000000.0,
+   "Diluted EPS": null
+  }
+ },
+ "eps_trend": {
+  "0q": {
+   "current": 0.77534,
+   "7daysAgo": 0.78522,
+   "30daysAgo": 0.78616,
+   "60daysAgo": 0.78481,
+   "90daysAgo": 0.78527,
+   "currency": "USD",
+   "methodology": "normalized"
+  },
+  "+1q": {
+   "current": 0.73436,
+   "7daysAgo": 0.73527,
+   "30daysAgo": 0.73902,
+   "60daysAgo": 0.73858,
+   "90daysAgo": 0.73232,
+   "currency": "USD",
+   "methodology": "normalized"
+  },
+  "0y": {
+   "current": 2.88668,
+   "7daysAgo": 2.88492,
+   "30daysAgo": 2.88655,
+   "60daysAgo": 2.88661,
+   "90daysAgo": 2.88196,
+   "currency": "USD",
+   "methodology": "normalized"
+  },
+  "+1y": {
+   "current": 3.22599,
+   "7daysAgo": 3.22659,
+   "30daysAgo": 3.22649,
+   "60daysAgo": 3.22947,
+   "90daysAgo": 3.22385,
+   "currency": "USD",
+   "methodology": "normalized"
+  }
+ },
+ "growth_estimates": {
+  "0q": {
+   "stockTrend": 0.0478,
+   "indexTrend": 0.3018
+  },
+  "+1q": {
+   "stockTrend": 0.11270001,
+   "indexTrend": 0.2754
+  },
+  "0y": {
+   "stockTrend": 0.0934,
+   "indexTrend": 0.3368
+  },
+  "+1y": {
+   "stockTrend": 0.1175,
+   "indexTrend": 0.1688
+  },
+  "LTG": {
+   "stockTrend": null,
+   "indexTrend": 0.122
+  }
+ }
+}
