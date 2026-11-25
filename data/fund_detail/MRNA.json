@@ -21,24 +21,24 @@
    "Surprise(%)": 12.37
   },
   "2026-02-13 07:00:00-05:00": {
-   "EPS Estimate": -2.64,
+   "EPS Estimate": -2.6,
    "Reported EPS": -2.11,
-   "Surprise(%)": 20.18
+   "Surprise(%)": 18.88
   },
   "2025-11-06 07:00:00-05:00": {
-   "EPS Estimate": -2.16,
+   "EPS Estimate": -2.18,
    "Reported EPS": -0.51,
-   "Surprise(%)": 76.42
+   "Surprise(%)": 76.6
   },
   "2025-08-01 07:00:00-04:00": {
-   "EPS Estimate": -3.0,
+   "EPS Estimate": -2.97,
    "Reported EPS": -2.13,
-   "Surprise(%)": 28.96
+   "Surprise(%)": 28.28
   },
   "2025-05-01 06:00:00-04:00": {
-   "EPS Estimate": -3.11,
+   "EPS Estimate": -3.18,
    "Reported EPS": -2.52,
-   "Surprise(%)": 18.89
+   "Surprise(%)": 20.69
   }
  },
  "upgrades_downgrades": {
