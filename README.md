@@ -53,6 +53,10 @@ Detalle de cada experimento en `experiments/` y sus resultados en `results/`.
 
 Manual: `pip install -r requirements.txt yfinance && python make_signal.py`.
 
+## Recordatorio de rebalanceo
+
+El workflow `Recordatorio de rebalanceo` corre los días hábiles a las 10:00 (Buenos Aires) y solo actúa la **víspera** del rebalanceo: abre un issue asignado al dueño del repo (GitHub lo manda por mail) con la cartera objetivo y qué comprar o vender contra `portfolio.json`. Si además cargás los secrets `MAIL_USERNAME` y `MAIL_PASSWORD` (contraseña de aplicación de Gmail) y opcionalmente `MAIL_TO`, también manda un mail directo. El día del rebalanceo, `Datos + señal semanal` corre igual aunque no sea viernes, para que la señal quede al cierre de ese día.
+
 ## Web (Vercel)
 
 La carpeta `web/` es un sitio estático con el estilo de la suite Analiza: cartera objetivo, ranking con semáforo, backtest contra buy & hold y seguimiento de cada señal publicada. Lee `web/data/dashboard.json`, que el workflow regenera cada viernes con `scripts/export_web.py`. En Vercel: importar el repo con **Root Directory = `web`**, sin framework ni build.

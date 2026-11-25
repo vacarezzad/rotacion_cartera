@@ -2,7 +2,7 @@ name: Datos + señal semanal
 
 on:
   schedule:
-    - cron: "30 22 * * 5"     # viernes 19:30 (Buenos Aires), después del cierre de EE.UU.
+    - cron: "30 22 * * 1-5"   # 19:30 (Buenos Aires), después del cierre de EE.UU.; corre viernes y el día de rebalanceo
   workflow_dispatch:
 
 permissions:
@@ -14,25 +14,45 @@ jobs:
     timeout-minutes: 40
     steps:
       - uses: actions/checkout@v5
+      - name: ¿Toca hoy? (viernes o día de rebalanceo)
+        id: gate
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import datetime as dt, calendar
+          t = dt.date.today()
+          last = dt.date(t.year, t.month, calendar.monthrange(t.year, t.month)[1])
+          while last.weekday() > 4:
+              last -= dt.timedelta(days=1)
+          rebal = t.month in (1, 4, 7, 10) and t == last
+          manual = "${{ github.event_name }}" == "workflow_dispatch"
+          print("run=" + ("true" if manual or t.weekday() == 4 or rebal else "false"))
+          PY
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
-      - run: pip install --no-cache-dir -r requirements.txt yfinance
-      - name: Precios (yfinance)
+      - if: steps.gate.outputs.run == 'true'
+        run: pip install --no-cache-dir -r requirements.txt yfinance
+      - if: steps.gate.outputs.run == 'true'
+        name: Precios (yfinance)
         run: python scripts/download_prices.py
-      - name: Fundamentals y earnings (yfinance)
+      - if: steps.gate.outputs.run == 'true'
+        name: Fundamentals y earnings (yfinance)
         run: python scripts/download_fundamentals.py
         continue-on-error: true
-      - name: SEC EDGAR
+      - if: steps.gate.outputs.run == 'true'
+        name: SEC EDGAR
         run: python scripts/download_edgar.py
         continue-on-error: true
         env:
           SEC_UA: ${{ secrets.SEC_UA }}
-      - name: Señal + semáforo
+      - if: steps.gate.outputs.run == 'true'
+        name: Señal + semáforo
         run: python make_signal.py
-      - name: Datos de la web
+      - if: steps.gate.outputs.run == 'true'
+        name: Datos de la web
         run: python scripts/export_web.py
-      - name: Commit
+      - if: steps.gate.outputs.run == 'true'
+        name: Commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

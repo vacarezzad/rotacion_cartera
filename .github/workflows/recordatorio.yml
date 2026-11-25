@@ -1,0 +1,49 @@
+name: Recordatorio de rebalanceo
+
+on:
+  schedule:
+    - cron: "0 13 * * 1-5"     # días hábiles 10:00 (Buenos Aires); solo avisa la víspera del rebalanceo
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Mandar el aviso igual (prueba)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install --no-cache-dir pandas
+      - name: ¿Es la víspera?
+        id: check
+        run: python scripts/reminder.py ${{ inputs.force && '--force' || '' }}
+        env:
+          SITE_URL: ${{ vars.SITE_URL }}
+      - name: Mail (si hay credenciales SMTP)
+        if: steps.check.outputs.send == 'true'
+        run: python scripts/send_mail.py
+        env:
+          MAIL_USERNAME: ${{ secrets.MAIL_USERNAME }}
+          MAIL_PASSWORD: ${{ secrets.MAIL_PASSWORD }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+      - name: Issue en GitHub (te llega por mail como notificación)
+        if: steps.check.outputs.send == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create --repo "$GITHUB_REPOSITORY" \
+            --title "$(cat reminder_subject.txt)" \
+            --body "$(cat reminder_body.md)
+          
+          @${{ github.repository_owner }}" \
+            --assignee "${{ github.repository_owner }}"
