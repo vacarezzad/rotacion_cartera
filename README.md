@@ -53,6 +53,10 @@ Detalle de cada experimento en `experiments/` y sus resultados en `results/`.
 
 Manual: `pip install -r requirements.txt yfinance && python make_signal.py`.
 
+## Web (Vercel)
+
+La carpeta `web/` es un sitio estático con el estilo de la suite Analiza: cartera objetivo, ranking con semáforo, backtest contra buy & hold y seguimiento de cada señal publicada. Lee `web/data/dashboard.json`, que el workflow regenera cada viernes con `scripts/export_web.py`. En Vercel: importar el repo con **Root Directory = `web`**, sin framework ni build.
+
 ## Datos
 
 - `data/prices/`: OHLCV diario ajustado (yfinance, corriendo en GitHub Actions).
@@ -69,6 +73,7 @@ experiments/            todos los experimentos (v2 → 30 activos + fundamentals
 scripts/                descargas de datos
 results/                resultados de los experimentos
 signals/                señales publicadas
+web/                    sitio estático (Vercel)
 ```
 
 Esto no es asesoramiento financiero.

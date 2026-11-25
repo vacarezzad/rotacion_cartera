@@ -1,0 +1,512 @@
+/*
+ * Analiza · tema editorial (dirección C)
+ * Fuente de verdad: suite-financiera/ds/analiza-theme.css
+ * Cada app carga una copia en src/analiza-theme.css DESPUÉS de su styles.css.
+ * Redefine los tokens que ya usan todas las apps (--bg, --surface, --ink,
+ * --accent, --call, --put…) y ajusta los componentes compartidos.
+ * Claro por defecto; oscuro con <html data-theme="dark">.
+ */
+
+:root,
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f6f3ec;
+  --bg-tint: #efeadf;
+  --surface: #fffdf8;
+  --surface-2: #f9f6ef;
+  --surface-elevated: #ffffff;
+  --ink: #1b1a17;
+  --ink-2: #2d2a25;
+  --ink-3: #4a463e;
+  --muted: #6b655a;
+  --muted-2: #8a8375;
+  --line: #e2dccf;
+  --line-strong: #cbc2b0;
+  --rule: #1b1a17;
+  --accent: #1f5c4a;
+  --accent-2: #1f5c4a;
+  --accent-ink: #fffdf8;
+  --accent-soft: rgba(31, 92, 74, 0.09);
+  --call: #2f7d5b;
+  --call-bg: rgba(47, 125, 91, 0.11);
+  --put: #b4432c;
+  --put-bg: rgba(180, 67, 44, 0.1);
+  --warn: #94600f;
+  --warn-bg: rgba(148, 96, 15, 0.11);
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --font-serif: "Instrument Serif", "Iowan Old Style", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Consolas, monospace;
+  --shadow: none;
+  --radius: 4px;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #171613;
+  --bg-tint: #1b1a16;
+  --surface: #1f1d19;
+  --surface-2: #1b1a16;
+  --surface-elevated: #26241f;
+  --ink: #f2eee6;
+  --ink-2: #e2ddd2;
+  --ink-3: #c4bdb0;
+  --muted: #a39b8c;
+  --muted-2: #847c6f;
+  --line: #34302a;
+  --line-strong: #4a443b;
+  --rule: #c4bdb0;
+  --accent: #8cc3ad;
+  --accent-2: #8cc3ad;
+  --accent-ink: #12211c;
+  --accent-soft: rgba(140, 195, 173, 0.12);
+  --call: #86c29b;
+  --call-bg: rgba(134, 194, 155, 0.12);
+  --put: #e58b75;
+  --put-bg: rgba(229, 139, 117, 0.12);
+  --warn: #e0b060;
+  --warn-bg: rgba(224, 176, 96, 0.12);
+}
+
+/* ── Base ─────────────────────────────────────────────── */
+
+body {
+  background: var(--bg) !important;
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
+
+.bg-aura {
+  display: none !important;
+}
+
+::selection {
+  background: var(--accent-soft);
+}
+
+a {
+  text-underline-offset: 3px;
+}
+
+/* ── Barra superior ───────────────────────────────────── */
+
+.topbar {
+  background: var(--bg) !important;
+  border-bottom: 1px solid var(--rule) !important;
+  backdrop-filter: none !important;
+  color: var(--ink-2);
+}
+
+.brand-mark {
+  display: none !important;
+}
+
+.brand .brand-name,
+.brand-name {
+  font-family: var(--font-serif);
+  font-size: 21px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: var(--ink);
+}
+
+.brand-sub {
+  color: var(--muted);
+}
+
+.brand-divider {
+  background: var(--line-strong);
+}
+
+.nav-link {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  background: transparent;
+  color: var(--ink);
+}
+
+.nav-link.active {
+  color: var(--ink);
+  border-bottom-color: var(--ink);
+}
+
+.suite-link,
+.theme-toggle {
+  background: transparent !important;
+  border: 1px solid var(--line-strong) !important;
+  border-radius: 999px !important;
+  color: var(--ink-3) !important;
+  box-shadow: none !important;
+}
+
+.suite-link:hover,
+.theme-toggle:hover {
+  color: var(--ink) !important;
+  border-color: var(--ink) !important;
+}
+
+.topbar-status {
+  color: var(--muted);
+}
+
+/* ── Encabezado de página ─────────────────────────────── */
+
+.hero {
+  padding-bottom: 8px;
+}
+
+.hero h1,
+h1 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: clamp(28px, 2.6vw, 36px);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  max-width: 900px;
+}
+
+h1 span {
+  background: none !important;
+  -webkit-background-clip: initial !important;
+  background-clip: initial !important;
+  color: var(--accent) !important;
+  font-family: var(--font-serif);
+  font-style: italic;
+}
+
+.hero p,
+.hero-lead {
+  color: var(--ink-3);
+  font-size: 14.5px;
+  line-height: 1.55;
+  max-width: 640px;
+}
+
+.eyebrow {
+  display: inline-block;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: none !important;
+  color: var(--accent) !important;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.eyebrow::before {
+  display: none !important;
+}
+
+/* ── Superficies ──────────────────────────────────────── */
+
+.metric,
+.card,
+.panel,
+.control-panel,
+.result-panel,
+.universe-card,
+.decision-box,
+.score-card,
+.chart-card,
+.scenario-card,
+.contract-card,
+.interpretation-card {
+  background: var(--surface) !important;
+  border-color: var(--line) !important;
+  border-radius: var(--radius) !important;
+  box-shadow: none !important;
+}
+
+.metric-strip .metric {
+  border-top: 2px solid var(--rule) !important;
+}
+
+.metric strong {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.1;
+  letter-spacing: 0;
+}
+
+.metric-label,
+.kicker {
+  color: var(--muted);
+}
+
+.kicker {
+  color: var(--accent);
+  letter-spacing: 0.12em;
+}
+
+.panel-head h2,
+.result-panel h2,
+.control-panel h2,
+.card h2,
+.panel h2 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+/* ── Tablas ───────────────────────────────────────────── */
+
+table th {
+  color: var(--muted);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+table td,
+table th {
+  border-color: var(--line) !important;
+}
+
+tbody tr:hover {
+  background: var(--surface-2);
+}
+
+/* ── Controles ────────────────────────────────────────── */
+
+input,
+select,
+textarea {
+  background: var(--surface) !important;
+  border-color: var(--line-strong) !important;
+  color: var(--ink) !important;
+  border-radius: 3px !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid var(--accent-soft);
+  border-color: var(--accent) !important;
+}
+
+input[type="range"] {
+  accent-color: var(--accent);
+  background: transparent !important;
+  border: 0 !important;
+}
+
+.primary-action {
+  background: var(--accent) !important;
+  border-color: var(--accent) !important;
+  color: var(--accent-ink) !important;
+  border-radius: 3px !important;
+  box-shadow: none !important;
+}
+
+.ghost-button {
+  background: transparent !important;
+  border: 1px solid var(--ink) !important;
+  color: var(--ink) !important;
+  border-radius: 3px !important;
+}
+
+.score-pill,
+.pill,
+.tag,
+.metric-tag,
+.reason-chip,
+.idea-chip {
+  border-radius: 999px;
+}
+
+.score-pill {
+  background: var(--accent-soft) !important;
+  border-color: transparent !important;
+  color: var(--accent) !important;
+}
+
+.preset-chips button,
+.segmented button,
+.mode-toggle button {
+  border-radius: 999px;
+}
+
+.bar span,
+.score-bar span {
+  background: var(--accent) !important;
+}
+
+/* ── Escala compacta ──────────────────────────────────────
+ * Una sola escala para toda la suite:
+ *   11  etiquetas, encabezados de tabla, chips (mayúsculas 600)
+ *   12  metadatos y texto secundario
+ *   13  texto de tablas y controles
+ *   14  texto corrido
+ *   16  títulos de tarjeta (h3, Inter 600)
+ *   20  títulos de panel (serif)
+ *   26  cifras destacadas (serif)
+ *   28–36 título de página (serif)
+ * Pesos: 400, 500 y 600. Nada más pesado.
+ */
+
+body {
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "cv11", "ss01";
+}
+
+.hero {
+  padding-top: 8px;
+  gap: 10px;
+}
+
+.hero .eyebrow {
+  margin-bottom: 2px;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+b,
+strong {
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.panel-head h3,
+.card h3,
+.chart-card h3,
+.score-card h3,
+.scenario-card h3,
+.contract-card h3,
+.detail-header h3,
+.decision-alternatives h3 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.kicker,
+.metric-label,
+table th {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.metric-label {
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+
+table td {
+  font-size: 13px;
+}
+
+.market-grid strong {
+  font-family: var(--font-serif);
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.summary-grid strong,
+.decision-box strong,
+.risk-grid strong,
+.bs-metrics strong,
+.interpretation-card strong {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.primary-action {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Iconos: sin emoji ni glifos decorativos; los íconos SVG van a 16 px y trazo fino. */
+.theme-icon,
+.brand-mark {
+  display: none !important;
+}
+
+.topbar svg:not(.brand-logo),
+.nav-link svg {
+  width: 16px;
+  height: 16px;
+  stroke-width: 1.6;
+}
+
+.theme-toggle .theme-label {
+  display: inline !important;
+}
+
+@media (max-width: 760px) {
+  .metric-strip,
+  .market-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 8px !important;
+  }
+  .metric-strip .metric,
+  .market-grid > * {
+    padding: 12px !important;
+    min-height: 0 !important;
+  }
+  .metric small,
+  .metric p {
+    font-size: 12px;
+  }
+  .hero h1,
+  h1 {
+    font-size: 26px;
+  }
+  .metric strong,
+  .market-grid strong {
+    font-size: 22px;
+  }
+  .brand-divider {
+    display: none !important;
+  }
+  .panel-head h2,
+  .panel h2 {
+    font-size: 18px;
+  }
+}
+
+/* Enlaces al informe de Analiza Ticker (detalle universal de un activo) */
+a.ticker-link {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dotted var(--line-strong);
+}
+a.ticker-link:hover,
+a.ticker-link:focus-visible {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+a.report-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+}
+a.report-link:hover,
+a.report-link:focus-visible {
+  text-decoration: underline;
+}

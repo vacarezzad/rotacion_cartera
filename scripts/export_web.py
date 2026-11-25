@@ -1,0 +1,141 @@
+"""Exporta los datos que lee la web (web/data/*.json) a partir de signals/, results/ y data/prices/.
+
+No entrena nada: solo junta lo que ya produjo make_signal.py y los experimentos.
+Uso: python scripts/export_web.py
+"""
+import glob
+import json
+import math
+import os
+
+import numpy as np
+import pandas as pd
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+OUT = os.path.join(ROOT, "web", "data")
+CURVES = os.path.join(ROOT, "results", "results_30f", "u30f_blend_curvas.csv")
+K = 5
+
+
+def clean(o):
+    if isinstance(o, dict):
+        return {k: clean(v) for k, v in o.items()}
+    if isinstance(o, (list, tuple)):
+        return [clean(v) for v in o]
+    if isinstance(o, (np.floating, float)):
+        return None if not math.isfinite(float(o)) else round(float(o), 5)
+    if isinstance(o, np.integer):
+        return int(o)
+    return o
+
+
+def close(t):
+    fp = os.path.join(ROOT, "data", "prices", f"{t}.csv")
+    if not os.path.exists(fp):
+        return None
+    d = pd.read_csv(fp, parse_dates=["Date"]).set_index("Date")["Close"].dropna()
+    return d[~d.index.duplicated(keep="last")].sort_index()
+
+
+def next_rebalance(today):
+    for m in range(0, 15):
+        d = (today + pd.offsets.MonthEnd(m)).normalize()
+        if d.month in (1, 4, 7, 10):
+            bd = pd.bdate_range(d - pd.Timedelta(days=7), d)[-1]
+            if bd >= today.normalize():
+                return bd
+    return today
+
+
+def stats(e):
+    e = e.dropna()
+    r = e.pct_change().dropna()
+    yrs = (e.index[-1] - e.index[0]).days / 365.25
+    return {"cagr": (e.iloc[-1] / e.iloc[0]) ** (1 / yrs) - 1, "vol": r.std() * np.sqrt(252),
+            "sharpe": r.mean() / r.std() * np.sqrt(252), "maxdd": (e / e.cummax() - 1).min(),
+            "total": e.iloc[-1] / e.iloc[0] - 1}
+
+
+def signal_files():
+    return sorted(f for f in glob.glob(os.path.join(ROOT, "signals", "*.csv")) if os.path.basename(f)[:4].isdigit())
+
+
+def export_signal():
+    files = signal_files()
+    if not files:
+        return None
+    s = pd.read_csv(files[-1])
+    date = os.path.basename(files[-1])[:-4]
+    held = json.load(open(os.path.join(ROOT, "portfolio.json"))).get("held", [])
+    picks = s.loc[s.en_cartera.astype(str).str.contains("✅"), "ticker"].tolist()
+    rows = []
+    for _, r in s.iterrows():
+        c = close(r.ticker)
+        spark = []
+        if c is not None:
+            w = c.loc[c.index >= c.index[-1] - pd.Timedelta(days=372)].resample("W-FRI").last().dropna()
+            spark = (w / w.iloc[0]).round(4).tolist()
+        rows.append({"rank": int(r.puesto), "ticker": r.ticker, "score": r.score, "e4": r.E4,
+                     "surprise": None if pd.isna(r["sorpresa_%"]) else r["sorpresa_%"] / 100,
+                     "ret3m": r.ret_3m, "vsHigh": r.dist_max_52s, "pick": r.ticker in picks,
+                     "held": r.ticker in held, "light": r.semaforo,
+                     "context": "" if pd.isna(r.contexto) else str(r.contexto),
+                     "last": None if c is None else c.iloc[-1], "spark": spark})
+    sell = [t for t in held if t not in picks]
+    buy = [t for t in picks if t not in held]
+    return {"date": date, "k": K, "picks": picks, "held": held, "buy": buy, "sell": sell,
+            "nextRebalance": str(next_rebalance(pd.Timestamp(date)).date()), "rows": rows}
+
+
+def export_history():
+    """Cartera objetivo de cada señal publicada y cómo le fue desde entonces (seguimiento en vivo)."""
+    out = []
+    for f in signal_files():
+        s = pd.read_csv(f)
+        d = pd.Timestamp(os.path.basename(f)[:-4])
+        picks = s.loc[s.en_cartera.astype(str).str.contains("✅"), "ticker"].tolist()
+        rets = {}
+        for t in picks + ["SPY"]:
+            c = close(t)
+            if c is None or c.index[-1] <= d:
+                continue
+            base = c.loc[:d]
+            if base.empty:
+                continue
+            rets[t] = c.iloc[-1] / base.iloc[-1] - 1
+        port = [rets[t] for t in picks if t in rets]
+        out.append({"date": str(d.date()), "picks": picks,
+                    "portRet": float(np.mean(port)) if port else None, "spyRet": rets.get("SPY")})
+    return out
+
+
+def export_backtest():
+    if not os.path.exists(CURVES):
+        return None
+    cv = pd.read_csv(CURVES, index_col=0, parse_dates=True)
+    spy = close("SPY")
+    cv["SPY"] = (spy.reindex(cv.index).ffill() / spy.reindex(cv.index).ffill().iloc[0])
+    names = {"E4+sorpresa k=5": "model5", "E4+sorpresa k=8": "model8", "B&H EW30": "ew30", "SPY": "spy"}
+    cv = cv[list(names)].rename(columns=names)
+    weekly = cv.resample("W-FRI").last().dropna()
+    yearly = cv.resample("YE").last()
+    yearly = pd.concat([cv.iloc[[0]], yearly]).pct_change().dropna()
+    return {"from": str(cv.index[0].date()), "to": str(cv.index[-1].date()),
+            "labels": {"model5": "Modelo top 5", "model8": "Modelo top 8", "ew30": "B&H equiponderado 30", "spy": "SPY"},
+            "stats": {k: stats(cv[k]) for k in cv},
+            "dates": [str(d.date()) for d in weekly.index],
+            "curves": {k: weekly[k].round(4).tolist() for k in weekly},
+            "years": [{"year": int(d.year), **{k: yearly.loc[d, k] for k in yearly}} for d in yearly.index]}
+
+
+def main():
+    os.makedirs(OUT, exist_ok=True)
+    payload = {"signal": export_signal(), "history": export_history(), "backtest": export_backtest(),
+               "generated": pd.Timestamp.now(tz="UTC").strftime("%Y-%m-%dT%H:%MZ")}
+    with open(os.path.join(OUT, "dashboard.json"), "w") as fh:
+        json.dump(clean(payload), fh, ensure_ascii=False, separators=(",", ":"))
+    print("web/data/dashboard.json OK", os.path.getsize(os.path.join(OUT, "dashboard.json")) // 1024, "KB")
+
+
+if __name__ == "__main__":
+    main()
