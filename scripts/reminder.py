@@ -7,6 +7,7 @@ import argparse
 import glob
 import json
 import os
+import sys
 
 import pandas as pd
 
@@ -58,7 +59,9 @@ def main():
     files = sorted(f for f in glob.glob(os.path.join(ROOT, "signals", "*.csv")) if os.path.basename(f)[:4].isdigit())
     s = pd.read_csv(files[-1])
     sig_date = os.path.basename(files[-1])[:-4]
-    held = json.load(open(os.path.join(ROOT, "portfolio.json"))).get("held", [])
+    sys.path.insert(0, ROOT)
+    from tml.positions import held_tickers
+    held = held_tickers()
     picks = s.loc[s.en_cartera.astype(str).str.contains("✅"), "ticker"].tolist()
     buy = [t for t in picks if t not in held]
     sell = [t for t in held if t not in picks]
@@ -104,9 +107,9 @@ def main():
                  f"- Vender: {', '.join(sell) if sell else 'nada'}",
                  f"- Mantener y re-equilibrar a 20%: {', '.join(keep) if keep else 'nada'}", ""]
     else:
-        body += ["`portfolio.json` está vacío, así que la señal arma la cartera desde cero.", ""]
+        body += ["Todavía no cargaste operaciones, así que la señal arma la cartera desde cero.", ""]
     body += ["Antes de operar, mirá la señal actualizada de mañana al cierre (puede cambiar algún puesto) y, "
-             "después de comprar, anotá los tickers en `portfolio.json` para que el buffer funcione.", ""]
+             "después de comprar, cargá las órdenes en `operaciones.csv` para que el buffer y el seguimiento funcionen.", ""]
     if SITE:
         body.append(f"Web: {SITE}")
     body.append(f"Señal completa: https://github.com/{REPO}/blob/main/signals/latest.md")
@@ -144,8 +147,8 @@ def main():
                f"🔴 Vender: {esc(', '.join(sell)) or 'nada'}",
                f"⚪ Mantener: {esc(', '.join(keep)) or 'nada'}", ""]
     else:
-        tg += ["📋 portfolio.json vacío: se arma la cartera desde cero.", ""]
-    tg += ["💡 Antes de operar mirá la señal de mañana al cierre y después anotá lo comprado en portfolio.json.", ""]
+        tg += ["📋 Sin operaciones cargadas: se arma la cartera desde cero.", ""]
+    tg += ["💡 Antes de operar mirá la señal de mañana al cierre y después cargá las órdenes en operaciones.csv.", ""]
     if SITE:
         tg.append(f'🌐 <a href="{esc(SITE)}">Ver la web</a>')
     tg.append(f'📄 <a href="https://github.com/{REPO}/blob/main/signals/latest.md">Señal completa</a>')

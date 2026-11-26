@@ -136,9 +136,8 @@ def main():
     rs = surp["xr_e_surp"].reindex(e4.index).fillna(0.5)
     score = (W_E4 * e4.rank(pct=True) + W_SURP * rs).sort_values(ascending=False)
 
-    held = []
-    if os.path.exists(a.portfolio):
-        held = json.load(open(a.portfolio)).get("held", [])
+    from tml.positions import held_tickers
+    held = held_tickers(a.portfolio)
     keep = [t for t in held if t in score.index[: a.k + 2]]
     picks = (keep + [t for t in score.index if t not in keep])[: a.k]
 
@@ -171,7 +170,7 @@ def main():
     md = [f"# Señal al {tag}", "",
           f"**Cartera objetivo (top {a.k}, 20% c/u):** {', '.join(picks)}", "",
           f"Próximo rebalanceo: **{nr.date()}** (al cierre; ejecutar a la apertura siguiente). "
-          f"Cartera actual en portfolio.json: {', '.join(held) if held else '(vacía)'}", "",
+          f"Cartera actual (operaciones.csv o portfolio.json): {', '.join(held) if held else '(vacía)'}", "",
           "El semáforo es contexto fundamental: no cambia el ranking. 🟢 respaldo fundamental · 🟡 mixto · 🔴 alerta", "",
           "| # | Ticker | Score | E4 | Sorpresa | 3 meses | vs máx 52s | Cartera | Semáforo | Contexto |",
           "|---|---|---|---|---|---|---|---|---|---|"]

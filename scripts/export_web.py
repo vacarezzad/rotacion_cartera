@@ -10,6 +10,9 @@ import os
 
 import numpy as np
 import pandas as pd
+import sys
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from tml.positions import held_tickers, load_trades, positions  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "web", "data")
@@ -103,7 +106,7 @@ def export_signal():
         return None
     s = pd.read_csv(files[-1])
     date = os.path.basename(files[-1])[:-4]
-    held = json.load(open(os.path.join(ROOT, "portfolio.json"))).get("held", [])
+    held = held_tickers()
     picks = s.loc[s.en_cartera.astype(str).str.contains("✅"), "ticker"].tolist()
     dr, dq = load_dataroma()
     rows = []
@@ -166,9 +169,31 @@ def export_backtest():
             "years": [{"year": int(d.year), **{k: yearly.loc[d, k] for k in yearly}} for d in yearly.index]}
 
 
+def export_mine():
+    """Operaciones reales y posiciones abiertas (valuadas con el precio del subyacente cuando hay ratio)."""
+    t = load_trades()
+    if t.empty:
+        return {"trades": [], "positions": []}
+    pos = positions(t)
+    out = []
+    for tk, p in pos.iterrows():
+        c = close(tk)
+        last = None if c is None else float(c.iloc[-1])
+        shares = p.cantidad / p.ratio if p.ratio else None
+        val = shares * last if shares and last else None
+        cost = p.costo_usd if p.usd_ok else None
+        out.append({"ticker": tk, "qty": p.cantidad, "since": str(p.desde.date()), "costArs": p.costo_ars,
+                    "costUsd": cost, "valueUsd": val, "pnlUsd": (val - cost) if val and cost else None,
+                    "pnlPct": (val / cost - 1) if val and cost else None, "realizedArs": p.realizado_ars})
+    tr = [{"date": str(r.fecha.date()), "ticker": r.ticker, "op": r.operacion, "qty": r.cantidad,
+           "priceArs": r.precio_ars, "ccl": r.ccl, "note": "" if pd.isna(r.get("nota")) else str(r.nota)}
+          for _, r in t.sort_values("fecha", ascending=False).iterrows()]
+    return {"trades": tr, "positions": out}
+
+
 def main():
     os.makedirs(OUT, exist_ok=True)
-    payload = {"signal": export_signal(), "history": export_history(), "backtest": export_backtest(),
+    payload = {"signal": export_signal(), "history": export_history(), "backtest": export_backtest(), "mine": export_mine(),
                "generated": pd.Timestamp.now(tz="UTC").strftime("%Y-%m-%dT%H:%MZ")}
     with open(os.path.join(OUT, "dashboard.json"), "w") as fh:
         json.dump(clean(payload), fh, ensure_ascii=False, separators=(",", ":"))
