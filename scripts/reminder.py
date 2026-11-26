@@ -95,6 +95,36 @@ def main():
         wa.append(f"Comprar: {', '.join(buy) or 'nada'}. Vender: {', '.join(sell) or 'nada'}.")
     wa.append(f"Ejecutar en la apertura del {corto(execd)}, con la señal del cierre de mañana. Detalle en el mail.")
     open(os.path.join(ROOT, "reminder_whatsapp.txt"), "w").write("\n".join(wa))
+
+    # Telegram (HTML): mismo contenido que el mail, con símbolos.
+    esc = lambda x: str(x).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+    TONO = lambda n: ("⚠️" if "balance" in n.lower() else
+                      "🔻" if any(w in n.lower() for w in ["baja", "bajan", "sin ganancias", "negativo", "debajo"]) else
+                      "🔺" if any(w in n.lower() for w in ["alta", "suben", "arriba"]) else "•")
+    tg = [f"🔄 <b>Mañana se rota la cartera de CEDEARs</b>", "",
+          f"📅 Rebalanceo: <b>{larga(reb)}</b> (señal al cierre)",
+          f"🛒 Ejecutar: apertura del <b>{larga(execd)}</b>", "",
+          f"🎯 <b>Cartera objetivo</b> · señal del {sig_date} · 20% c/u", ""]
+    for t in picks:
+        r = s[s.ticker == t].iloc[0]
+        tg.append(f"{r.semaforo} <b>{esc(t)}</b>  #{int(r.puesto)} · score {r.score:.3f}")
+        if not pd.isna(r.contexto):
+            for n in [x.strip() for x in str(r.contexto).split(";") if x.strip()]:
+                tg.append(f"   {TONO(n)} {esc(n)}")
+        tg.append("")
+    if held:
+        tg += [f"📋 <b>Contra tu cartera</b> ({esc(', '.join(held))})",
+               f"🟢 Comprar: {esc(', '.join(buy)) or 'nada'}",
+               f"🔴 Vender: {esc(', '.join(sell)) or 'nada'}",
+               f"⚪ Mantener: {esc(', '.join(keep)) or 'nada'}", ""]
+    else:
+        tg += ["📋 portfolio.json vacío: se arma la cartera desde cero.", ""]
+    tg += ["💡 Antes de operar mirá la señal de mañana al cierre y después anotá lo comprado en portfolio.json.", ""]
+    if SITE:
+        tg.append(f'🌐 <a href="{esc(SITE)}">Ver la web</a>')
+    tg.append(f'📄 <a href="https://github.com/{REPO}/blob/main/signals/latest.md">Señal completa</a>')
+    tg.append("<i>🟢 respaldo · 🟡 mixto · 🔴 alerta — no es asesoramiento financiero</i>")
+    open(os.path.join(ROOT, "reminder_telegram.html"), "w").write("\n".join(tg))
     open(os.path.join(ROOT, "reminder_subject.txt"), "w").write(subject)
     open(os.path.join(ROOT, "reminder_body.md"), "w").write("\n".join(body) + "\n")
     print(subject)

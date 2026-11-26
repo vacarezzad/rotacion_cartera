@@ -1,4 +1,4 @@
-"""Manda reminder_whatsapp.txt (mensaje corto) por Telegram.
+"""Manda reminder_telegram.html (mismo contenido que el mail, con formato) por Telegram.
 Secrets: TELEGRAM_TOKEN (de @BotFather) y TELEGRAM_CHAT_ID (tu chat con el bot)."""
 import json
 import os
@@ -12,8 +12,9 @@ if not token or not chat:
     print("Sin TELEGRAM_TOKEN/TELEGRAM_CHAT_ID: no se manda Telegram.")
     sys.exit(0)
 root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-text = open(os.path.join(root, "reminder_whatsapp.txt")).read()
-data = urllib.parse.urlencode({"chat_id": chat, "text": text}).encode()
+text = open(os.path.join(root, "reminder_telegram.html")).read()
+data = urllib.parse.urlencode({"chat_id": chat, "text": text, "parse_mode": "HTML",
+                               "disable_web_page_preview": "true"}).encode()
 try:
     with urllib.request.urlopen(f"https://api.telegram.org/bot{token}/sendMessage", data=data, timeout=60) as r:
         ok = json.loads(r.read()).get("ok")
