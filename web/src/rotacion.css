@@ -110,3 +110,16 @@ ul.notes li.pos, ul.notes li.neg { color: var(--ink-2); }
 .sup-who summary { cursor: pointer; color: var(--accent); font-size: 12px; }
 .sup-who ul { margin-top: 6px; }
 .sup-cell { font-family: var(--font-mono); font-size: 12px; }
+
+/* ABM de operaciones */
+.abm { display: grid; gap: 12px; }
+.abm-form { padding: 12px 0 4px; }
+.abm-form input, .abm-form select { min-width: 0; }
+.abm-adv { flex-basis: 100%; font-size: 12px; color: var(--muted); }
+.abm-adv summary { cursor: pointer; color: var(--accent); }
+.abm-adv-body { display: flex; gap: 14px; margin-top: 8px; }
+.abm-msg.ok { color: var(--call); }
+.abm-msg.err { color: var(--put); }
+.abm-actions { display: inline-flex; gap: 6px; }
+button.btn.sm { padding: 4px 10px; font-size: 12px; }
+button.btn.danger { background: var(--put); color: #fff; }

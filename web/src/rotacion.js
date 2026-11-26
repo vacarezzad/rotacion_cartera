@@ -235,47 +235,126 @@
       h.every((r) => r.portRet == null) ? el("p", { class: "note", text: "La primera señal es de esta semana: el seguimiento se completa desde el próximo viernes." }) : null);
   }
 
+  // ABM de operaciones: /api/operaciones lee y escribe operaciones.csv en GitHub.
+  function abm(d, onSaved) {
+    const API = "api/operaciones";
+    const tickers = (d.signal?.rows || []).map((r) => r.ticker).sort();
+    const today = new Date().toISOString().slice(0, 10);
+    let state = { sha: null, rows: [] }, editing = null, confirmDel = null;
+    const msg = el("p", { class: "status abm-msg", role: "status" });
+    const say = (t, cls) => { msg.textContent = t || ""; msg.className = `status abm-msg ${cls || ""}`; };
+    const field = (label, input) => el("label", {}, label, input);
+    const inp = (name, attrs) => el("input", { name, ...attrs });
+    const f = {
+      fecha: inp("fecha", { type: "date", required: true, value: today }),
+      ticker: inp("ticker", { list: "abm-tickers", required: true, placeholder: "NVDA", autocomplete: "off", style: "width:96px;text-transform:uppercase" }),
+      operacion: el("select", { name: "operacion" }, el("option", { value: "compra", text: "Compra" }), el("option", { value: "venta", text: "Venta" })),
+      cantidad: inp("cantidad", { type: "number", min: "1", step: "1", required: true, placeholder: "CEDEARs" }),
+      precio_ars: inp("precio_ars", { type: "number", min: "0", step: "0.01", required: true, placeholder: "$ por CEDEAR" }),
+      comision_ars: inp("comision_ars", { type: "number", min: "0", step: "0.01", placeholder: "opcional" }),
+      nota: inp("nota", { type: "text", maxlength: "200", placeholder: "opcional", style: "width:180px" }),
+      ccl: inp("ccl", { type: "number", min: "0", step: "0.01", placeholder: "automático" }),
+      ratio: inp("ratio", { type: "number", min: "0", step: "any", placeholder: "automático" }),
+    };
+    const submit = el("button", { type: "submit", class: "btn", text: "Agregar" });
+    const cancel = el("button", { type: "button", class: "btn ghost", text: "Cancelar", hidden: true, onclick: () => reset() });
+    const adv = el("details", { class: "abm-adv" }, el("summary", { text: "CCL y ratio (se completan solos)" }),
+      el("div", { class: "abm-adv-body" }, field("CCL", f.ccl), field("Ratio", f.ratio)));
+    const form = el("form", { class: "inline abm-form" },
+      field("Fecha", f.fecha), field("Ticker", f.ticker), field("Operación", f.operacion), field("Cantidad", f.cantidad),
+      field("Precio ARS", f.precio_ars), field("Comisión ARS", f.comision_ars), field("Nota", f.nota), submit, cancel, adv,
+      el("datalist", { id: "abm-tickers" }, tickers.map((t) => el("option", { value: t }))));
+    const list = el("div", {});
+
+    function reset() {
+      editing = null; form.reset(); f.fecha.value = today; submit.textContent = "Agregar"; cancel.hidden = true; adv.open = false;
+    }
+    function load(r) {
+      for (const k of Object.keys(f)) f[k].value = r[k] ?? "";
+      if (r.ccl || r.ratio) adv.open = true;
+    }
+    async function call(body) {
+      const r = await fetch(API, { method: body ? "POST" : "GET", headers: { "Content-Type": "application/json" }, body: body ? JSON.stringify(body) : undefined });
+      const j = await r.json().catch(() => ({ error: `Error ${r.status}` }));
+      if (j.rows) state = { sha: j.sha, rows: j.rows };
+      if (!r.ok) throw new Error(j.error || `Error ${r.status}`);
+      return j;
+    }
+    async function save(body, okText) {
+      form.querySelectorAll("button").forEach((b) => (b.disabled = true));
+      say("Guardando…");
+      try {
+        await call({ ...body, sha: state.sha });
+        reset(); say(`${okText} Costo, valor y resultado en USD se recalculan en 1 o 2 minutos.`, "ok"); onSaved?.();
+      } catch (e) { say(e.message, "err"); }
+      form.querySelectorAll("button").forEach((b) => (b.disabled = false));
+      render();
+    }
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const row = Object.fromEntries(Object.entries(f).map(([k, v]) => [k, v.value.trim()]));
+      row.ticker = row.ticker.toUpperCase();
+      if (editing != null) save({ action: "update", index: editing, row }, `Modificada la operación de ${row.ticker}.`);
+      else save({ action: "add", row }, `Agregada: ${row.operacion} de ${row.cantidad} ${row.ticker}.`);
+    });
+
+    function render() {
+      const rows = state.rows.map((r, i) => ({ ...r, i })).reverse();
+      if (!rows.length) { list.replaceChildren(el("p", { class: "note", text: "Todavía no hay operaciones cargadas." })); return; }
+      list.replaceChildren(table([
+        { label: "Fecha", value: (r) => date(r.fecha) },
+        { label: "Ticker", value: (r) => el("span", { class: "tk", text: r.ticker }) },
+        { label: "Operación", value: (r) => el("span", { class: `act ${r.operacion === "compra" ? "buy" : "sell"}`, text: r.operacion === "compra" ? "Compra" : "Venta" }) },
+        { label: "Cantidad", num: true, value: (r) => fmt(+r.cantidad) },
+        { label: "Precio ARS", num: true, value: (r) => fmt(+r.precio_ars, 2) },
+        { label: "Comisión", num: true, value: (r) => (r.comision_ars ? fmt(+r.comision_ars, 2) : "") },
+        { label: "Nota", value: (r) => r.nota || "" },
+        { label: "", value: (r) => el("span", { class: "abm-actions" },
+            el("button", { type: "button", class: "btn ghost sm", text: "Editar", onclick: () => { editing = r.i; confirmDel = null; load(r); submit.textContent = "Guardar cambios"; cancel.hidden = false; say(`Editando ${r.ticker} del ${date(r.fecha)}.`); form.scrollIntoView({ behavior: "smooth", block: "center" }); render(); } }),
+            confirmDel === r.i
+              ? el("button", { type: "button", class: "btn danger sm", text: "¿Borrar?", onclick: () => { confirmDel = null; save({ action: "delete", index: r.i }, `Borrada la operación de ${r.ticker}.`); } })
+              : el("button", { type: "button", class: "btn ghost sm", text: "Borrar", onclick: () => { confirmDel = r.i; render(); } })) },
+      ], rows, (r) => (r.i === editing ? "is-pick" : "")));
+    }
+
+    const box = el("div", { class: "abm" }, el("h3", { class: "sub", text: "Cargar operación" }), form, msg,
+      el("h3", { class: "sub", text: "Operaciones" }), list);
+    list.replaceChildren(el("p", { class: "note", text: "Cargando operaciones…" }));
+    call().then(render).catch((e) => {
+      form.querySelectorAll("input,select,button").forEach((x) => (x.disabled = true));
+      say(`No se puede editar desde acá: ${e.message}.`, "err");
+      state.rows = (d.mine?.trades || []).map((t) => ({ fecha: t.date, ticker: t.ticker, operacion: t.op, cantidad: t.qty, precio_ars: t.priceArs, nota: t.note })).reverse();
+      render(); list.querySelectorAll("button").forEach((x) => (x.disabled = true));
+    });
+    return box;
+  }
+
   function mine(d) {
     const m = d.mine || { trades: [], positions: [] };
-    const edit = "https://github.com/vacarezzad/rotacion_cartera/edit/main/operaciones.csv";
-    if (!m.trades.length) {
-      return block("mia", "Mi cartera real", "Acá se va a ver lo que compraste y vendiste de verdad, con su costo y resultado en USD.",
-        el("p", { class: "status" }, "Todavía no cargaste operaciones. Cuando operes, sumá una fila por orden en ",
-          el("a", { href: edit, class: "mi-link", text: "operaciones.csv" }),
-          " (fecha, ticker, compra/venta, cantidad y precio en pesos; el CCL y el ratio se completan solos). Los resultados se muestran en dólares. La señal usa esas posiciones para el buffer del top 7."));
+    const P = m.positions || [];
+    const parts = [];
+    if (P.length) {
+      const cost = P.reduce((a, p) => a + (p.costUsd || 0), 0);
+      const val = P.reduce((a, p) => a + (p.valueUsd || 0), 0);
+      parts.push(el("div", { class: "figures" },
+        figure("Posiciones abiertas", fmt(P.length), P.map((p) => p.ticker).join(" · ")),
+        figure("Invertido", `US$ ${fmt(cost, 0)}`, "pesos pagados ÷ CCL de cada compra"),
+        figure("Valor hoy", val ? `US$ ${fmt(val, 0)}` : "s/d", "precio del subyacente × acciones equivalentes"),
+        figure("Resultado", val && cost ? pct(val / cost - 1, 1, true) : "s/d", val && cost ? `US$ ${fmt(val - cost, 0)}` : "", val >= cost ? "up" : "down"),
+        figure("Realizado", `US$ ${fmt(m.realizedUsd || 0, 0)}`, "ganancia de lo ya vendido", (m.realizedUsd || 0) >= 0 ? "up" : "down")));
+      parts.push(table([
+        { label: "Ticker", value: (r) => el("span", { class: "tk", text: r.ticker }) },
+        { label: "Desde", value: (r) => date(r.since) },
+        { label: "CEDEARs", num: true, value: (r) => fmt(r.qty) },
+        { label: "Costo ARS", num: true, value: (r) => `$ ${fmt(r.costArs, 0)}` },
+        { label: "Costo USD", num: true, value: (r) => (r.costUsd == null ? "s/d" : fmt(r.costUsd, 0)) },
+        { label: "Valor USD", num: true, value: (r) => (r.valueUsd == null ? "s/d" : fmt(r.valueUsd, 0)) },
+        { label: "Resultado USD", num: true, value: (r) => (r.pnlUsd == null ? "s/d" : fmt(r.pnlUsd, 0)), tone: (r) => r.pnlUsd },
+        { label: "Resultado", num: true, value: (r) => pct(r.pnlPct, 1, true), tone: (r) => r.pnlPct },
+      ], P));
     }
-    const P = m.positions;
-    const cost = P.reduce((a, p) => a + (p.costUsd || 0), 0);
-    const val = P.reduce((a, p) => a + (p.valueUsd || 0), 0);
-    const figs = el("div", { class: "figures" },
-      figure("Posiciones abiertas", fmt(P.length), P.map((p) => p.ticker).join(" · ")),
-      figure("Invertido", `US$ ${fmt(cost, 0)}`, "pesos pagados ÷ CCL de cada compra"),
-      figure("Valor hoy", val ? `US$ ${fmt(val, 0)}` : "s/d", "precio del subyacente × acciones equivalentes"),
-      figure("Resultado", val && cost ? pct(val / cost - 1, 1, true) : "s/d", val && cost ? `US$ ${fmt(val - cost, 0)}` : "", val >= cost ? "up" : "down"),
-      figure("Realizado", m.realizedUsd ? `US$ ${fmt(m.realizedUsd, 0)}` : "US$ 0", "ganancia de lo ya vendido", (m.realizedUsd || 0) >= 0 ? "up" : "down"));
-    const pos = table([
-      { label: "Ticker", value: (r) => el("span", { class: "tk", text: r.ticker }) },
-      { label: "Desde", value: (r) => date(r.since) },
-      { label: "CEDEARs", num: true, value: (r) => fmt(r.qty) },
-      { label: "Costo ARS", num: true, value: (r) => `$ ${fmt(r.costArs, 0)}` },
-      { label: "Costo USD", num: true, value: (r) => (r.costUsd == null ? "s/d" : fmt(r.costUsd, 0)) },
-      { label: "Valor USD", num: true, value: (r) => (r.valueUsd == null ? "s/d" : fmt(r.valueUsd, 0)) },
-      { label: "Resultado USD", num: true, value: (r) => (r.pnlUsd == null ? "s/d" : fmt(r.pnlUsd, 0)), tone: (r) => r.pnlUsd },
-      { label: "Resultado", num: true, value: (r) => pct(r.pnlPct, 1, true), tone: (r) => r.pnlPct },
-    ], P);
-    const tr = table([
-      { label: "Fecha", value: (r) => date(r.date) },
-      { label: "Ticker", value: (r) => r.ticker },
-      { label: "Operación", value: (r) => el("span", { class: `act ${r.op.startsWith("c") ? "buy" : "sell"}`, text: r.op.startsWith("c") ? "Compra" : "Venta" }) },
-      { label: "Cantidad", num: true, value: (r) => fmt(r.qty) },
-      { label: "Precio ARS", num: true, value: (r) => fmt(r.priceArs, 2) },
-      { label: "USD", num: true, value: (r) => (r.usd == null ? "s/d" : fmt(r.usd, 2)) },
-      { label: "CCL", num: true, value: (r) => (r.ccl == null ? "s/d" : fmt(r.ccl, 0) + (r.cclImplied ? "*" : "")) },
-      { label: "Nota", value: (r) => r.note || "" },
-    ], m.trades);
-    return block("mia", "Mi cartera real", "Posiciones abiertas según tus operaciones (costo promedio ponderado). El valor se estima con el precio del subyacente en USD y el ratio del CEDEAR.",
-      figs, pos, el("h3", { class: "sub", text: "Historial de operaciones" }), tr,
-      el("p", { class: "note" }, "Para sumar una operación, editá ", el("a", { href: edit, class: "mi-link", text: "operaciones.csv" }), " en GitHub. * CCL implícito: precio en pesos × ratio ÷ cierre del subyacente ese día."));
+    parts.push(abm(d));
+    return block("mia", "Mi cartera real", "Cargá cada compra o venta en pesos; el ratio sale de Supabase y el CCL se calcula implícito, así que costo, valor y resultado se ven en dólares. La señal usa estas posiciones para el buffer del top 7.", ...parts);
   }
 
   function metodo() {
