@@ -9,6 +9,9 @@ import yfinance as yf
 
 TICKERS = ["NVDA", "GOOGL", "AMD", "MELI", "VIST", "META", "MSFT", "AMZN", "AVGO", "MCD", "TSM", "ORCL", "TSLA",
            "MRNA", "GLOB", "AAPL", "KO", "BABA", "INTC", "PEP", "PBR", "V", "IBM", "WMT", "JPM", "ASML", "MRVL", "UNH"]
+import os as _os
+TICKERS = TICKERS + [t for t in _os.environ.get("EXTRA_TICKERS", "").replace(",", " ").split() if t not in TICKERS]
+
 KEYS = ["shortName", "sector", "industry", "marketCap", "trailingPE", "forwardPE", "pegRatio", "priceToSalesTrailing12Months",
         "enterpriseToEbitda", "priceToBook", "revenueGrowth", "earningsGrowth", "earningsQuarterlyGrowth",
         "grossMargins", "operatingMargins", "profitMargins", "returnOnEquity", "freeCashflow", "totalCash", "totalDebt",

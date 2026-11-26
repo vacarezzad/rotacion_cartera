@@ -18,6 +18,9 @@ TICKERS = ["NVDA", "GOOGL", "AMD", "QQQ", "MELI", "VIST", "META", "MSFT", "AMZN"
            "^VIX3M", "^VIX9D",
            # universo ampliado a 30 CEDEARs líquidos (Supabase cedear_ccl_diario, nov-2026)
            "MRNA", "GLOB", "KO", "BABA", "INTC", "PEP", "PBR", "V", "IBM", "WMT", "JPM", "ASML", "MRVL", "UNH"]
+import os as _os
+TICKERS = TICKERS + [t for t in _os.environ.get("EXTRA_TICKERS", "").replace(",", " ").split() if t not in TICKERS]
+
 START = os.environ.get("ML_START", "1998-01-01")
 OUT = "data/prices"
 

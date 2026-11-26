@@ -1,0 +1,38 @@
+name: Datos extra (manual)
+
+on:
+  workflow_dispatch:
+    inputs:
+      tickers:
+        description: "Tickers extra separados por coma"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  extra:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      EXTRA_TICKERS: ${{ inputs.tickers }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install --no-cache-dir -r requirements.txt yfinance
+      - run: python scripts/download_prices.py
+      - run: python scripts/download_fundamentals.py
+        continue-on-error: true
+      - run: python scripts/download_edgar.py
+        continue-on-error: true
+        env:
+          SEC_UA: ${{ secrets.SEC_UA }}
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git commit -m "datos extra $(date -u +%F) [skip ci]" || echo "sin cambios"
+          for i in 1 2 3; do git pull --rebase -q && git push && break || sleep 10; done

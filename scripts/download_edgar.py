@@ -14,6 +14,9 @@ UA = {"User-Agent": os.environ.get("SEC_UA") or "AppFinanciera Research github-a
       "Accept-Encoding": "gzip, deflate"}
 TICKERS = ["NVDA", "GOOGL", "AMD", "MELI", "VIST", "META", "MSFT", "AMZN", "AVGO", "MCD", "TSM", "ORCL", "TSLA",
            "MRNA", "GLOB", "AAPL", "KO", "BABA", "INTC", "PEP", "PBR", "V", "IBM", "WMT", "JPM", "ASML", "MRVL", "UNH"]
+import os as _os
+TICKERS = TICKERS + [t for t in _os.environ.get("EXTRA_TICKERS", "").replace(",", " ").split() if t not in TICKERS]
+
 TAGS = {
     "us-gaap": ["Revenues", "RevenueFromContractWithCustomerExcludingAssessedTax", "SalesRevenueNet",
                 "RevenuesNetOfInterestExpense", "GrossProfit", "OperatingIncomeLoss", "NetIncomeLoss",
