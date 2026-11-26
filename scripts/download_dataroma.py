@@ -12,7 +12,18 @@ from make_signal import UNIVERSE  # noqa: E402
 OUT = os.path.join(ROOT, "data", "dataroma", "raw")
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
 os.makedirs(OUT, exist_ok=True)
+def get(url):
+    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "en-US,en;q=0.9"})
+    with urllib.request.urlopen(req, timeout=40) as r:
+        return r.read().decode("utf-8", "replace")
+
+
 for t in UNIVERSE:
+    try:
+        open(os.path.join(OUT, f"{t}_act.html"), "w").write(get(f"https://www.dataroma.com/m/activity.php?sym={t}&typ=a"))
+        time.sleep(1.5)
+    except Exception as e:
+        print(t, "actividad ERROR", e)
     url = f"https://www.dataroma.com/m/stock.php?sym={t}"
     try:
         req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "en-US,en;q=0.9"})
