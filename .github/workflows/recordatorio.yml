@@ -9,6 +9,10 @@ on:
         description: "Mandar el aviso igual (prueba)"
         type: boolean
         default: false
+      solo_celular:
+        description: "Prueba: no abrir issue ni mandar mail"
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -30,7 +34,7 @@ jobs:
         env:
           SITE_URL: ${{ vars.SITE_URL }}
       - name: Mail (si hay credenciales SMTP)
-        if: steps.check.outputs.send == 'true'
+        if: steps.check.outputs.send == 'true' && !inputs.solo_celular
         run: python scripts/send_mail.py
         env:
           MAIL_USERNAME: ${{ secrets.MAIL_USERNAME }}
@@ -51,7 +55,7 @@ jobs:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
       - name: Issue en GitHub (te llega por mail como notificación)
-        if: steps.check.outputs.send == 'true'
+        if: steps.check.outputs.send == 'true' && !inputs.solo_celular
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
