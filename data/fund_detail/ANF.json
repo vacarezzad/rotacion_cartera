@@ -1,0 +1,278 @@
+{
+ "earnings_dates": {
+  "2027-03-03 08:00:00-05:00": {
+   "EPS Estimate": 3.57,
+   "Reported EPS": null,
+   "Surprise(%)": null
+  },
+  "2026-11-24 07:00:00-05:00": {
+   "EPS Estimate": 3.15,
+   "Reported EPS": 3.82,
+   "Surprise(%)": 21.35
+  },
+  "2026-08-26 07:00:00-04:00": {
+   "EPS Estimate": 1.97,
+   "Reported EPS": 4.17,
+   "Surprise(%)": 111.93
+  },
+  "2026-05-27 07:00:00-04:00": {
+   "EPS Estimate": 1.28,
+   "Reported EPS": 1.47,
+   "Surprise(%)": 15.26
+  },
+  "2026-03-04 07:00:00-05:00": {
+   "EPS Estimate": 3.57,
+   "Reported EPS": 3.67,
+   "Surprise(%)": 2.75
+  },
+  "2025-11-25 07:00:00-05:00": {
+   "EPS Estimate": 2.16,
+   "Reported EPS": 2.36,
+   "Surprise(%)": 9.4
+  },
+  "2025-08-27 07:00:00-04:00": {
+   "EPS Estimate": 2.32,
+   "Reported EPS": 2.32,
+   "Surprise(%)": 0.2
+  },
+  "2025-05-28 07:00:00-04:00": {
+   "EPS Estimate": 1.33,
+   "Reported EPS": 1.59,
+   "Surprise(%)": 19.67
+  }
+ },
+ "upgrades_downgrades": {
+  "2026-11-11 21:24:01": {
+   "Firm": "UBS",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 200.0,
+   "priorPriceTarget": 185.0
+  },
+  "2026-10-22 17:16:57": {
+   "Firm": "Wolfe Research",
+   "ToGrade": "Outperform",
+   "FromGrade": "",
+   "Action": "init",
+   "priceTargetAction": "Announces",
+   "currentPriceTarget": 181.0,
+   "priorPriceTarget": 0.0
+  },
+  "2026-10-07 10:38:30": {
+   "Firm": "BTIG",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "reit",
+   "priceTargetAction": "Maintains",
+   "currentPriceTarget": 175.0,
+   "priorPriceTarget": 175.0
+  },
+  "2026-09-09 12:47:47": {
+   "Firm": "BMO Capital",
+   "ToGrade": "Outperform",
+   "FromGrade": "",
+   "Action": "init",
+   "priceTargetAction": "Announces",
+   "currentPriceTarget": 170.0,
+   "priorPriceTarget": 0.0
+  },
+  "2026-08-31 12:27:38": {
+   "Firm": "Argus Research",
+   "ToGrade": "Buy",
+   "FromGrade": "Hold",
+   "Action": "up",
+   "priceTargetAction": "Announces",
+   "currentPriceTarget": 162.0,
+   "priorPriceTarget": 0.0
+  },
+  "2026-08-27 19:21:30": {
+   "Firm": "Citigroup",
+   "ToGrade": "Neutral",
+   "FromGrade": "Buy",
+   "Action": "down",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 156.0,
+   "priorPriceTarget": 135.0
+  },
+  "2026-08-27 15:09:24": {
+   "Firm": "Barclays",
+   "ToGrade": "Equal-Weight",
+   "FromGrade": "Equal-Weight",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 155.0,
+   "priorPriceTarget": 114.0
+  },
+  "2026-08-27 13:58:06": {
+   "Firm": "UBS",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 185.0,
+   "priorPriceTarget": 153.0
+  },
+  "2026-08-27 13:14:54": {
+   "Firm": "Morgan Stanley",
+   "ToGrade": "Equal-Weight",
+   "FromGrade": "Equal-Weight",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 134.0,
+   "priorPriceTarget": 87.0
+  },
+  "2026-08-26 10:17:26": {
+   "Firm": "Needham",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 165.0,
+   "priorPriceTarget": 108.0
+  },
+  "2026-08-26 10:07:19": {
+   "Firm": "BTIG",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 175.0,
+   "priorPriceTarget": 120.0
+  },
+  "2026-08-19 19:31:27": {
+   "Firm": "Telsey Advisory Group",
+   "ToGrade": "Outperform",
+   "FromGrade": "Outperform",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 118.0,
+   "priorPriceTarget": 115.0
+  },
+  "2026-08-18 14:09:02": {
+   "Firm": "JP Morgan",
+   "ToGrade": "Neutral",
+   "FromGrade": "Neutral",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 126.0,
+   "priorPriceTarget": 110.0
+  },
+  "2026-08-18 09:21:20": {
+   "Firm": "Raymond James",
+   "ToGrade": "Market Perform",
+   "FromGrade": "Outperform",
+   "Action": "down",
+   "priceTargetAction": "",
+   "currentPriceTarget": 0.0,
+   "priorPriceTarget": 0.0
+  },
+  "2026-08-12 17:56:57": {
+   "Firm": "Jefferies",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 135.0,
+   "priorPriceTarget": 110.0
+  }
+ },
+ "quarterly_income": {
+  "2026-07-31": {
+   "Total Revenue": 1266689000.0,
+   "Gross Profit": 900580000.0,
+   "Operating Income": 252700000.0,
+   "Net Income": 183720000.0,
+   "Diluted EPS": 4.17
+  },
+  "2026-04-30": {
+   "Total Revenue": 1113821000.0,
+   "Gross Profit": 699983000.0,
+   "Operating Income": 88797000.0,
+   "Net Income": 67134000.0,
+   "Diluted EPS": 1.47
+  },
+  "2026-01-31": {
+   "Total Revenue": 1669802000.0,
+   "Gross Profit": 993311000.0,
+   "Operating Income": 235931000.0,
+   "Net Income": 172130000.0,
+   "Diluted EPS": 3.68
+  },
+  "2025-10-31": {
+   "Total Revenue": 1290619000.0,
+   "Gross Profit": 806949000.0,
+   "Operating Income": 155021000.0,
+   "Net Income": 112995000.0,
+   "Diluted EPS": 2.36
+  },
+  "2025-07-31": {
+   "Total Revenue": 1208560000.0,
+   "Gross Profit": 756970000.0,
+   "Operating Income": 206658000.0,
+   "Net Income": 141383000.0,
+   "Diluted EPS": 2.91
+  }
+ },
+ "eps_trend": {
+  "0q": {
+   "current": 4.62714,
+   "7daysAgo": 4.92188,
+   "30daysAgo": 4.9227,
+   "60daysAgo": 4.88891,
+   "90daysAgo": 4.8567,
+   "currency": "USD",
+   "methodology": "gaap"
+  },
+  "+1q": {
+   "current": 1.702,
+   "7daysAgo": 1.77333,
+   "30daysAgo": 1.74451,
+   "60daysAgo": 1.67961,
+   "90daysAgo": 1.62701,
+   "currency": "USD",
+   "methodology": "gaap"
+  },
+  "0y": {
+   "current": 13.54364,
+   "7daysAgo": 13.48013,
+   "30daysAgo": 13.44766,
+   "60daysAgo": 13.54227,
+   "90daysAgo": 13.57341,
+   "currency": "USD",
+   "methodology": "gaap"
+  },
+  "+1y": {
+   "current": 13.59531,
+   "7daysAgo": 13.38857,
+   "30daysAgo": 13.37184,
+   "60daysAgo": 13.17612,
+   "90daysAgo": 12.64381,
+   "currency": "USD",
+   "methodology": "gaap"
+  }
+ },
+ "growth_estimates": {
+  "0q": {
+   "stockTrend": 0.26,
+   "indexTrend": 0.3022
+  },
+  "+1q": {
+   "stockTrend": 0.1933,
+   "indexTrend": 0.2749
+  },
+  "0y": {
+   "stockTrend": 0.3422,
+   "indexTrend": 0.3369
+  },
+  "+1y": {
+   "stockTrend": 0.0064,
+   "indexTrend": 0.1683
+  },
+  "LTG": {
+   "stockTrend": null,
+   "indexTrend": 0.122
+  }
+ }
+}

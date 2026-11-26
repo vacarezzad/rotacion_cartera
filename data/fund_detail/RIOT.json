@@ -1,0 +1,285 @@
+{
+ "earnings_dates": {
+  "2027-03-01 08:00:00-05:00": {
+   "EPS Estimate": -0.29,
+   "Reported EPS": null,
+   "Surprise(%)": null
+  },
+  "2026-11-04 09:00:00-05:00": {
+   "EPS Estimate": -0.31,
+   "Reported EPS": 0.13,
+   "Surprise(%)": 141.5
+  },
+  "2026-08-10 17:00:00-04:00": {
+   "EPS Estimate": -0.32,
+   "Reported EPS": -0.58,
+   "Surprise(%)": -83.47
+  },
+  "2026-04-30 17:00:00-04:00": {
+   "EPS Estimate": -0.28,
+   "Reported EPS": -0.35,
+   "Surprise(%)": -25.29
+  },
+  "2026-03-02 17:00:00-05:00": {
+   "EPS Estimate": -0.39,
+   "Reported EPS": -1.88,
+   "Surprise(%)": -384.13
+  },
+  "2025-10-30 17:00:00-04:00": {
+   "EPS Estimate": -0.09,
+   "Reported EPS": 0.19,
+   "Surprise(%)": 309.56
+  },
+  "2025-07-31 16:00:00-04:00": {
+   "EPS Estimate": -0.19,
+   "Reported EPS": 0.99,
+   "Surprise(%)": 620.74
+  },
+  "2025-05-01 16:00:00-04:00": {
+   "EPS Estimate": -0.21,
+   "Reported EPS": -0.9,
+   "Surprise(%)": -329.39
+  }
+ },
+ "upgrades_downgrades": {
+  "2026-11-11 11:13:33": {
+   "Firm": "Keefe, Bruyette & Woods",
+   "ToGrade": "Market Perform",
+   "FromGrade": "Outperform",
+   "Action": "down",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 23.0,
+   "priorPriceTarget": 20.0
+  },
+  "2026-11-10 16:56:18": {
+   "Firm": "JP Morgan",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 28.0,
+   "priorPriceTarget": 22.0
+  },
+  "2026-11-10 09:17:30": {
+   "Firm": "Jefferies",
+   "ToGrade": "Buy",
+   "FromGrade": "Hold",
+   "Action": "up",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 28.0,
+   "priorPriceTarget": 13.0
+  },
+  "2026-11-09 17:43:27": {
+   "Firm": "Morgan Stanley",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 41.0,
+   "priorPriceTarget": 35.5
+  },
+  "2026-11-05 16:55:55": {
+   "Firm": "Bernstein",
+   "ToGrade": "Outperform",
+   "FromGrade": "Outperform",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 30.0,
+   "priorPriceTarget": 18.0
+  },
+  "2026-11-05 13:12:30": {
+   "Firm": "Chardan Capital",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 32.0,
+   "priorPriceTarget": 27.5
+  },
+  "2026-11-05 11:36:14": {
+   "Firm": "Needham",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 31.0,
+   "priorPriceTarget": 30.0
+  },
+  "2026-11-04 20:18:58": {
+   "Firm": "HC Wainwright & Co.",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 35.0,
+   "priorPriceTarget": 30.0
+  },
+  "2026-11-04 16:39:05": {
+   "Firm": "Cantor Fitzgerald",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "reit",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 37.0,
+   "priorPriceTarget": 24.0
+  },
+  "2026-11-04 09:22:25": {
+   "Firm": "Bernstein",
+   "ToGrade": "Outperform",
+   "FromGrade": "Outperform",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 18.0,
+   "priorPriceTarget": 35.0
+  },
+  "2026-10-30 13:32:37": {
+   "Firm": "B. Riley Securities",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 25.0,
+   "priorPriceTarget": 33.0
+  },
+  "2026-10-20 13:09:05": {
+   "Firm": "Piper Sandler",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 19.0,
+   "priorPriceTarget": 25.0
+  },
+  "2026-10-16 11:41:41": {
+   "Firm": "Cantor Fitzgerald",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 24.0,
+   "priorPriceTarget": 30.0
+  },
+  "2026-10-12 16:59:12": {
+   "Firm": "Morgan Stanley",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 35.5,
+   "priorPriceTarget": 43.0
+  },
+  "2026-09-29 15:42:39": {
+   "Firm": "B. Riley Securities",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 33.0,
+   "priorPriceTarget": 28.0
+  }
+ },
+ "quarterly_income": {
+  "2026-09-30": {
+   "Total Revenue": 181426000.0,
+   "Gross Profit": 41354000.0,
+   "Operating Income": -125939000.0,
+   "Net Income": 4034000.0,
+   "Diluted EPS": 0.01
+  },
+  "2026-06-30": {
+   "Total Revenue": 174235000.0,
+   "Gross Profit": 41241000.0,
+   "Operating Income": -128488000.0,
+   "Net Income": -237170000.0,
+   "Diluted EPS": -0.68
+  },
+  "2026-03-31": {
+   "Total Revenue": 167219000.0,
+   "Gross Profit": 31543000.0,
+   "Operating Income": -121348000.0,
+   "Net Income": -500477000.0,
+   "Diluted EPS": -1.44
+  },
+  "2025-12-31": {
+   "Total Revenue": 152831000.0,
+   "Gross Profit": 47056000.0,
+   "Operating Income": -127316000.0,
+   "Net Income": -690748000.0,
+   "Diluted EPS": null
+  },
+  "2025-09-30": {
+   "Total Revenue": 180229000.0,
+   "Gross Profit": 70757000.0,
+   "Operating Income": -51370000.0,
+   "Net Income": 104480000.0,
+   "Diluted EPS": 0.26
+  },
+  "2025-06-30": {
+   "Total Revenue": null,
+   "Gross Profit": null,
+   "Operating Income": null,
+   "Net Income": null,
+   "Diluted EPS": 0.58
+  }
+ },
+ "eps_trend": {
+  "0q": {
+   "current": -0.29268,
+   "7daysAgo": -0.30044,
+   "30daysAgo": -0.29624,
+   "60daysAgo": -0.29624,
+   "90daysAgo": -0.2637,
+   "currency": "USD",
+   "methodology": "normalized"
+  },
+  "+1q": {
+   "current": -0.19932,
+   "7daysAgo": -0.22,
+   "30daysAgo": -0.26786,
+   "60daysAgo": -0.26786,
+   "90daysAgo": -0.16042,
+   "currency": "USD",
+   "methodology": "normalized"
+  },
+  "0y": {
+   "current": -1.30395,
+   "7daysAgo": -1.70496,
+   "30daysAgo": -1.68034,
+   "60daysAgo": -1.42712,
+   "90daysAgo": -1.32627,
+   "currency": "USD",
+   "methodology": "normalized"
+  },
+  "+1y": {
+   "current": -0.90325,
+   "7daysAgo": -0.95316,
+   "30daysAgo": -0.96132,
+   "60daysAgo": -0.93509,
+   "90daysAgo": -0.71179,
+   "currency": "USD",
+   "methodology": "normalized"
+  }
+ },
+ "growth_estimates": {
+  "0q": {
+   "stockTrend": 0.84459996,
+   "indexTrend": 0.3022
+  },
+  "+1q": {
+   "stockTrend": 0.4318,
+   "indexTrend": 0.2749
+  },
+  "0y": {
+   "stockTrend": 0.0539,
+   "indexTrend": 0.3369
+  },
+  "+1y": {
+   "stockTrend": 0.3073,
+   "indexTrend": 0.1683
+  },
+  "LTG": {
+   "stockTrend": null,
+   "indexTrend": 0.122
+  }
+ }
+}

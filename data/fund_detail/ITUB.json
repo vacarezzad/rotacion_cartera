@@ -1,0 +1,273 @@
+{
+ "earnings_dates": {
+  "2027-02-03 16:00:00-05:00": {
+   "EPS Estimate": 0.22,
+   "Reported EPS": null,
+   "Surprise(%)": null
+  },
+  "2026-11-03 16:00:00-05:00": {
+   "EPS Estimate": 0.22,
+   "Reported EPS": 0.21,
+   "Surprise(%)": -7.75
+  },
+  "2026-08-04 17:00:00-04:00": {
+   "EPS Estimate": 0.22,
+   "Reported EPS": 0.22,
+   "Surprise(%)": 1.68
+  },
+  "2026-05-05 20:00:00-04:00": {
+   "EPS Estimate": 0.21,
+   "Reported EPS": 0.23,
+   "Surprise(%)": 6.05
+  },
+  "2026-02-04 18:00:00-05:00": {
+   "EPS Estimate": 0.2,
+   "Reported EPS": 0.2,
+   "Surprise(%)": 0.19
+  },
+  "2025-11-04 19:00:00-05:00": {
+   "EPS Estimate": 0.2,
+   "Reported EPS": 0.2,
+   "Surprise(%)": -0.97
+  },
+  "2025-08-05 18:00:00-04:00": {
+   "EPS Estimate": 0.18,
+   "Reported EPS": 0.19,
+   "Surprise(%)": 2.37
+  },
+  "2025-05-08 18:00:00-04:00": {
+   "EPS Estimate": 0.17,
+   "Reported EPS": 0.19,
+   "Surprise(%)": 9.99
+  }
+ },
+ "upgrades_downgrades": {
+  "2026-10-09 17:51:08": {
+   "Firm": "Goldman Sachs",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 10.5,
+   "priorPriceTarget": 9.3
+  },
+  "2026-10-08 10:00:49": {
+   "Firm": "HSBC",
+   "ToGrade": "Hold",
+   "FromGrade": "Buy",
+   "Action": "down",
+   "priceTargetAction": "Announces",
+   "currentPriceTarget": 9.1,
+   "priorPriceTarget": 0.0
+  },
+  "2026-07-07 12:23:13": {
+   "Firm": "JP Morgan",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 10.0,
+   "priorPriceTarget": 9.0
+  },
+  "2026-02-18 16:05:32": {
+   "Firm": "JP Morgan",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 9.0,
+   "priorPriceTarget": 8.0
+  },
+  "2025-11-25 15:17:08": {
+   "Firm": "JP Morgan",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 8.0,
+   "priorPriceTarget": 7.0
+  },
+  "2025-07-10 12:04:29": {
+   "Firm": "UBS",
+   "ToGrade": "Neutral",
+   "FromGrade": "Buy",
+   "Action": "down",
+   "priceTargetAction": "",
+   "currentPriceTarget": 0.0,
+   "priorPriceTarget": 0.0
+  },
+  "2025-01-17 19:49:37": {
+   "Firm": "UBS",
+   "ToGrade": "Buy",
+   "FromGrade": "Neutral",
+   "Action": "up",
+   "priceTargetAction": "",
+   "currentPriceTarget": 0.0,
+   "priorPriceTarget": 0.0
+  },
+  "2025-01-13 17:00:12": {
+   "Firm": "HSBC",
+   "ToGrade": "Buy",
+   "FromGrade": "Hold",
+   "Action": "up",
+   "priceTargetAction": "Announces",
+   "currentPriceTarget": 6.8,
+   "priorPriceTarget": 0.0
+  },
+  "2024-11-07 18:03:34": {
+   "Firm": "JP Morgan",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 7.0,
+   "priorPriceTarget": 8.0
+  },
+  "2024-08-22 12:41:17": {
+   "Firm": "UBS",
+   "ToGrade": "Neutral",
+   "FromGrade": "Buy",
+   "Action": "down",
+   "priceTargetAction": "",
+   "currentPriceTarget": 0.0,
+   "priorPriceTarget": 0.0
+  },
+  "2024-01-16 17:24:53": {
+   "Firm": "B of A Securities",
+   "ToGrade": "Buy",
+   "FromGrade": "Neutral",
+   "Action": "up",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 8.0,
+   "priorPriceTarget": 6.6
+  },
+  "2023-10-16 11:41:16": {
+   "Firm": "Jefferies",
+   "ToGrade": "Hold",
+   "FromGrade": "",
+   "Action": "init",
+   "priceTargetAction": "Announces",
+   "currentPriceTarget": 6.1,
+   "priorPriceTarget": 0.0
+  },
+  "2023-06-22 12:09:32": {
+   "Firm": "Goldman Sachs",
+   "ToGrade": "Buy",
+   "FromGrade": "",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 7.2,
+   "priorPriceTarget": 6.2
+  },
+  "2022-11-15 11:40:10": {
+   "Firm": "Barclays",
+   "ToGrade": "Overweight",
+   "FromGrade": "Equal-Weight",
+   "Action": "up",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 7.0,
+   "priorPriceTarget": 5.5
+  },
+  "2022-11-08 14:51:24": {
+   "Firm": "Barclays",
+   "ToGrade": "Equal-Weight",
+   "FromGrade": "",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 5.5,
+   "priorPriceTarget": 5.0
+  }
+ },
+ "quarterly_income": {
+  "2026-09-30": {
+   "Total Revenue": 45938000000.0,
+   "Net Income": 12227000000.0,
+   "Diluted EPS": 1.1
+  },
+  "2026-06-30": {
+   "Total Revenue": 43954000000.0,
+   "Net Income": 11979000000.0,
+   "Diluted EPS": 1.07
+  },
+  "2026-03-31": {
+   "Total Revenue": 41132000000.0,
+   "Net Income": 11636000000.0,
+   "Diluted EPS": 1.05
+  },
+  "2025-12-31": {
+   "Total Revenue": 42119000000.0,
+   "Net Income": 11907000000.0,
+   "Diluted EPS": null
+  },
+  "2025-09-30": {
+   "Total Revenue": 42165000000.0,
+   "Net Income": 11306000000.0,
+   "Diluted EPS": 1.01
+  },
+  "2025-06-30": {
+   "Total Revenue": null,
+   "Net Income": null,
+   "Diluted EPS": 0.99
+  }
+ },
+ "eps_trend": {
+  "0q": {
+   "current": 0.22309,
+   "7daysAgo": 0.22309,
+   "30daysAgo": 0.23847,
+   "60daysAgo": 0.24101,
+   "90daysAgo": 0.2438,
+   "currency": "USD",
+   "methodology": "normalized"
+  },
+  "+1q": {
+   "current": 0.2287,
+   "7daysAgo": 0.2287,
+   "30daysAgo": 0.2287,
+   "60daysAgo": 0.2387,
+   "90daysAgo": 0.24375,
+   "currency": "USD",
+   "methodology": "normalized"
+  },
+  "0y": {
+   "current": 0.79954,
+   "7daysAgo": 0.84387,
+   "30daysAgo": 0.8882,
+   "60daysAgo": 0.89199,
+   "90daysAgo": 0.89068,
+   "currency": "USD",
+   "methodology": "normalized"
+  },
+  "+1y": {
+   "current": 0.8652,
+   "7daysAgo": 0.9117,
+   "30daysAgo": 0.96972,
+   "60daysAgo": 0.98799,
+   "90daysAgo": 1.00159,
+   "currency": "USD",
+   "methodology": "normalized"
+  }
+ },
+ "growth_estimates": {
+  "0q": {
+   "stockTrend": 0.1024,
+   "indexTrend": 0.3022
+  },
+  "+1q": {
+   "stockTrend": 0.0139,
+   "indexTrend": 0.2749
+  },
+  "0y": {
+   "stockTrend": -0.006,
+   "indexTrend": 0.3369
+  },
+  "+1y": {
+   "stockTrend": 0.082100004,
+   "indexTrend": 0.1683
+  },
+  "LTG": {
+   "stockTrend": null,
+   "indexTrend": 0.122
+  }
+ }
+}

@@ -1,0 +1,231 @@
+{
+ "earnings_dates": {
+  "2027-03-17 17:00:00-04:00": {
+   "EPS Estimate": -0.09,
+   "Reported EPS": null,
+   "Surprise(%)": null
+  },
+  "2026-11-12 21:00:00-05:00": {
+   "EPS Estimate": -0.04,
+   "Reported EPS": -0.15,
+   "Surprise(%)": -274.23
+  },
+  "2026-08-12 22:00:00-04:00": {
+   "EPS Estimate": -0.03,
+   "Reported EPS": -0.12,
+   "Surprise(%)": -313.75
+  },
+  "2026-05-13 20:00:00-04:00": {
+   "EPS Estimate": 0.24,
+   "Reported EPS": -0.09,
+   "Surprise(%)": -136.23
+  },
+  "2026-03-11 23:00:00-04:00": {
+   "EPS Estimate": -0.05,
+   "Reported EPS": -0.16,
+   "Surprise(%)": -206.33
+  },
+  "2025-11-04 21:00:00-05:00": {
+   "EPS Estimate": 0.11,
+   "Reported EPS": 0.01,
+   "Surprise(%)": -90.23
+  },
+  "2025-07-31 20:00:00-04:00": {
+   "EPS Estimate": -0.01,
+   "Reported EPS": -0.02,
+   "Surprise(%)": -124.1
+  },
+  "2025-05-08 22:00:00-04:00": {
+   "EPS Estimate": 0.07,
+   "Reported EPS": -0.1,
+   "Surprise(%)": -239.73
+  }
+ },
+ "upgrades_downgrades": {
+  "2025-12-15 18:52:48": {
+   "Firm": "UBS",
+   "ToGrade": "Sell",
+   "FromGrade": "Sell",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 1.4,
+   "priorPriceTarget": 1.3
+  },
+  "2025-03-12 19:01:48": {
+   "Firm": "UBS",
+   "ToGrade": "Sell",
+   "FromGrade": "",
+   "Action": "init",
+   "priceTargetAction": "Announces",
+   "currentPriceTarget": 1.3,
+   "priorPriceTarget": 0.0
+  },
+  "2024-04-09 16:33:54": {
+   "Firm": "B of A Securities",
+   "ToGrade": "Underperform",
+   "FromGrade": "Neutral",
+   "Action": "down",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 2.9,
+   "priorPriceTarget": 3.9
+  },
+  "2024-04-04 08:41:46": {
+   "Firm": "Itau BBA",
+   "ToGrade": "Underperform",
+   "FromGrade": "Market Perform",
+   "Action": "down",
+   "priceTargetAction": "Announces",
+   "currentPriceTarget": 3.0,
+   "priorPriceTarget": 0.0
+  },
+  "2023-11-20 11:46:30": {
+   "Firm": "B of A Securities",
+   "ToGrade": "Buy",
+   "FromGrade": "Underperform",
+   "Action": "up",
+   "priceTargetAction": "Announces",
+   "currentPriceTarget": 4.1,
+   "priorPriceTarget": 0.0
+  },
+  "2023-07-10 11:47:41": {
+   "Firm": "Itau BBA",
+   "ToGrade": "Underperform",
+   "FromGrade": "Market Perform",
+   "Action": "down",
+   "priceTargetAction": "Announces",
+   "currentPriceTarget": 2.3,
+   "priorPriceTarget": 0.0
+  },
+  "2022-08-26 13:02:22": {
+   "Firm": "B of A Securities",
+   "ToGrade": "Underperform",
+   "FromGrade": "Neutral",
+   "Action": "down",
+   "priceTargetAction": "",
+   "currentPriceTarget": 0.0,
+   "priorPriceTarget": 0.0
+  },
+  "2019-04-15 11:46:20": {
+   "Firm": "Goldman Sachs",
+   "ToGrade": "Neutral",
+   "FromGrade": "Sell",
+   "Action": "up",
+   "priceTargetAction": "",
+   "currentPriceTarget": 0.0,
+   "priorPriceTarget": 0.0
+  },
+  "2012-08-10 10:37:00": {
+   "Firm": "Credit Suisse",
+   "ToGrade": "Underperform",
+   "FromGrade": "Neutral",
+   "Action": "down",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 10.5,
+   "priorPriceTarget": 19.0
+  }
+ },
+ "quarterly_income": {
+  "2026-09-30": {
+   "Total Revenue": 10485800000.0,
+   "Gross Profit": 2290885000.0,
+   "Operating Income": -736398000.0,
+   "Net Income": -1247288000.0,
+   "Diluted EPS": -0.940573
+  },
+  "2026-06-30": {
+   "Total Revenue": 11306169000.0,
+   "Gross Profit": 2930923000.0,
+   "Operating Income": 1121387000.0,
+   "Net Income": -794123000.0,
+   "Diluted EPS": -0.59884
+  },
+  "2026-03-31": {
+   "Total Revenue": 10603772000.0,
+   "Gross Profit": 2522704000.0,
+   "Operating Income": 270567000.0,
+   "Net Income": -615531000.0,
+   "Diluted EPS": -0.464168
+  },
+  "2025-12-31": {
+   "Total Revenue": 11403163000.0,
+   "Gross Profit": 3668133000.0,
+   "Operating Income": 1212268000.0,
+   "Net Income": -1080148000.0,
+   "Diluted EPS": -0.543864
+  },
+  "2025-09-30": {
+   "Total Revenue": 11793868000.0,
+   "Gross Profit": 3467250000.0,
+   "Operating Income": 1566802000.0,
+   "Net Income": 76438000.0,
+   "Diluted EPS": 0.057641
+  },
+  "2025-06-30": {
+   "Total Revenue": null,
+   "Gross Profit": null,
+   "Operating Income": null,
+   "Net Income": null,
+   "Diluted EPS": null
+  }
+ },
+ "eps_trend": {
+  "0q": {
+   "current": -0.094,
+   "7daysAgo": -0.094,
+   "30daysAgo": -0.004,
+   "60daysAgo": -0.004,
+   "90daysAgo": 0.0,
+   "currency": "USD",
+   "methodology": "normalized"
+  },
+  "+1q": {
+   "current": null,
+   "7daysAgo": null,
+   "30daysAgo": null,
+   "60daysAgo": null,
+   "90daysAgo": null,
+   "currency": "USD",
+   "methodology": "normalized"
+  },
+  "0y": {
+   "current": -0.264,
+   "7daysAgo": -0.264,
+   "30daysAgo": -0.264,
+   "60daysAgo": 0.15,
+   "90daysAgo": 0.1055,
+   "currency": "USD",
+   "methodology": "normalized"
+  },
+  "+1y": {
+   "current": 0.119,
+   "7daysAgo": 0.119,
+   "30daysAgo": 0.0935,
+   "60daysAgo": 0.068,
+   "90daysAgo": 0.159,
+   "currency": "USD",
+   "methodology": "normalized"
+  }
+ },
+ "growth_estimates": {
+  "0q": {
+   "stockTrend": 0.39830002,
+   "indexTrend": 0.3022
+  },
+  "+1q": {
+   "stockTrend": null,
+   "indexTrend": 0.2749
+  },
+  "0y": {
+   "stockTrend": 0.0885,
+   "indexTrend": 0.3369
+  },
+  "+1y": {
+   "stockTrend": 1.4508001,
+   "indexTrend": 0.1683
+  },
+  "LTG": {
+   "stockTrend": null,
+   "indexTrend": 0.122
+  }
+ }
+}

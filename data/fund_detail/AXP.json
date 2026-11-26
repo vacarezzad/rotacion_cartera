@@ -1,0 +1,273 @@
+{
+ "earnings_dates": {
+  "2027-01-29 08:00:00-05:00": {
+   "EPS Estimate": 4.29,
+   "Reported EPS": null,
+   "Surprise(%)": null
+  },
+  "2026-10-23 07:00:00-04:00": {
+   "EPS Estimate": 4.5,
+   "Reported EPS": 5.42,
+   "Surprise(%)": 20.44
+  },
+  "2026-07-24 07:00:00-04:00": {
+   "EPS Estimate": 4.4,
+   "Reported EPS": 4.53,
+   "Surprise(%)": 2.84
+  },
+  "2026-04-23 07:00:00-04:00": {
+   "EPS Estimate": 3.99,
+   "Reported EPS": 4.28,
+   "Surprise(%)": 7.18
+  },
+  "2026-01-30 07:00:00-05:00": {
+   "EPS Estimate": 3.55,
+   "Reported EPS": 3.53,
+   "Surprise(%)": -0.66
+  },
+  "2025-10-17 07:00:00-04:00": {
+   "EPS Estimate": 3.98,
+   "Reported EPS": 4.14,
+   "Surprise(%)": 4.02
+  },
+  "2025-07-18 07:00:00-04:00": {
+   "EPS Estimate": 3.88,
+   "Reported EPS": 4.08,
+   "Surprise(%)": 5.09
+  },
+  "2025-04-17 07:00:00-04:00": {
+   "EPS Estimate": 3.47,
+   "Reported EPS": 3.64,
+   "Surprise(%)": 4.8
+  }
+ },
+ "upgrades_downgrades": {
+  "2026-11-02 21:55:31": {
+   "Firm": "UBS",
+   "ToGrade": "Neutral",
+   "FromGrade": "Neutral",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 346.0,
+   "priorPriceTarget": 345.0
+  },
+  "2026-10-27 20:19:50": {
+   "Firm": "Citigroup",
+   "ToGrade": "Neutral",
+   "FromGrade": "Neutral",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 335.0,
+   "priorPriceTarget": 340.0
+  },
+  "2026-10-26 15:16:25": {
+   "Firm": "JP Morgan",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 365.0,
+   "priorPriceTarget": 360.0
+  },
+  "2026-10-26 14:33:13": {
+   "Firm": "Barclays",
+   "ToGrade": "Equal-Weight",
+   "FromGrade": "Equal-Weight",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 340.0,
+   "priorPriceTarget": 342.0
+  },
+  "2026-10-12 16:24:02": {
+   "Firm": "Morgan Stanley",
+   "ToGrade": "Equal-Weight",
+   "FromGrade": "Equal-Weight",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 380.0,
+   "priorPriceTarget": 382.0
+  },
+  "2026-10-12 16:21:59": {
+   "Firm": "JP Morgan",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 360.0,
+   "priorPriceTarget": 400.0
+  },
+  "2026-10-09 13:36:21": {
+   "Firm": "RBC Capital",
+   "ToGrade": "Outperform",
+   "FromGrade": "Outperform",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 400.0,
+   "priorPriceTarget": 415.0
+  },
+  "2026-10-09 09:20:05": {
+   "Firm": "BMO Capital",
+   "ToGrade": "Outperform",
+   "FromGrade": "",
+   "Action": "init",
+   "priceTargetAction": "Announces",
+   "currentPriceTarget": 380.0,
+   "priorPriceTarget": 0.0
+  },
+  "2026-10-06 14:22:49": {
+   "Firm": "TD Cowen",
+   "ToGrade": "Hold",
+   "FromGrade": "Hold",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 335.0,
+   "priorPriceTarget": 338.0
+  },
+  "2026-10-05 21:03:56": {
+   "Firm": "UBS",
+   "ToGrade": "Neutral",
+   "FromGrade": "Neutral",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 345.0,
+   "priorPriceTarget": 384.0
+  },
+  "2026-10-05 14:53:32": {
+   "Firm": "Barclays",
+   "ToGrade": "Equal-Weight",
+   "FromGrade": "Equal-Weight",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 342.0,
+   "priorPriceTarget": 364.0
+  },
+  "2026-10-01 13:55:29": {
+   "Firm": "Evercore ISI Group",
+   "ToGrade": "In-Line",
+   "FromGrade": "In-Line",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 320.0,
+   "priorPriceTarget": 370.0
+  },
+  "2026-09-30 18:20:15": {
+   "Firm": "Citigroup",
+   "ToGrade": "Neutral",
+   "FromGrade": "Neutral",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 340.0,
+   "priorPriceTarget": 355.0
+  },
+  "2026-09-23 15:22:27": {
+   "Firm": "Truist Securities",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 370.0,
+   "priorPriceTarget": 375.0
+  },
+  "2026-08-12 16:16:51": {
+   "Firm": "Piper Sandler",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 405.0,
+   "priorPriceTarget": 396.0
+  }
+ },
+ "quarterly_income": {
+  "2026-09-30": {
+   "Total Revenue": 20061000000.0,
+   "Net Income": 3712000000.0,
+   "Diluted EPS": 5.42
+  },
+  "2026-06-30": {
+   "Total Revenue": 19637000000.0,
+   "Net Income": 3110000000.0,
+   "Diluted EPS": 4.53
+  },
+  "2026-03-31": {
+   "Total Revenue": 18908000000.0,
+   "Net Income": 2971000000.0,
+   "Diluted EPS": 4.28
+  },
+  "2025-12-31": {
+   "Total Revenue": 18981000000.0,
+   "Net Income": 2462000000.0,
+   "Diluted EPS": 3.53
+  },
+  "2025-09-30": {
+   "Total Revenue": 18426000000.0,
+   "Net Income": 2902000000.0,
+   "Diluted EPS": 4.14
+  },
+  "2025-06-30": {
+   "Total Revenue": null,
+   "Net Income": null,
+   "Diluted EPS": null
+  }
+ },
+ "eps_trend": {
+  "0q": {
+   "current": 4.28993,
+   "7daysAgo": 4.28993,
+   "30daysAgo": 4.29914,
+   "60daysAgo": 4.28788,
+   "90daysAgo": 4.28788,
+   "currency": "USD",
+   "methodology": "gaap"
+  },
+  "+1q": {
+   "current": 4.74431,
+   "7daysAgo": 4.76464,
+   "30daysAgo": 4.70662,
+   "60daysAgo": 4.71196,
+   "90daysAgo": 4.71196,
+   "currency": "USD",
+   "methodology": "gaap"
+  },
+  "0y": {
+   "current": 18.39107,
+   "7daysAgo": 18.39063,
+   "30daysAgo": 17.63936,
+   "60daysAgo": 17.6721,
+   "90daysAgo": 17.6721,
+   "currency": "USD",
+   "methodology": "gaap"
+  },
+  "+1y": {
+   "current": 20.16747,
+   "7daysAgo": 20.16747,
+   "30daysAgo": 20.13023,
+   "60daysAgo": 20.10497,
+   "90daysAgo": 20.10854,
+   "currency": "USD",
+   "methodology": "gaap"
+  }
+ },
+ "growth_estimates": {
+  "0q": {
+   "stockTrend": 0.2138,
+   "indexTrend": 0.3022
+  },
+  "+1q": {
+   "stockTrend": 0.1,
+   "indexTrend": 0.2749
+  },
+  "0y": {
+   "stockTrend": 0.1552,
+   "indexTrend": 0.3369
+  },
+  "+1y": {
+   "stockTrend": 0.1378,
+   "indexTrend": 0.1683
+  },
+  "LTG": {
+   "stockTrend": null,
+   "indexTrend": 0.122
+  }
+ }
+}

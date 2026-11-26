@@ -1,0 +1,273 @@
+{
+ "earnings_dates": {
+  "2027-01-14 08:00:00-05:00": {
+   "EPS Estimate": 2.3,
+   "Reported EPS": null,
+   "Surprise(%)": null
+  },
+  "2026-10-13 07:00:00-04:00": {
+   "EPS Estimate": 2.62,
+   "Reported EPS": 2.83,
+   "Surprise(%)": 7.94
+  },
+  "2026-07-14 08:00:00-04:00": {
+   "EPS Estimate": 2.71,
+   "Reported EPS": 3.14,
+   "Surprise(%)": 15.62
+  },
+  "2026-04-14 08:00:00-04:00": {
+   "EPS Estimate": 2.6,
+   "Reported EPS": 3.06,
+   "Surprise(%)": 17.91
+  },
+  "2026-01-14 08:00:00-05:00": {
+   "EPS Estimate": 1.62,
+   "Reported EPS": 1.24,
+   "Surprise(%)": -23.43
+  },
+  "2025-10-14 08:00:00-04:00": {
+   "EPS Estimate": 1.93,
+   "Reported EPS": 2.26,
+   "Surprise(%)": 17.44
+  },
+  "2025-07-15 08:00:00-04:00": {
+   "EPS Estimate": 1.59,
+   "Reported EPS": 2.04,
+   "Surprise(%)": 28.26
+  },
+  "2025-04-15 08:00:00-04:00": {
+   "EPS Estimate": 1.85,
+   "Reported EPS": 1.96,
+   "Surprise(%)": 5.93
+  }
+ },
+ "upgrades_downgrades": {
+  "2026-10-30 22:31:02": {
+   "Firm": "JP Morgan",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 148.5,
+   "priorPriceTarget": 147.0
+  },
+  "2026-10-14 16:36:39": {
+   "Firm": "Evercore ISI Group",
+   "ToGrade": "In-Line",
+   "FromGrade": "In-Line",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 135.0,
+   "priorPriceTarget": 140.0
+  },
+  "2026-10-14 15:32:58": {
+   "Firm": "TD Cowen",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 148.0,
+   "priorPriceTarget": 150.0
+  },
+  "2026-10-14 13:23:43": {
+   "Firm": "RBC Capital",
+   "ToGrade": "Outperform",
+   "FromGrade": "Outperform",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 135.0,
+   "priorPriceTarget": 150.0
+  },
+  "2026-10-05 21:24:26": {
+   "Firm": "UBS",
+   "ToGrade": "Neutral",
+   "FromGrade": "Neutral",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 139.0,
+   "priorPriceTarget": 142.0
+  },
+  "2026-10-02 16:13:01": {
+   "Firm": "JP Morgan",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 147.0,
+   "priorPriceTarget": 149.0
+  },
+  "2026-10-01 14:15:21": {
+   "Firm": "Evercore ISI Group",
+   "ToGrade": "In-Line",
+   "FromGrade": "In-Line",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 140.0,
+   "priorPriceTarget": 135.0
+  },
+  "2026-09-28 13:59:22": {
+   "Firm": "HSBC",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 164.0,
+   "priorPriceTarget": 161.0
+  },
+  "2026-08-03 20:02:26": {
+   "Firm": "UBS",
+   "ToGrade": "Neutral",
+   "FromGrade": "Neutral",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 142.0,
+   "priorPriceTarget": 150.0
+  },
+  "2026-07-17 13:36:27": {
+   "Firm": "Evercore ISI Group",
+   "ToGrade": "In-Line",
+   "FromGrade": "In-Line",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 135.0,
+   "priorPriceTarget": 143.0
+  },
+  "2026-07-15 15:46:55": {
+   "Firm": "RBC Capital",
+   "ToGrade": "Outperform",
+   "FromGrade": "Outperform",
+   "Action": "reit",
+   "priceTargetAction": "Maintains",
+   "currentPriceTarget": 150.0,
+   "priorPriceTarget": 150.0
+  },
+  "2026-07-15 12:43:36": {
+   "Firm": "Truist Securities",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 154.0,
+   "priorPriceTarget": 158.0
+  },
+  "2026-07-07 14:37:00": {
+   "Firm": "B of A Securities",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 176.0,
+   "priorPriceTarget": 170.0
+  },
+  "2026-07-07 13:37:20": {
+   "Firm": "UBS",
+   "ToGrade": "Neutral",
+   "FromGrade": "Neutral",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 150.0,
+   "priorPriceTarget": 134.0
+  },
+  "2026-07-06 15:56:48": {
+   "Firm": "Evercore ISI Group",
+   "ToGrade": "In-Line",
+   "FromGrade": "In-Line",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 143.0,
+   "priorPriceTarget": 139.0
+  }
+ },
+ "quarterly_income": {
+  "2026-09-30": {
+   "Total Revenue": 23839000000.0,
+   "Net Income": 5245000000.0,
+   "Diluted EPS": 2.85
+  },
+  "2026-06-30": {
+   "Total Revenue": 24765000000.0,
+   "Net Income": 5831000000.0,
+   "Diluted EPS": 3.15
+  },
+  "2026-03-31": {
+   "Total Revenue": 24663000000.0,
+   "Net Income": 5785000000.0,
+   "Diluted EPS": 3.06
+  },
+  "2025-12-31": {
+   "Total Revenue": 19670000000.0,
+   "Net Income": 2471000000.0,
+   "Diluted EPS": 1.19
+  },
+  "2025-09-30": {
+   "Total Revenue": 22095000000.0,
+   "Net Income": 3752000000.0,
+   "Diluted EPS": 1.86
+  },
+  "2025-06-30": {
+   "Total Revenue": null,
+   "Net Income": null,
+   "Diluted EPS": null
+  }
+ },
+ "eps_trend": {
+  "0q": {
+   "current": 2.30066,
+   "7daysAgo": 2.30066,
+   "30daysAgo": 2.28456,
+   "60daysAgo": 2.30988,
+   "90daysAgo": 2.30738,
+   "currency": "USD",
+   "methodology": "normalized"
+  },
+  "+1q": {
+   "current": 3.214,
+   "7daysAgo": 3.245,
+   "30daysAgo": 3.282,
+   "60daysAgo": 3.29074,
+   "90daysAgo": 3.34092,
+   "currency": "USD",
+   "methodology": "normalized"
+  },
+  "0y": {
+   "current": 11.4046,
+   "7daysAgo": 11.4046,
+   "30daysAgo": 11.38875,
+   "60daysAgo": 11.18105,
+   "90daysAgo": 11.18105,
+   "currency": "USD",
+   "methodology": "normalized"
+  },
+  "+1y": {
+   "current": 13.06276,
+   "7daysAgo": 13.06276,
+   "30daysAgo": 13.05007,
+   "60daysAgo": 12.88329,
+   "90daysAgo": 12.88329,
+   "currency": "USD",
+   "methodology": "normalized"
+  }
+ },
+ "growth_estimates": {
+  "0q": {
+   "stockTrend": 0.85040003,
+   "indexTrend": 0.3022
+  },
+  "+1q": {
+   "stockTrend": 0.0498,
+   "indexTrend": 0.2749
+  },
+  "0y": {
+   "stockTrend": 0.5147,
+   "indexTrend": 0.3369
+  },
+  "+1y": {
+   "stockTrend": 0.1454,
+   "indexTrend": 0.1683
+  },
+  "LTG": {
+   "stockTrend": null,
+   "indexTrend": 0.122
+  }
+ }
+}

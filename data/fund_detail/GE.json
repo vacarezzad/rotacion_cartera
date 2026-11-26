@@ -1,0 +1,285 @@
+{
+ "earnings_dates": {
+  "2027-01-21 08:00:00-05:00": {
+   "EPS Estimate": 2.03,
+   "Reported EPS": null,
+   "Surprise(%)": null
+  },
+  "2026-10-20 06:00:00-04:00": {
+   "EPS Estimate": 2.02,
+   "Reported EPS": 2.25,
+   "Surprise(%)": 11.39
+  },
+  "2026-07-16 06:00:00-04:00": {
+   "EPS Estimate": 1.86,
+   "Reported EPS": 2.02,
+   "Surprise(%)": 8.62
+  },
+  "2026-04-21 06:00:00-04:00": {
+   "EPS Estimate": 1.6,
+   "Reported EPS": 1.86,
+   "Surprise(%)": 16.31
+  },
+  "2026-01-22 06:00:00-05:00": {
+   "EPS Estimate": 1.43,
+   "Reported EPS": 1.57,
+   "Surprise(%)": 9.81
+  },
+  "2025-10-21 06:00:00-04:00": {
+   "EPS Estimate": 1.47,
+   "Reported EPS": 1.66,
+   "Surprise(%)": 13.01
+  },
+  "2025-07-17 06:00:00-04:00": {
+   "EPS Estimate": 1.43,
+   "Reported EPS": 1.66,
+   "Surprise(%)": 15.97
+  },
+  "2025-04-22 06:00:00-04:00": {
+   "EPS Estimate": 1.27,
+   "Reported EPS": 1.49,
+   "Surprise(%)": 17.51
+  }
+ },
+ "upgrades_downgrades": {
+  "2026-10-21 19:17:34": {
+   "Firm": "UBS",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 380.0,
+   "priorPriceTarget": 377.0
+  },
+  "2026-10-21 17:22:17": {
+   "Firm": "BNP Paribas",
+   "ToGrade": "Underperform",
+   "FromGrade": "Underperform",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 280.0,
+   "priorPriceTarget": 305.0
+  },
+  "2026-10-21 15:21:05": {
+   "Firm": "JP Morgan",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 375.0,
+   "priorPriceTarget": 400.0
+  },
+  "2026-10-21 12:44:59": {
+   "Firm": "Susquehanna",
+   "ToGrade": "Positive",
+   "FromGrade": "Positive",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 400.0,
+   "priorPriceTarget": 430.0
+  },
+  "2026-10-21 12:35:29": {
+   "Firm": "RBC Capital",
+   "ToGrade": "Outperform",
+   "FromGrade": "Outperform",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 375.0,
+   "priorPriceTarget": 400.0
+  },
+  "2026-10-21 11:23:37": {
+   "Firm": "Morgan Stanley",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 375.0,
+   "priorPriceTarget": 400.0
+  },
+  "2026-09-30 14:56:30": {
+   "Firm": "Wells Fargo",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 380.0,
+   "priorPriceTarget": 390.0
+  },
+  "2026-09-23 18:02:03": {
+   "Firm": "Jefferies",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Lowers",
+   "currentPriceTarget": 435.0,
+   "priorPriceTarget": 455.0
+  },
+  "2026-07-23 19:22:21": {
+   "Firm": "Bernstein",
+   "ToGrade": "Outperform",
+   "FromGrade": "Outperform",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 421.0,
+   "priorPriceTarget": 405.0
+  },
+  "2026-07-20 14:46:07": {
+   "Firm": "JP Morgan",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 400.0,
+   "priorPriceTarget": 335.0
+  },
+  "2026-07-17 13:05:10": {
+   "Firm": "RBC Capital",
+   "ToGrade": "Outperform",
+   "FromGrade": "Outperform",
+   "Action": "reit",
+   "priceTargetAction": "Maintains",
+   "currentPriceTarget": 400.0,
+   "priorPriceTarget": 400.0
+  },
+  "2026-07-17 12:43:02": {
+   "Firm": "UBS",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 435.0,
+   "priorPriceTarget": 426.0
+  },
+  "2026-07-15 15:41:53": {
+   "Firm": "RBC Capital",
+   "ToGrade": "Outperform",
+   "FromGrade": "Outperform",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 400.0,
+   "priorPriceTarget": 355.0
+  },
+  "2026-07-13 17:00:51": {
+   "Firm": "TD Cowen",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 380.0,
+   "priorPriceTarget": 330.0
+  },
+  "2026-07-09 18:28:03": {
+   "Firm": "Susquehanna",
+   "ToGrade": "Positive",
+   "FromGrade": "Positive",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 430.0,
+   "priorPriceTarget": 380.0
+  }
+ },
+ "quarterly_income": {
+  "2026-09-30": {
+   "Total Revenue": 14118000000.0,
+   "Gross Profit": 4002000000.0,
+   "Operating Income": 2430000000.0,
+   "Net Income": 2288000000.0,
+   "Diluted EPS": 2.2
+  },
+  "2026-06-30": {
+   "Total Revenue": 13348000000.0,
+   "Gross Profit": 4151000000.0,
+   "Operating Income": 2560000000.0,
+   "Net Income": 2370000000.0,
+   "Diluted EPS": 2.26
+  },
+  "2026-03-31": {
+   "Total Revenue": 12392000000.0,
+   "Gross Profit": 3846000000.0,
+   "Operating Income": 2322000000.0,
+   "Net Income": 1904000000.0,
+   "Diluted EPS": 1.81
+  },
+  "2025-12-31": {
+   "Total Revenue": 12717000000.0,
+   "Gross Profit": 3804000000.0,
+   "Operating Income": 2269000000.0,
+   "Net Income": 2541000000.0,
+   "Diluted EPS": 2.4
+  },
+  "2025-09-30": {
+   "Total Revenue": 12181000000.0,
+   "Gross Profit": 3919000000.0,
+   "Operating Income": 2309000000.0,
+   "Net Income": 2157000000.0,
+   "Diluted EPS": 2.02
+  },
+  "2025-06-30": {
+   "Total Revenue": null,
+   "Gross Profit": null,
+   "Operating Income": null,
+   "Net Income": null,
+   "Diluted EPS": null
+  }
+ },
+ "eps_trend": {
+  "0q": {
+   "current": 2.332,
+   "7daysAgo": 2.34629,
+   "30daysAgo": 2.35733,
+   "60daysAgo": 2.27468,
+   "90daysAgo": 2.24151,
+   "currency": "USD",
+   "methodology": "normalized"
+  },
+  "+1q": {
+   "current": 2.09439,
+   "7daysAgo": 2.09105,
+   "30daysAgo": 2.06689,
+   "60daysAgo": 2.08752,
+   "90daysAgo": 2.08752,
+   "currency": "USD",
+   "methodology": "normalized"
+  },
+  "0y": {
+   "current": 8.15419,
+   "7daysAgo": 8.15895,
+   "30daysAgo": 8.11722,
+   "60daysAgo": 7.9145,
+   "90daysAgo": 7.91328,
+   "currency": "USD",
+   "methodology": "normalized"
+  },
+  "+1y": {
+   "current": 9.95822,
+   "7daysAgo": 9.97905,
+   "30daysAgo": 9.91293,
+   "60daysAgo": 9.74578,
+   "90daysAgo": 9.71732,
+   "currency": "USD",
+   "methodology": "normalized"
+  }
+ },
+ "growth_estimates": {
+  "0q": {
+   "stockTrend": 0.2926,
+   "indexTrend": 0.3022
+  },
+  "+1q": {
+   "stockTrend": 0.126,
+   "indexTrend": 0.2749
+  },
+  "0y": {
+   "stockTrend": 0.2801,
+   "indexTrend": 0.3369
+  },
+  "+1y": {
+   "stockTrend": 0.1407,
+   "indexTrend": 0.1683
+  },
+  "LTG": {
+   "stockTrend": null,
+   "indexTrend": 0.122
+  }
+ }
+}

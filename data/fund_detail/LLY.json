@@ -1,0 +1,285 @@
+{
+ "earnings_dates": {
+  "2027-02-03 08:00:00-05:00": {
+   "EPS Estimate": 11.26,
+   "Reported EPS": null,
+   "Surprise(%)": null
+  },
+  "2026-10-29 06:00:00-04:00": {
+   "EPS Estimate": 6.35,
+   "Reported EPS": 7.48,
+   "Surprise(%)": 17.88
+  },
+  "2026-08-05 06:00:00-04:00": {
+   "EPS Estimate": 6.58,
+   "Reported EPS": 8.38,
+   "Surprise(%)": 27.27
+  },
+  "2026-04-30 06:00:00-04:00": {
+   "EPS Estimate": 6.79,
+   "Reported EPS": 8.55,
+   "Surprise(%)": 25.9
+  },
+  "2026-02-04 06:00:00-05:00": {
+   "EPS Estimate": 6.91,
+   "Reported EPS": 7.54,
+   "Surprise(%)": 9.14
+  },
+  "2025-10-30 06:00:00-04:00": {
+   "EPS Estimate": 5.89,
+   "Reported EPS": 7.02,
+   "Surprise(%)": 19.15
+  },
+  "2025-08-07 06:00:00-04:00": {
+   "EPS Estimate": 5.59,
+   "Reported EPS": 6.31,
+   "Surprise(%)": 12.89
+  },
+  "2025-05-01 06:00:00-04:00": {
+   "EPS Estimate": 3.46,
+   "Reported EPS": 3.34,
+   "Surprise(%)": -3.39
+  }
+ },
+ "upgrades_downgrades": {
+  "2026-11-09 21:36:58": {
+   "Firm": "Jefferies",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 1700.0,
+   "priorPriceTarget": 1610.0
+  },
+  "2026-11-02 12:27:04": {
+   "Firm": "Cantor Fitzgerald",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 1600.0,
+   "priorPriceTarget": 1440.0
+  },
+  "2026-10-31 02:08:12": {
+   "Firm": "UBS",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 1625.0,
+   "priorPriceTarget": 1425.0
+  },
+  "2026-10-30 22:13:42": {
+   "Firm": "JP Morgan",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 1650.0,
+   "priorPriceTarget": 1500.0
+  },
+  "2026-10-30 21:32:23": {
+   "Firm": "Citigroup",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 1650.0,
+   "priorPriceTarget": 1600.0
+  },
+  "2026-10-30 18:54:16": {
+   "Firm": "Scotiabank",
+   "ToGrade": "Sector Outperform",
+   "FromGrade": "Sector Outperform",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 1605.0,
+   "priorPriceTarget": 1300.0
+  },
+  "2026-10-30 18:01:04": {
+   "Firm": "Morgan Stanley",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 1596.0,
+   "priorPriceTarget": 1430.0
+  },
+  "2026-10-30 16:46:27": {
+   "Firm": "Wells Fargo",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 1500.0,
+   "priorPriceTarget": 1330.0
+  },
+  "2026-10-30 15:46:56": {
+   "Firm": "Truist Securities",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "reit",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 1612.0,
+   "priorPriceTarget": 1376.0
+  },
+  "2026-10-30 15:46:38": {
+   "Firm": "RBC Capital",
+   "ToGrade": "Outperform",
+   "FromGrade": "Outperform",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 1600.0,
+   "priorPriceTarget": 1500.0
+  },
+  "2026-10-30 13:48:55": {
+   "Firm": "Argus Research",
+   "ToGrade": "Buy",
+   "FromGrade": "Buy",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 1550.0,
+   "priorPriceTarget": 1300.0
+  },
+  "2026-10-21 17:49:18": {
+   "Firm": "Leerink Partners",
+   "ToGrade": "Outperform",
+   "FromGrade": "Outperform",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 1316.0,
+   "priorPriceTarget": 1309.0
+  },
+  "2026-10-12 14:28:00": {
+   "Firm": "RBC Capital",
+   "ToGrade": "Outperform",
+   "FromGrade": "Outperform",
+   "Action": "reit",
+   "priceTargetAction": "Maintains",
+   "currentPriceTarget": 1500.0,
+   "priorPriceTarget": 1500.0
+  },
+  "2026-10-08 10:42:57": {
+   "Firm": "Cantor Fitzgerald",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 1440.0,
+   "priorPriceTarget": 1410.0
+  },
+  "2026-10-07 14:30:59": {
+   "Firm": "Morgan Stanley",
+   "ToGrade": "Overweight",
+   "FromGrade": "Overweight",
+   "Action": "main",
+   "priceTargetAction": "Raises",
+   "currentPriceTarget": 1430.0,
+   "priorPriceTarget": 1419.0
+  }
+ },
+ "quarterly_income": {
+  "2026-09-30": {
+   "Total Revenue": 24397000000.0,
+   "Gross Profit": 20464000000.0,
+   "Operating Income": 13092000000.0,
+   "Net Income": 6451000000.0,
+   "Diluted EPS": 7.22
+  },
+  "2026-06-30": {
+   "Total Revenue": 22974000000.0,
+   "Gross Profit": 19706000000.0,
+   "Operating Income": 12457000000.0,
+   "Net Income": 7095000000.0,
+   "Diluted EPS": 7.94
+  },
+  "2026-03-31": {
+   "Total Revenue": 19799000000.0,
+   "Gross Profit": 16222000000.0,
+   "Operating Income": 9778000000.0,
+   "Net Income": 7396000000.0,
+   "Diluted EPS": 8.26
+  },
+  "2025-12-31": {
+   "Total Revenue": 19292000000.0,
+   "Gross Profit": 15920300000.0,
+   "Operating Income": 8987400000.0,
+   "Net Income": 6637700000.0,
+   "Diluted EPS": 7.39
+  },
+  "2025-09-30": {
+   "Total Revenue": 17601000000.0,
+   "Gross Profit": 14593000000.0,
+   "Operating Income": 8386000000.0,
+   "Net Income": 5583000000.0,
+   "Diluted EPS": 6.21
+  },
+  "2025-06-30": {
+   "Total Revenue": null,
+   "Gross Profit": null,
+   "Operating Income": null,
+   "Net Income": null,
+   "Diluted EPS": null
+  }
+ },
+ "eps_trend": {
+  "0q": {
+   "current": 11.26245,
+   "7daysAgo": 11.22021,
+   "30daysAgo": 10.11876,
+   "60daysAgo": 9.97881,
+   "90daysAgo": 9.97587,
+   "currency": "USD",
+   "methodology": "normalized"
+  },
+  "+1q": {
+   "current": 10.93667,
+   "7daysAgo": 10.93667,
+   "30daysAgo": 10.08667,
+   "60daysAgo": 9.7325,
+   "90daysAgo": 9.7325,
+   "currency": "USD",
+   "methodology": "normalized"
+  },
+  "0y": {
+   "current": 35.48088,
+   "7daysAgo": 35.3865,
+   "30daysAgo": 34.65591,
+   "60daysAgo": 36.73186,
+   "90daysAgo": 36.71123,
+   "currency": "USD",
+   "methodology": "normalized"
+  },
+  "+1y": {
+   "current": 50.87043,
+   "7daysAgo": 50.64068,
+   "30daysAgo": 47.24199,
+   "60daysAgo": 47.34434,
+   "90daysAgo": 47.23395,
+   "currency": "USD",
+   "methodology": "normalized"
+  }
+ },
+ "growth_estimates": {
+  "0q": {
+   "stockTrend": 0.4937,
+   "indexTrend": 0.3022
+  },
+  "+1q": {
+   "stockTrend": 0.2791,
+   "indexTrend": 0.2749
+  },
+  "0y": {
+   "stockTrend": 0.4655,
+   "indexTrend": 0.3369
+  },
+  "+1y": {
+   "stockTrend": 0.4337,
+   "indexTrend": 0.1683
+  },
+  "LTG": {
+   "stockTrend": null,
+   "indexTrend": 0.122
+  }
+ }
+}
