@@ -39,6 +39,37 @@
     return el("ul", { class: `notes ${cls || ""}` }, items.map((n) => el("li", { class: n.tone, text: n.text })));
   }
 
+  const musd = (v) => (v == null ? "s/d" : v >= 1e6 ? `US$ ${fmt(v / 1e6, 1)} M` : `US$ ${fmt(v / 1e3, 0)} mil`);
+  const plural = (n, a, b) => `${fmt(n)} ${n === 1 ? a : b}`;
+
+  // Superinversores (Dataroma, 13F) e insiders, para una tarjeta de la cartera.
+  function superBlock(r) {
+    const d = r.dataroma;
+    if (!d) return null;
+    const lines = [];
+    lines.push(el("p", { class: "sup-line" }, d.count
+      ? `${plural(d.count, "superinversor lo tiene", "superinversores lo tienen")} · puesto ${fmt(d.rank)} · ${d.pct < 0.0001 ? "<0,01%" : pct(d.pct, 2)} de los portafolios`
+      : "Ningún superinversor lo tiene"));
+    if (d.holdPrice) lines.push(el("p", { class: "sup-line muted" }, `Hold price US$ ${fmt(d.holdPrice, 2)} (hoy US$ ${fmt(r.last, 2)})`));
+    const act = el("p", { class: "sup-line" }, el("b", { text: `${d.quarter}: ` }),
+      el("span", { class: "pos", text: `${d.buy} compran/suben` }), " · ", el("span", { class: "neg", text: `${d.sell} venden/bajan` }));
+    lines.push(act);
+    const who = [...d.buyers.map((b) => ({ ...b, tone: "pos" })), ...d.sellers.map((b) => ({ ...b, tone: "neg" }))];
+    if (who.length) {
+      lines.push(el("details", { class: "sup-who" }, el("summary", { text: "Quiénes" }),
+        el("ul", { class: "notes compact" }, who.map((w) => el("li", { class: w.tone, text: `${w.manager.split(" - ")[0]}: ${w.action}` })))));
+    }
+    const ib = d.insiderBuys || {}, is = d.insiderSells || {};
+    lines.push(el("p", { class: "sup-line muted" }, `Insiders 6 meses: ${plural(ib.n || 0, "compra", "compras")}${ib.n ? ` (${musd(ib.usd)})` : ""} · ${plural(is.n || 0, "venta", "ventas")}${is.n ? ` (${musd(is.usd)})` : ""}`));
+    return el("div", { class: "sup" }, el("span", { class: "sup-title", text: "Superinversores · Dataroma" }), ...lines);
+  }
+
+  function superCell(r) {
+    const d = r.dataroma;
+    if (!d) return "s/d";
+    return el("span", { class: "sup-cell" }, `${fmt(d.count)} `, el("span", { class: "pos", text: `+${d.buy}` }), " / ", el("span", { class: "neg", text: `−${d.sell}` }));
+  }
+
   function action(r, sig) {
     if (sig.held.length === 0) return r.pick ? el("span", { class: "act buy", text: "Comprar" }) : null;
     if (r.pick && r.held) return el("span", { class: "act keep", text: "Mantener" });
@@ -77,13 +108,14 @@
         el("dt", { text: "vs máximo 52 sem." }), el("dd", { text: pct(r.vsHigh, 0) }),
         el("dt", { text: "Sorpresa earnings" }), el("dd", { text: pct(r.surprise, 1, true) })),
       action(r, sig),
-      noteList(r.notes))));
+      noteList(r.notes),
+      superBlock(r))));
     const what = sig.held.length
       ? `Cartera anotada: ${sig.held.join(", ")}. ${sig.buy.length ? `Comprar ${sig.buy.join(", ")}.` : ""} ${sig.sell.length ? `Vender ${sig.sell.join(", ")}.` : "No hay que vender nada."} Lo que ya tenés se mantiene mientras siga en el top ${sig.k + 2}.`
       : `Todavía no anotaste tu cartera en portfolio.json, así que la señal la arma desde cero.`;
     return block("cartera", "Cartera objetivo", `Top ${sig.k}, 20% cada uno. ${what}`, cards,
       sells.length ? el("p", { class: "note warn", text: `Salen de la cartera: ${sells.map((r) => `${r.ticker} (#${r.rank})`).join(", ")}.` }) : null,
-      el("p", { class: "note", text: "El semáforo es contexto fundamental (calidad contable SEC EDGAR, revisiones del EPS estimado, rentabilidad, precio objetivo y próximos balances). No cambia el ranking. El gráfico muestra el precio del último año en USD." }));
+      el("p", { class: "note", text: "Superinversores: carteras 13F que sigue Dataroma, con un trimestre de rezago. El semáforo es contexto fundamental (calidad contable SEC EDGAR, revisiones del EPS estimado, rentabilidad, precio objetivo y próximos balances). No cambia el ranking. El gráfico muestra el precio del último año en USD." }));
   }
 
   function ranking(d) {
@@ -98,10 +130,11 @@
       { label: "vs máx. 52s", num: true, value: (r) => pct(r.vsHigh, 0) },
       { label: "1 año", value: (r) => spark(r.spark) },
       { label: "Semáforo", value: (r) => light(r.light) },
+      { label: "Superinv.", value: (r) => superCell(r) },
       { label: "Contexto", value: (r) => noteList(r.notes, "compact") || "" },
     ], sig.rows, (r) => [r.pick ? "is-pick" : "", r.rank === sig.k + 2 ? "cut" : ""].join(" "));
     t.querySelectorAll("tbody tr").forEach((tr) => tr.lastElementChild.classList.add("ctx"));
-    return block("ranking", "Ranking completo", `Los ${sig.rows.length} CEDEARs ordenados por score = 75% modelo E4 + 25% sorpresa del último balance. La línea marca el top ${sig.k + 2}: lo que ya está en cartera se mantiene mientras no caiga debajo.`, t);
+    return block("ranking", "Ranking completo", `Los ${sig.rows.length} CEDEARs ordenados por score = 75% modelo E4 + 25% sorpresa del último balance. La línea marca el top ${sig.k + 2}: lo que ya está en cartera se mantiene mientras no caiga debajo. Superinv.: cuántos superinversores de Dataroma lo tienen y cuántos compraron (+) o vendieron (−) en ${sig.dataromaQuarter || "el último trimestre"}.`, t);
   }
 
   function chart(bt) {

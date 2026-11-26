@@ -1,0 +1,2467 @@
+{
+ "AAPL": {
+  "count": 23.0,
+  "rank": 10.0,
+  "pct": 0.01319,
+  "holdPrice": 333.02,
+  "insider_buys": {
+   "n": 0,
+   "usd": 0.0
+  },
+  "insider_sells": {
+   "n": 40,
+   "usd": 146955464.0
+  },
+  "activity": {
+   "quarter": "Q3 2026",
+   "buys": 0,
+   "adds": 3,
+   "reduces": 12,
+   "sells": 0,
+   "buyers": [
+    {
+     "manager": "Thomas Russo - Gardner Russo & Quinn",
+     "action": "Add 2.72%",
+     "kind": "add"
+    },
+    {
+     "manager": "Polen Capital Management",
+     "action": "Add 1.59%",
+     "kind": "add"
+    },
+    {
+     "manager": "Muhlenkamp",
+     "action": "Add 0.29%",
+     "kind": "add"
+    }
+   ],
+   "sellers": [
+    {
+     "manager": "Sanders Capital",
+     "action": "Reduce 0.42%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "David Katz - Matrix Asset Advisors",
+     "action": "Reduce 0.82%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Dodge & Cox Funds",
+     "action": "Reduce 1.39%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Francois Rochon - Giverny Capital",
+     "action": "Reduce 4.30%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Bill Nygren - Oakmark Funds",
+     "action": "Reduce 4.90%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Torray Funds",
+     "action": "Reduce 5.54%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Sarah Ketterer - Causeway Capital Management",
+     "action": "Reduce 6.12%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "David Rolfe - Wedgewood Partners",
+     "action": "Reduce 8.56%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Christopher Bloomstran - Semper Augustus",
+     "action": "Reduce 10.75%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Mairs & Power Funds",
+     "action": "Reduce 16.57%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Duan Yongping - H&H International Investment",
+     "action": "Reduce 21.76%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Jensen Investment Management",
+     "action": "Reduce 33.14%",
+     "kind": "reduce"
+    }
+   ]
+  }
+ },
+ "AMD": {
+  "count": 5.0,
+  "rank": 172.0,
+  "pct": 0.00078,
+  "holdPrice": 611.76,
+  "insider_buys": {
+   "n": 0,
+   "usd": 0.0
+  },
+  "insider_sells": {
+   "n": 148,
+   "usd": 230114714.0
+  },
+  "activity": {
+   "quarter": "Q3 2026",
+   "buys": 0,
+   "adds": 1,
+   "reduces": 2,
+   "sells": 1,
+   "buyers": [
+    {
+     "manager": "Polen Capital Management",
+     "action": "Add 10268.11%",
+     "kind": "add"
+    }
+   ],
+   "sellers": [
+    {
+     "manager": "Mairs & Power Funds",
+     "action": "Reduce 3.94%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Lee Ainslie - Maverick Capital",
+     "action": "Reduce 14.19%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "David Tepper - Appaloosa Management",
+     "action": "Sell 100.00%",
+     "kind": "sell"
+    }
+   ]
+  }
+ },
+ "AMZN": {
+  "count": 37.0,
+  "rank": 1.0,
+  "pct": 0.03143,
+  "holdPrice": 249.15,
+  "insider_buys": {
+   "n": 0,
+   "usd": 0.0
+  },
+  "insider_sells": {
+   "n": 104,
+   "usd": 399314598.0
+  },
+  "activity": {
+   "quarter": "Q3 2026",
+   "buys": 3,
+   "adds": 12,
+   "reduces": 17,
+   "sells": 1,
+   "buyers": [
+    {
+     "manager": "Glenn Greenberg - Brave Warrior Advisors",
+     "action": "Add 135.85%",
+     "kind": "add"
+    },
+    {
+     "manager": "Dodge & Cox Funds",
+     "action": "Add 35.89%",
+     "kind": "add"
+    },
+    {
+     "manager": "John Armitage - Egerton Capital",
+     "action": "Add 31.92%",
+     "kind": "add"
+    },
+    {
+     "manager": "Lee Ainslie - Maverick Capital",
+     "action": "Add 20.78%",
+     "kind": "add"
+    },
+    {
+     "manager": "David Rolfe - Wedgewood Partners",
+     "action": "Add 12.40%",
+     "kind": "add"
+    },
+    {
+     "manager": "Arnold Van Den Berg - Century Management",
+     "action": "Add 3.38%",
+     "kind": "add"
+    },
+    {
+     "manager": "Harry Burn - Sound Shore",
+     "action": "Add 3.24%",
+     "kind": "add"
+    },
+    {
+     "manager": "David Katz - Matrix Asset Advisors",
+     "action": "Add 2.67%",
+     "kind": "add"
+    },
+    {
+     "manager": "Christopher Davis - Davis Advisors",
+     "action": "Add 2.49%",
+     "kind": "add"
+    },
+    {
+     "manager": "ValueAct Capital",
+     "action": "Add 2.07%",
+     "kind": "add"
+    },
+    {
+     "manager": "Wallace Weitz - Weitz Investment Management",
+     "action": "Add 0.71%",
+     "kind": "add"
+    },
+    {
+     "manager": "Mairs & Power Funds",
+     "action": "Add 0.26%",
+     "kind": "add"
+    },
+    {
+     "manager": "Stephen Mandel - Lone Pine Capital",
+     "action": "Buy",
+     "kind": "buy"
+    },
+    {
+     "manager": "Valley Forge Capital Management",
+     "action": "Buy",
+     "kind": "buy"
+    },
+    {
+     "manager": "Francois Rochon - Giverny Capital",
+     "action": "Buy",
+     "kind": "buy"
+    }
+   ],
+   "sellers": [
+    {
+     "manager": "First Pacific Advisors",
+     "action": "Reduce 0.01%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Sanders Capital",
+     "action": "Reduce 0.34%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Samantha McLemore - Patient Capital Management",
+     "action": "Reduce 0.58%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Steven Check - Check Capital Management",
+     "action": "Reduce 0.61%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Bill Ackman - Pershing Square Capital Management",
+     "action": "Reduce 0.68%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Josh Tarasoff - Greenlea Lane Capital",
+     "action": "Reduce 1.18%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Vulcan Value Partners",
+     "action": "Reduce 1.96%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Bill Nygren - Oakmark Funds",
+     "action": "Reduce 2.17%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Chase Coleman - Tiger Global Management",
+     "action": "Reduce 4.18%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Torray Funds",
+     "action": "Reduce 4.18%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Dennis Hong - ShawSpring Partners",
+     "action": "Reduce 6.47%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "David Tepper - Appaloosa Management",
+     "action": "Reduce 10.50%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "AltaRock Partners",
+     "action": "Reduce 15.79%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "AKO Capital",
+     "action": "Reduce 17.05%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Jensen Investment Management",
+     "action": "Reduce 19.11%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Viking Global Investors",
+     "action": "Reduce 21.03%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Polen Capital Management",
+     "action": "Reduce 25.55%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Daniel Loeb - Third Point",
+     "action": "Sell 100.00%",
+     "kind": "sell"
+    }
+   ]
+  }
+ },
+ "ASML": {
+  "count": 8.0,
+  "rank": 67.0,
+  "pct": 0.006059999999999999,
+  "holdPrice": 1811.67,
+  "insider_buys": {
+   "n": 0,
+   "usd": 0.0
+  },
+  "insider_sells": {
+   "n": 0,
+   "usd": 0.0
+  },
+  "activity": {
+   "quarter": "Q3 2026",
+   "buys": 0,
+   "adds": 5,
+   "reduces": 2,
+   "sells": 1,
+   "buyers": [
+    {
+     "manager": "Polen Capital Management",
+     "action": "Add 292.75%",
+     "kind": "add"
+    },
+    {
+     "manager": "David Tepper - Appaloosa Management",
+     "action": "Add 30.00%",
+     "kind": "add"
+    },
+    {
+     "manager": "Wallace Weitz - Weitz Investment Management",
+     "action": "Add 22.73%",
+     "kind": "add"
+    },
+    {
+     "manager": "Valley Forge Capital Management",
+     "action": "Add 21.87%",
+     "kind": "add"
+    },
+    {
+     "manager": "Lee Ainslie - Maverick Capital",
+     "action": "Add 16.12%",
+     "kind": "add"
+    }
+   ],
+   "sellers": [
+    {
+     "manager": "Stephen Mandel - Lone Pine Capital",
+     "action": "Reduce 24.99%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Pat Dorsey - Dorsey Asset Management",
+     "action": "Reduce 43.05%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Daniel Loeb - Third Point",
+     "action": "Sell 100.00%",
+     "kind": "sell"
+    }
+   ]
+  }
+ },
+ "AVGO": {
+  "count": 14.0,
+  "rank": 23.0,
+  "pct": 0.00358,
+  "holdPrice": 351.19,
+  "insider_buys": {
+   "n": 1,
+   "usd": 373570.0
+  },
+  "insider_sells": {
+   "n": 69,
+   "usd": 533703162.0
+  },
+  "activity": {
+   "quarter": "Q3 2026",
+   "buys": 2,
+   "adds": 2,
+   "reduces": 7,
+   "sells": 1,
+   "buyers": [
+    {
+     "manager": "Mairs & Power Funds",
+     "action": "Add 526.75%",
+     "kind": "add"
+    },
+    {
+     "manager": "Torray Funds",
+     "action": "Add 17.21%",
+     "kind": "add"
+    },
+    {
+     "manager": "Valley Forge Capital Management",
+     "action": "Buy",
+     "kind": "buy"
+    },
+    {
+     "manager": "Samantha McLemore - Patient Capital Management",
+     "action": "Buy",
+     "kind": "buy"
+    }
+   ],
+   "sellers": [
+    {
+     "manager": "Sanders Capital",
+     "action": "Reduce 0.18%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Dodge & Cox Funds",
+     "action": "Reduce 1.30%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Lee Ainslie - Maverick Capital",
+     "action": "Reduce 8.49%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Sarah Ketterer - Causeway Capital Management",
+     "action": "Reduce 12.97%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Jensen Investment Management",
+     "action": "Reduce 14.41%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Polen Capital Management",
+     "action": "Reduce 26.27%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "First Pacific Advisors",
+     "action": "Reduce 95.37%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "David Tepper - Appaloosa Management",
+     "action": "Sell 100.00%",
+     "kind": "sell"
+    }
+   ]
+  }
+ },
+ "BABA": {
+  "count": 10.0,
+  "rank": 43.0,
+  "pct": 0.0032700000000000003,
+  "holdPrice": 107.54,
+  "insider_buys": {
+   "n": 3,
+   "usd": 25691200.0
+  },
+  "insider_sells": {
+   "n": 10,
+   "usd": 84356170.0
+  },
+  "activity": {
+   "quarter": "Q3 2026",
+   "buys": 2,
+   "adds": 3,
+   "reduces": 3,
+   "sells": 1,
+   "buyers": [
+    {
+     "manager": "Bill Nygren - Oakmark Funds",
+     "action": "Add 31.94%",
+     "kind": "add"
+    },
+    {
+     "manager": "Dodge & Cox Funds",
+     "action": "Add 5.97%",
+     "kind": "add"
+    },
+    {
+     "manager": "Dennis Hong - ShawSpring Partners",
+     "action": "Add 1.46%",
+     "kind": "add"
+    },
+    {
+     "manager": "Viking Global Investors",
+     "action": "Buy",
+     "kind": "buy"
+    },
+    {
+     "manager": "Polen Capital Management",
+     "action": "Buy",
+     "kind": "buy"
+    }
+   ],
+   "sellers": [
+    {
+     "manager": "Sarah Ketterer - Causeway Capital Management",
+     "action": "Reduce 4.08%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Richard Pzena - Pzena Investment Management",
+     "action": "Reduce 7.44%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "David Tepper - Appaloosa Management",
+     "action": "Reduce 7.50%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Duan Yongping - H&H International Investment",
+     "action": "Sell 100.00%",
+     "kind": "sell"
+    }
+   ]
+  }
+ },
+ "GLD": {
+  "count": 6.0,
+  "rank": 129.0,
+  "pct": 0.0006,
+  "holdPrice": 380.84,
+  "insider_buys": {
+   "n": 0,
+   "usd": 0.0
+  },
+  "insider_sells": {
+   "n": 0,
+   "usd": 0.0
+  },
+  "activity": {
+   "quarter": "Q3 2026",
+   "buys": 0,
+   "adds": 4,
+   "reduces": 1,
+   "sells": 0,
+   "buyers": [
+    {
+     "manager": "Mairs & Power Funds",
+     "action": "Add 27.74%",
+     "kind": "add"
+    },
+    {
+     "manager": "First Eagle Investment Management",
+     "action": "Add 19.77%",
+     "kind": "add"
+    },
+    {
+     "manager": "David Einhorn - Greenlight Capital",
+     "action": "Add 10.62%",
+     "kind": "add"
+    },
+    {
+     "manager": "Muhlenkamp",
+     "action": "Add 1.23%",
+     "kind": "add"
+    }
+   ],
+   "sellers": [
+    {
+     "manager": "David Katz - Matrix Asset Advisors",
+     "action": "Reduce 1.40%",
+     "kind": "reduce"
+    }
+   ]
+  }
+ },
+ "GLOB": {
+  "count": 2.0,
+  "rank": 557.0,
+  "pct": 8.999999999999999e-05,
+  "holdPrice": 34.7,
+  "insider_buys": {
+   "n": 1,
+   "usd": 971838.0
+  },
+  "insider_sells": {
+   "n": 3,
+   "usd": 585436.0
+  },
+  "activity": {
+   "quarter": "Q3 2026",
+   "buys": 0,
+   "adds": 2,
+   "reduces": 0,
+   "sells": 0,
+   "buyers": [
+    {
+     "manager": "Tweedy Browne",
+     "action": "Add 42.39%",
+     "kind": "add"
+    },
+    {
+     "manager": "Richard Pzena - Pzena Investment Management",
+     "action": "Add 27.71%",
+     "kind": "add"
+    }
+   ],
+   "sellers": []
+  }
+ },
+ "GOOGL": {
+  "count": 37.0,
+  "rank": 1.0,
+  "pct": 0.01755,
+  "holdPrice": 344.08,
+  "insider_buys": {
+   "n": 0,
+   "usd": 0.0
+  },
+  "insider_sells": {
+   "n": 29,
+   "usd": 4107799.0
+  },
+  "activity": {
+   "quarter": "Q3 2026",
+   "buys": 2,
+   "adds": 2,
+   "reduces": 25,
+   "sells": 0,
+   "buyers": [
+    {
+     "manager": "Stephen Mandel - Lone Pine Capital",
+     "action": "Add 901.32%",
+     "kind": "add"
+    },
+    {
+     "manager": "Arnold Van Den Berg - Century Management",
+     "action": "Add 37.38%",
+     "kind": "add"
+    },
+    {
+     "manager": "Viking Global Investors",
+     "action": "Buy",
+     "kind": "buy"
+    },
+    {
+     "manager": "Lee Ainslie - Maverick Capital",
+     "action": "Buy",
+     "kind": "buy"
+    }
+   ],
+   "sellers": [
+    {
+     "manager": "First Eagle Investment Management",
+     "action": "Reduce 0.57%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Mairs & Power Funds",
+     "action": "Reduce 0.60%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Thomas Russo - Gardner Russo & Quinn",
+     "action": "Reduce 0.90%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Harry Burn - Sound Shore",
+     "action": "Reduce 1.16%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Francois Rochon - Giverny Capital",
+     "action": "Reduce 1.33%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Samantha McLemore - Patient Capital Management",
+     "action": "Reduce 1.38%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Josh Tarasoff - Greenlea Lane Capital",
+     "action": "Reduce 1.50%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Tweedy Browne",
+     "action": "Reduce 1.51%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Dodge & Cox Funds",
+     "action": "Reduce 1.70%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Polen Capital Management",
+     "action": "Reduce 3.78%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Chris Hohn - TCI Fund Management",
+     "action": "Reduce 3.90%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Torray Funds",
+     "action": "Reduce 4.82%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "AltaRock Partners",
+     "action": "Reduce 5.48%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Christopher Davis - Davis Advisors",
+     "action": "Reduce 5.69%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "David Rolfe - Wedgewood Partners",
+     "action": "Reduce 8.47%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Thomas Gayner - Markel Group",
+     "action": "Reduce 9.10%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Lindsell Train",
+     "action": "Reduce 12.50%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Jensen Investment Management",
+     "action": "Reduce 18.44%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "First Pacific Advisors",
+     "action": "Reduce 18.50%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Bill Nygren - Oakmark Funds",
+     "action": "Reduce 20.36%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Ruane Cunniff LP",
+     "action": "Reduce 35.94%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Chase Coleman - Tiger Global Management",
+     "action": "Reduce 42.31%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Terry Smith - Fundsmith",
+     "action": "Reduce 45.43%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Richard Pzena - Pzena Investment Management",
+     "action": "Reduce 54.11%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Daniel Loeb - Third Point",
+     "action": "Reduce 82.93%",
+     "kind": "reduce"
+    }
+   ]
+  }
+ },
+ "IBM": {
+  "count": 4.0,
+  "rank": 235.0,
+  "pct": 0.00024,
+  "holdPrice": 219.93,
+  "insider_buys": {
+   "n": 0,
+   "usd": 0.0
+  },
+  "insider_sells": {
+   "n": 1,
+   "usd": 5758088.0
+  },
+  "activity": {
+   "quarter": "Q3 2026",
+   "buys": 0,
+   "adds": 1,
+   "reduces": 3,
+   "sells": 1,
+   "buyers": [
+    {
+     "manager": "Arnold Van Den Berg - Century Management",
+     "action": "Add 6.90%",
+     "kind": "add"
+    }
+   ],
+   "sellers": [
+    {
+     "manager": "Dodge & Cox Funds",
+     "action": "Reduce 1.00%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Kahn Brothers Group",
+     "action": "Reduce 16.29%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Mairs & Power Funds",
+     "action": "Reduce 17.82%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "David Katz - Matrix Asset Advisors",
+     "action": "Sell 100.00%",
+     "kind": "sell"
+    }
+   ]
+  }
+ },
+ "INTC": {
+  "count": 7.0,
+  "rank": 91.0,
+  "pct": 0.0020499999999999997,
+  "holdPrice": 120.23,
+  "insider_buys": {
+   "n": 2,
+   "usd": 19709665.0
+  },
+  "insider_sells": {
+   "n": 1,
+   "usd": 2486698.0
+  },
+  "activity": {
+   "quarter": "Q3 2026",
+   "buys": 1,
+   "adds": 2,
+   "reduces": 2,
+   "sells": 1,
+   "buyers": [
+    {
+     "manager": "Lee Ainslie - Maverick Capital",
+     "action": "Add 40.96%",
+     "kind": "add"
+    },
+    {
+     "manager": "Chase Coleman - Tiger Global Management",
+     "action": "Add 30.37%",
+     "kind": "add"
+    },
+    {
+     "manager": "Stephen Mandel - Lone Pine Capital",
+     "action": "Buy",
+     "kind": "buy"
+    }
+   ],
+   "sellers": [
+    {
+     "manager": "Arnold Van Den Berg - Century Management",
+     "action": "Reduce 0.89%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "John Rogers - Ariel Investments",
+     "action": "Reduce 20.46%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Tweedy Browne",
+     "action": "Sell 100.00%",
+     "kind": "sell"
+    }
+   ]
+  }
+ },
+ "JPM": {
+  "count": 17.0,
+  "rank": 15.0,
+  "pct": 0.00166,
+  "holdPrice": 330.83,
+  "insider_buys": {
+   "n": 0,
+   "usd": 0.0
+  },
+  "insider_sells": {
+   "n": 3,
+   "usd": 3593665.0
+  },
+  "activity": {
+   "quarter": "Q3 2026",
+   "buys": 1,
+   "adds": 2,
+   "reduces": 10,
+   "sells": 0,
+   "buyers": [
+    {
+     "manager": "Viking Global Investors",
+     "action": "Add 18.45%",
+     "kind": "add"
+    },
+    {
+     "manager": "Richard Pzena - Pzena Investment Management",
+     "action": "Add 2.11%",
+     "kind": "add"
+    },
+    {
+     "manager": "Lee Ainslie - Maverick Capital",
+     "action": "Buy",
+     "kind": "buy"
+    }
+   ],
+   "sellers": [
+    {
+     "manager": "Samantha McLemore - Patient Capital Management",
+     "action": "Reduce 0.00%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Kahn Brothers Group",
+     "action": "Reduce 0.35%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Sanders Capital",
+     "action": "Reduce 0.59%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Christopher Davis - Davis Advisors",
+     "action": "Reduce 1.03%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Francois Rochon - Giverny Capital",
+     "action": "Reduce 1.40%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "David Katz - Matrix Asset Advisors",
+     "action": "Reduce 2.77%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Mairs & Power Funds",
+     "action": "Reduce 4.46%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Dodge & Cox Funds",
+     "action": "Reduce 4.91%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Greenhaven Associates",
+     "action": "Reduce 60.00%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Thomas Russo - Gardner Russo & Quinn",
+     "action": "Reduce 65.17%",
+     "kind": "reduce"
+    }
+   ]
+  }
+ },
+ "KO": {
+  "count": 8.0,
+  "rank": 67.0,
+  "pct": 0.00155,
+  "holdPrice": 86.08,
+  "insider_buys": {
+   "n": 0,
+   "usd": 0.0
+  },
+  "insider_sells": {
+   "n": 30,
+   "usd": 165952994.0
+  },
+  "activity": {
+   "quarter": "Q3 2026",
+   "buys": 0,
+   "adds": 0,
+   "reduces": 5,
+   "sells": 1,
+   "buyers": [],
+   "sellers": [
+    {
+     "manager": "Mairs & Power Funds",
+     "action": "Reduce 2.34%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Jensen Investment Management",
+     "action": "Reduce 2.39%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Lindsell Train",
+     "action": "Reduce 4.17%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Yacktman Asset Management",
+     "action": "Reduce 45.23%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Lee Ainslie - Maverick Capital",
+     "action": "Reduce 98.72%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Christopher Bloomstran - Semper Augustus",
+     "action": "Sell 100.00%",
+     "kind": "sell"
+    }
+   ]
+  }
+ },
+ "MCD": {
+  "count": 7.0,
+  "rank": 91.0,
+  "pct": 0.00047,
+  "holdPrice": 230.94,
+  "insider_buys": {
+   "n": 0,
+   "usd": 0.0
+  },
+  "insider_sells": {
+   "n": 5,
+   "usd": 2772815.0
+  },
+  "activity": {
+   "quarter": "Q3 2026",
+   "buys": 0,
+   "adds": 2,
+   "reduces": 3,
+   "sells": 0,
+   "buyers": [
+    {
+     "manager": "David Katz - Matrix Asset Advisors",
+     "action": "Add 410.79%",
+     "kind": "add"
+    },
+    {
+     "manager": "Viking Global Investors",
+     "action": "Add 17.46%",
+     "kind": "add"
+    }
+   ],
+   "sellers": [
+    {
+     "manager": "Dodge & Cox Funds",
+     "action": "Reduce 0.02%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Mairs & Power Funds",
+     "action": "Reduce 0.71%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Jensen Investment Management",
+     "action": "Reduce 97.26%",
+     "kind": "reduce"
+    }
+   ]
+  }
+ },
+ "MELI": {
+  "count": 9.0,
+  "rank": 53.0,
+  "pct": 0.0013900000000000002,
+  "holdPrice": 1728.52,
+  "insider_buys": {
+   "n": 3,
+   "usd": 1193556.0
+  },
+  "insider_sells": {
+   "n": 0,
+   "usd": 0.0
+  },
+  "activity": {
+   "quarter": "Q3 2026",
+   "buys": 2,
+   "adds": 3,
+   "reduces": 3,
+   "sells": 0,
+   "buyers": [
+    {
+     "manager": "Chase Coleman - Tiger Global Management",
+     "action": "Add 59.75%",
+     "kind": "add"
+    },
+    {
+     "manager": "Wallace Weitz - Weitz Investment Management",
+     "action": "Add 27.17%",
+     "kind": "add"
+    },
+    {
+     "manager": "Thomas Gayner - Markel Group",
+     "action": "Add 0.83%",
+     "kind": "add"
+    },
+    {
+     "manager": "Stephen Mandel - Lone Pine Capital",
+     "action": "Buy",
+     "kind": "buy"
+    },
+    {
+     "manager": "Bill Nygren - Oakmark Funds",
+     "action": "Buy",
+     "kind": "buy"
+    }
+   ],
+   "sellers": [
+    {
+     "manager": "Henry Ellenbogen - Durable Capital Partners",
+     "action": "Reduce 13.34%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Dodge & Cox Funds",
+     "action": "Reduce 25.16%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Polen Capital Management",
+     "action": "Reduce 26.75%",
+     "kind": "reduce"
+    }
+   ]
+  }
+ },
+ "META": {
+  "count": 35.0,
+  "rank": 4.0,
+  "pct": 0.02177,
+  "holdPrice": 725.18,
+  "insider_buys": {
+   "n": 0,
+   "usd": 0.0
+  },
+  "insider_sells": {
+   "n": 185,
+   "usd": 143756707.0
+  },
+  "activity": {
+   "quarter": "Q3 2026",
+   "buys": 3,
+   "adds": 13,
+   "reduces": 16,
+   "sells": 0,
+   "buyers": [
+    {
+     "manager": "Bill Nygren - Oakmark Funds",
+     "action": "Add 52112.57%",
+     "kind": "add"
+    },
+    {
+     "manager": "Glenn Greenberg - Brave Warrior Advisors",
+     "action": "Add 572.39%",
+     "kind": "add"
+    },
+    {
+     "manager": "Polen Capital Management",
+     "action": "Add 52.01%",
+     "kind": "add"
+    },
+    {
+     "manager": "Lee Ainslie - Maverick Capital",
+     "action": "Add 36.43%",
+     "kind": "add"
+    },
+    {
+     "manager": "Clifford Sosin - CAS Investment Partners",
+     "action": "Add 26.74%",
+     "kind": "add"
+    },
+    {
+     "manager": "Pat Dorsey - Dorsey Asset Management",
+     "action": "Add 9.85%",
+     "kind": "add"
+    },
+    {
+     "manager": "Samantha McLemore - Patient Capital Management",
+     "action": "Add 5.97%",
+     "kind": "add"
+    },
+    {
+     "manager": "First Pacific Advisors",
+     "action": "Add 3.24%",
+     "kind": "add"
+    },
+    {
+     "manager": "David Katz - Matrix Asset Advisors",
+     "action": "Add 2.43%",
+     "kind": "add"
+    },
+    {
+     "manager": "Dodge & Cox Funds",
+     "action": "Add 1.67%",
+     "kind": "add"
+    },
+    {
+     "manager": "Christopher Davis - Davis Advisors",
+     "action": "Add 1.17%",
+     "kind": "add"
+    },
+    {
+     "manager": "First Eagle Investment Management",
+     "action": "Add 0.44%",
+     "kind": "add"
+    },
+    {
+     "manager": "Ruane Cunniff LP",
+     "action": "Add 0.01%",
+     "kind": "add"
+    },
+    {
+     "manager": "Daniel Loeb - Third Point",
+     "action": "Buy",
+     "kind": "buy"
+    },
+    {
+     "manager": "Stephen Mandel - Lone Pine Capital",
+     "action": "Buy",
+     "kind": "buy"
+    },
+    {
+     "manager": "John Armitage - Egerton Capital",
+     "action": "Buy",
+     "kind": "buy"
+    }
+   ],
+   "sellers": [
+    {
+     "manager": "Sanders Capital",
+     "action": "Reduce 0.23%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Arnold Van Den Berg - Century Management",
+     "action": "Reduce 0.93%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Francois Rochon - Giverny Capital",
+     "action": "Reduce 4.01%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Wallace Weitz - Weitz Investment Management",
+     "action": "Reduce 4.60%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Robert Vinall - RV Capital GmbH",
+     "action": "Reduce 6.39%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Bill Miller - Miller Value Partners",
+     "action": "Reduce 7.19%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Thomas Gayner - Markel Group",
+     "action": "Reduce 10.68%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Bill Ackman - Pershing Square Capital Management",
+     "action": "Reduce 11.35%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Mairs & Power Funds",
+     "action": "Reduce 15.75%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "David Rolfe - Wedgewood Partners",
+     "action": "Reduce 16.57%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Chase Coleman - Tiger Global Management",
+     "action": "Reduce 20.36%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "David Tepper - Appaloosa Management",
+     "action": "Reduce 22.22%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Sarah Ketterer - Causeway Capital Management",
+     "action": "Reduce 33.51%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Terry Smith - Fundsmith",
+     "action": "Reduce 42.53%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Viking Global Investors",
+     "action": "Reduce 50.60%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Jensen Investment Management",
+     "action": "Reduce 96.95%",
+     "kind": "reduce"
+    }
+   ]
+  }
+ },
+ "MRNA": {
+  "count": 0.0,
+  "rank": null,
+  "pct": 0.0,
+  "holdPrice": null,
+  "insider_buys": {
+   "n": 0,
+   "usd": 0.0
+  },
+  "insider_sells": {
+   "n": 19,
+   "usd": 86009783.0
+  },
+  "activity": {
+   "quarter": "Q2 2025",
+   "buys": 0,
+   "adds": 0,
+   "reduces": 0,
+   "sells": 1,
+   "buyers": [],
+   "sellers": [
+    {
+     "manager": "Duan Yongping - H&H International Investment",
+     "action": "Sell 100.00%",
+     "kind": "sell"
+    }
+   ]
+  }
+ },
+ "MRVL": {
+  "count": 1.0,
+  "rank": 943.0,
+  "pct": 0.0,
+  "holdPrice": null,
+  "insider_buys": {
+   "n": 0,
+   "usd": 0.0
+  },
+  "insider_sells": {
+   "n": 17,
+   "usd": 27591194.0
+  },
+  "activity": {
+   "quarter": "Q3 2026",
+   "buys": 0,
+   "adds": 1,
+   "reduces": 0,
+   "sells": 0,
+   "buyers": [
+    {
+     "manager": "Lee Ainslie - Maverick Capital",
+     "action": "Add 106.79%",
+     "kind": "add"
+    }
+   ],
+   "sellers": []
+  }
+ },
+ "MSFT": {
+  "count": 37.0,
+  "rank": 1.0,
+  "pct": 0.023780000000000003,
+  "holdPrice": 512.9,
+  "insider_buys": {
+   "n": 0,
+   "usd": 0.0
+  },
+  "insider_sells": {
+   "n": 25,
+   "usd": 92025708.0
+  },
+  "activity": {
+   "quarter": "Q3 2026",
+   "buys": 1,
+   "adds": 12,
+   "reduces": 18,
+   "sells": 1,
+   "buyers": [
+    {
+     "manager": "Richard Pzena - Pzena Investment Management",
+     "action": "Add 31819.60%",
+     "kind": "add"
+    },
+    {
+     "manager": "Lee Ainslie - Maverick Capital",
+     "action": "Add 86.84%",
+     "kind": "add"
+    },
+    {
+     "manager": "AltaRock Partners",
+     "action": "Add 13.13%",
+     "kind": "add"
+    },
+    {
+     "manager": "Glenn Greenberg - Brave Warrior Advisors",
+     "action": "Add 11.93%",
+     "kind": "add"
+    },
+    {
+     "manager": "Christopher Davis - Davis Advisors",
+     "action": "Add 5.53%",
+     "kind": "add"
+    },
+    {
+     "manager": "Bill Nygren - Oakmark Funds",
+     "action": "Add 4.82%",
+     "kind": "add"
+    },
+    {
+     "manager": "Muhlenkamp",
+     "action": "Add 2.73%",
+     "kind": "add"
+    },
+    {
+     "manager": "First Eagle Investment Management",
+     "action": "Add 1.32%",
+     "kind": "add"
+    },
+    {
+     "manager": "Dodge & Cox Funds",
+     "action": "Add 0.69%",
+     "kind": "add"
+    },
+    {
+     "manager": "Arnold Van Den Berg - Century Management",
+     "action": "Add 0.57%",
+     "kind": "add"
+    },
+    {
+     "manager": "Yacktman Asset Management",
+     "action": "Add 0.32%",
+     "kind": "add"
+    },
+    {
+     "manager": "David Katz - Matrix Asset Advisors",
+     "action": "Add 0.08%",
+     "kind": "add"
+    },
+    {
+     "manager": "Daniel Loeb - Third Point",
+     "action": "Buy",
+     "kind": "buy"
+    }
+   ],
+   "sellers": [
+    {
+     "manager": "Mairs & Power Funds",
+     "action": "Reduce 0.14%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Sanders Capital",
+     "action": "Reduce 0.30%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Francois Rochon - Giverny Capital",
+     "action": "Reduce 2.29%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Torray Funds",
+     "action": "Reduce 5.23%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Dennis Hong - ShawSpring Partners",
+     "action": "Reduce 6.73%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Vulcan Value Partners",
+     "action": "Reduce 7.61%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Duan Yongping - H&H International Investment",
+     "action": "Reduce 7.96%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Hillman Capital Management",
+     "action": "Reduce 8.03%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "David Rolfe - Wedgewood Partners",
+     "action": "Reduce 8.50%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Thomas Russo - Gardner Russo & Quinn",
+     "action": "Reduce 8.79%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Wallace Weitz - Weitz Investment Management",
+     "action": "Reduce 9.40%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Sarah Ketterer - Causeway Capital Management",
+     "action": "Reduce 15.00%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "AKO Capital",
+     "action": "Reduce 17.41%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Christopher Bloomstran - Semper Augustus",
+     "action": "Reduce 25.74%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Polen Capital Management",
+     "action": "Reduce 26.87%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Jensen Investment Management",
+     "action": "Reduce 29.50%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Bill Ackman - Pershing Square Capital Management",
+     "action": "Reduce 34.51%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Terry Smith - Fundsmith",
+     "action": "Reduce 50.55%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Viking Global Investors",
+     "action": "Sell 100.00%",
+     "kind": "sell"
+    }
+   ]
+  }
+ },
+ "NVDA": {
+  "count": 21.0,
+  "rank": 12.0,
+  "pct": 0.01047,
+  "holdPrice": 228.38,
+  "insider_buys": {
+   "n": 0,
+   "usd": 0.0
+  },
+  "insider_sells": {
+   "n": 44,
+   "usd": 1382722247.0
+  },
+  "activity": {
+   "quarter": "Q3 2026",
+   "buys": 3,
+   "adds": 10,
+   "reduces": 7,
+   "sells": 1,
+   "buyers": [
+    {
+     "manager": "Dodge & Cox Funds",
+     "action": "Add 146742.65%",
+     "kind": "add"
+    },
+    {
+     "manager": "Sanders Capital",
+     "action": "Add 32.75%",
+     "kind": "add"
+    },
+    {
+     "manager": "Arnold Van Den Berg - Century Management",
+     "action": "Add 32.32%",
+     "kind": "add"
+    },
+    {
+     "manager": "David Tepper - Appaloosa Management",
+     "action": "Add 31.15%",
+     "kind": "add"
+    },
+    {
+     "manager": "Lee Ainslie - Maverick Capital",
+     "action": "Add 20.95%",
+     "kind": "add"
+    },
+    {
+     "manager": "John Armitage - Egerton Capital",
+     "action": "Add 9.48%",
+     "kind": "add"
+    },
+    {
+     "manager": "Chase Coleman - Tiger Global Management",
+     "action": "Add 7.15%",
+     "kind": "add"
+    },
+    {
+     "manager": "Richard Pzena - Pzena Investment Management",
+     "action": "Add 3.46%",
+     "kind": "add"
+    },
+    {
+     "manager": "Christopher Davis - Davis Advisors",
+     "action": "Add 0.57%",
+     "kind": "add"
+    },
+    {
+     "manager": "Samantha McLemore - Patient Capital Management",
+     "action": "Add 0.05%",
+     "kind": "add"
+    },
+    {
+     "manager": "Daniel Loeb - Third Point",
+     "action": "Buy",
+     "kind": "buy"
+    },
+    {
+     "manager": "Valley Forge Capital Management",
+     "action": "Buy",
+     "kind": "buy"
+    },
+    {
+     "manager": "Thomas Russo - Gardner Russo & Quinn",
+     "action": "Buy",
+     "kind": "buy"
+    }
+   ],
+   "sellers": [
+    {
+     "manager": "Mairs & Power Funds",
+     "action": "Reduce 0.85%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "David Katz - Matrix Asset Advisors",
+     "action": "Reduce 1.97%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Bill Nygren - Oakmark Funds",
+     "action": "Reduce 3.97%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Sarah Ketterer - Causeway Capital Management",
+     "action": "Reduce 6.81%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Polen Capital Management",
+     "action": "Reduce 25.99%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Jensen Investment Management",
+     "action": "Reduce 42.46%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Duan Yongping - H&H International Investment",
+     "action": "Reduce 63.07%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Wallace Weitz - Weitz Investment Management",
+     "action": "Sell 100.00%",
+     "kind": "sell"
+    }
+   ]
+  }
+ },
+ "ORCL": {
+  "count": 14.0,
+  "rank": 23.0,
+  "pct": 0.00164,
+  "holdPrice": 137.3,
+  "insider_buys": {
+   "n": 1,
+   "usd": 3483800.0
+  },
+  "insider_sells": {
+   "n": 14,
+   "usd": 69006163.0
+  },
+  "activity": {
+   "quarter": "Q3 2026",
+   "buys": 1,
+   "adds": 5,
+   "reduces": 3,
+   "sells": 0,
+   "buyers": [
+    {
+     "manager": "John Rogers - Ariel Investments",
+     "action": "Add 102.49%",
+     "kind": "add"
+    },
+    {
+     "manager": "Hillman Capital Management",
+     "action": "Add 44.75%",
+     "kind": "add"
+    },
+    {
+     "manager": "Harry Burn - Sound Shore",
+     "action": "Add 24.71%",
+     "kind": "add"
+    },
+    {
+     "manager": "First Eagle Investment Management",
+     "action": "Add 17.76%",
+     "kind": "add"
+    },
+    {
+     "manager": "Christopher Davis - Davis Advisors",
+     "action": "Add 1.50%",
+     "kind": "add"
+    },
+    {
+     "manager": "David Tepper - Appaloosa Management",
+     "action": "Buy",
+     "kind": "buy"
+    }
+   ],
+   "sellers": [
+    {
+     "manager": "Bill Nygren - Oakmark Funds",
+     "action": "Reduce 1.49%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Jensen Investment Management",
+     "action": "Reduce 4.10%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Polen Capital Management",
+     "action": "Reduce 29.47%",
+     "kind": "reduce"
+    }
+   ]
+  }
+ },
+ "PBR": {
+  "count": 1.0,
+  "rank": 943.0,
+  "pct": 0.0,
+  "holdPrice": null,
+  "insider_buys": {
+   "n": 0,
+   "usd": 0.0
+  },
+  "insider_sells": {
+   "n": 2,
+   "usd": 2608.0
+  },
+  "activity": {
+   "quarter": "Q3 2026",
+   "buys": 0,
+   "adds": 1,
+   "reduces": 0,
+   "sells": 0,
+   "buyers": [
+    {
+     "manager": "Dodge & Cox Funds",
+     "action": "Add 30.00%",
+     "kind": "add"
+    }
+   ],
+   "sellers": []
+  }
+ },
+ "PEP": {
+  "count": 13.0,
+  "rank": 27.0,
+  "pct": 0.0018,
+  "holdPrice": 126.72,
+  "insider_buys": {
+   "n": 4,
+   "usd": 23686389.0
+  },
+  "insider_sells": {
+   "n": 2,
+   "usd": 4458565.0
+  },
+  "activity": {
+   "quarter": "Q3 2026",
+   "buys": 0,
+   "adds": 3,
+   "reduces": 6,
+   "sells": 0,
+   "buyers": [
+    {
+     "manager": "Torray Funds",
+     "action": "Add 11.62%",
+     "kind": "add"
+    },
+    {
+     "manager": "David Katz - Matrix Asset Advisors",
+     "action": "Add 10.99%",
+     "kind": "add"
+    },
+    {
+     "manager": "Yacktman Asset Management",
+     "action": "Add 1.17%",
+     "kind": "add"
+    }
+   ],
+   "sellers": [
+    {
+     "manager": "Thomas Russo - Gardner Russo & Quinn",
+     "action": "Reduce 0.02%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "First Eagle Investment Management",
+     "action": "Reduce 0.26%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Mairs & Power Funds",
+     "action": "Reduce 1.60%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Jensen Investment Management",
+     "action": "Reduce 4.31%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Sanders Capital",
+     "action": "Reduce 4.31%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Lindsell Train",
+     "action": "Reduce 7.10%",
+     "kind": "reduce"
+    }
+   ]
+  }
+ },
+ "QQQ": {
+  "count": 3.0,
+  "rank": 330.0,
+  "pct": 1e-05,
+  "holdPrice": 739.99,
+  "insider_buys": {
+   "n": 0,
+   "usd": 0.0
+  },
+  "insider_sells": {
+   "n": 0,
+   "usd": 0.0
+  },
+  "activity": {
+   "quarter": "Q3 2026",
+   "buys": 0,
+   "adds": 1,
+   "reduces": 1,
+   "sells": 0,
+   "buyers": [
+    {
+     "manager": "David Katz - Matrix Asset Advisors",
+     "action": "Add 0.13%",
+     "kind": "add"
+    }
+   ],
+   "sellers": [
+    {
+     "manager": "Mairs & Power Funds",
+     "action": "Reduce 1.47%",
+     "kind": "reduce"
+    }
+   ]
+  }
+ },
+ "TSLA": {
+  "count": 5.0,
+  "rank": 172.0,
+  "pct": 0.00191,
+  "holdPrice": 354.81,
+  "insider_buys": {
+   "n": 0,
+   "usd": 0.0
+  },
+  "insider_sells": {
+   "n": 2,
+   "usd": 1986343.0
+  },
+  "activity": {
+   "quarter": "Q3 2026",
+   "buys": 0,
+   "adds": 2,
+   "reduces": 2,
+   "sells": 1,
+   "buyers": [
+    {
+     "manager": "Viking Global Investors",
+     "action": "Add 327.36%",
+     "kind": "add"
+    },
+    {
+     "manager": "Duan Yongping - H&H International Investment",
+     "action": "Add 20.70%",
+     "kind": "add"
+    }
+   ],
+   "sellers": [
+    {
+     "manager": "Josh Tarasoff - Greenlea Lane Capital",
+     "action": "Reduce 0.72%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Polen Capital Management",
+     "action": "Reduce 29.55%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "David Katz - Matrix Asset Advisors",
+     "action": "Sell 100.00%",
+     "kind": "sell"
+    }
+   ]
+  }
+ },
+ "TSM": {
+  "count": 25.0,
+  "rank": 8.0,
+  "pct": 0.0109,
+  "holdPrice": 456.19,
+  "insider_buys": {
+   "n": 217,
+   "usd": 3350563.0
+  },
+  "insider_sells": {
+   "n": 1,
+   "usd": 3761.0
+  },
+  "activity": {
+   "quarter": "Q3 2026",
+   "buys": 1,
+   "adds": 8,
+   "reduces": 15,
+   "sells": 0,
+   "buyers": [
+    {
+     "manager": "Stephen Mandel - Lone Pine Capital",
+     "action": "Add 1595.06%",
+     "kind": "add"
+    },
+    {
+     "manager": "Wallace Weitz - Weitz Investment Management",
+     "action": "Add 153.25%",
+     "kind": "add"
+    },
+    {
+     "manager": "Lee Ainslie - Maverick Capital",
+     "action": "Add 41.25%",
+     "kind": "add"
+    },
+    {
+     "manager": "Viking Global Investors",
+     "action": "Add 23.22%",
+     "kind": "add"
+    },
+    {
+     "manager": "Dodge & Cox Funds",
+     "action": "Add 21.13%",
+     "kind": "add"
+    },
+    {
+     "manager": "Christopher Davis - Davis Advisors",
+     "action": "Add 1.26%",
+     "kind": "add"
+    },
+    {
+     "manager": "Hillman Capital Management",
+     "action": "Add 0.64%",
+     "kind": "add"
+    },
+    {
+     "manager": "First Eagle Investment Management",
+     "action": "Add 0.41%",
+     "kind": "add"
+    },
+    {
+     "manager": "Valley Forge Capital Management",
+     "action": "Buy",
+     "kind": "buy"
+    }
+   ],
+   "sellers": [
+    {
+     "manager": "Terry Smith - Fundsmith",
+     "action": "Reduce 0.09%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Francois Rochon - Giverny Capital",
+     "action": "Reduce 0.22%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Mairs & Power Funds",
+     "action": "Reduce 0.61%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Richard Pzena - Pzena Investment Management",
+     "action": "Reduce 0.72%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Ruane Cunniff LP",
+     "action": "Reduce 1.14%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "John Rogers - Ariel Investments",
+     "action": "Reduce 1.24%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Sarah Ketterer - Causeway Capital Management",
+     "action": "Reduce 1.61%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "David Tepper - Appaloosa Management",
+     "action": "Reduce 4.55%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Torray Funds",
+     "action": "Reduce 5.36%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Sanders Capital",
+     "action": "Reduce 6.47%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "David Rolfe - Wedgewood Partners",
+     "action": "Reduce 8.39%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Daniel Loeb - Third Point",
+     "action": "Reduce 13.04%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Jensen Investment Management",
+     "action": "Reduce 13.08%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Polen Capital Management",
+     "action": "Reduce 13.84%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Chase Coleman - Tiger Global Management",
+     "action": "Reduce 35.79%",
+     "kind": "reduce"
+    }
+   ]
+  }
+ },
+ "UNH": {
+  "count": 18.0,
+  "rank": 13.0,
+  "pct": 0.0028399999999999996,
+  "holdPrice": 367.08,
+  "insider_buys": {
+   "n": 0,
+   "usd": 0.0
+  },
+  "insider_sells": {
+   "n": 2,
+   "usd": 660910.0
+  },
+  "activity": {
+   "quarter": "Q3 2026",
+   "buys": 1,
+   "adds": 5,
+   "reduces": 9,
+   "sells": 1,
+   "buyers": [
+    {
+     "manager": "Tweedy Browne",
+     "action": "Add 11.67%",
+     "kind": "add"
+    },
+    {
+     "manager": "Hillman Capital Management",
+     "action": "Add 3.70%",
+     "kind": "add"
+    },
+    {
+     "manager": "Christopher Davis - Davis Advisors",
+     "action": "Add 0.82%",
+     "kind": "add"
+    },
+    {
+     "manager": "Ruane Cunniff LP",
+     "action": "Add 0.67%",
+     "kind": "add"
+    },
+    {
+     "manager": "Yacktman Asset Management",
+     "action": "Add 0.46%",
+     "kind": "add"
+    },
+    {
+     "manager": "Lee Ainslie - Maverick Capital",
+     "action": "Buy",
+     "kind": "buy"
+    }
+   ],
+   "sellers": [
+    {
+     "manager": "First Eagle Investment Management",
+     "action": "Reduce 0.25%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Arnold Van Den Berg - Century Management",
+     "action": "Reduce 0.58%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Samantha McLemore - Patient Capital Management",
+     "action": "Reduce 2.72%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Sanders Capital",
+     "action": "Reduce 3.26%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Jensen Investment Management",
+     "action": "Reduce 5.70%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Mairs & Power Funds",
+     "action": "Reduce 10.46%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Dodge & Cox Funds",
+     "action": "Reduce 12.55%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Sarah Ketterer - Causeway Capital Management",
+     "action": "Reduce 26.56%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Vulcan Value Partners",
+     "action": "Reduce 35.37%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Glenn Greenberg - Brave Warrior Advisors",
+     "action": "Sell 100.00%",
+     "kind": "sell"
+    }
+   ]
+  }
+ },
+ "V": {
+  "count": 29.0,
+  "rank": 6.0,
+  "pct": 0.01686,
+  "holdPrice": 359.33,
+  "insider_buys": {
+   "n": 0,
+   "usd": 0.0
+  },
+  "insider_sells": {
+   "n": 24,
+   "usd": 84504066.0
+  },
+  "activity": {
+   "quarter": "Q3 2026",
+   "buys": 0,
+   "adds": 4,
+   "reduces": 19,
+   "sells": 1,
+   "buyers": [
+    {
+     "manager": "Stephen Mandel - Lone Pine Capital",
+     "action": "Add 1243.52%",
+     "kind": "add"
+    },
+    {
+     "manager": "Yacktman Asset Management",
+     "action": "Add 30.87%",
+     "kind": "add"
+    },
+    {
+     "manager": "Terry Smith - Fundsmith",
+     "action": "Add 11.49%",
+     "kind": "add"
+    },
+    {
+     "manager": "Dodge & Cox Funds",
+     "action": "Add 0.19%",
+     "kind": "add"
+    }
+   ],
+   "sellers": [
+    {
+     "manager": "Sanders Capital",
+     "action": "Reduce 0.26%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Chris Hohn - TCI Fund Management",
+     "action": "Reduce 0.36%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Wallace Weitz - Weitz Investment Management",
+     "action": "Reduce 0.91%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Mairs & Power Funds",
+     "action": "Reduce 1.04%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "David Katz - Matrix Asset Advisors",
+     "action": "Reduce 1.25%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Bill Nygren - Oakmark Funds",
+     "action": "Reduce 1.79%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "John Armitage - Egerton Capital",
+     "action": "Reduce 4.35%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Francois Rochon - Giverny Capital",
+     "action": "Reduce 4.69%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Torray Funds",
+     "action": "Reduce 5.35%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Thomas Russo - Gardner Russo & Quinn",
+     "action": "Reduce 6.64%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Vulcan Value Partners",
+     "action": "Reduce 7.01%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "David Rolfe - Wedgewood Partners",
+     "action": "Reduce 7.67%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "AltaRock Partners",
+     "action": "Reduce 7.98%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Bill Ackman - Pershing Square Capital Management",
+     "action": "Reduce 12.22%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Chuck Akre - Akre Capital Management",
+     "action": "Reduce 16.28%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Polen Capital Management",
+     "action": "Reduce 25.67%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "AKO Capital",
+     "action": "Reduce 28.78%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Viking Global Investors",
+     "action": "Reduce 32.62%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Valley Forge Capital Management",
+     "action": "Reduce 48.55%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Lee Ainslie - Maverick Capital",
+     "action": "Sell 100.00%",
+     "kind": "sell"
+    }
+   ]
+  }
+ },
+ "VIST": {
+  "count": 1.0,
+  "rank": 943.0,
+  "pct": 0.0,
+  "holdPrice": null,
+  "insider_buys": {
+   "n": 0,
+   "usd": 0.0
+  },
+  "insider_sells": {
+   "n": 0,
+   "usd": 0.0
+  },
+  "activity": {
+   "quarter": "Q3 2026",
+   "buys": 0,
+   "adds": 1,
+   "reduces": 0,
+   "sells": 1,
+   "buyers": [
+    {
+     "manager": "Polen Capital Management",
+     "action": "Add 43.49%",
+     "kind": "add"
+    }
+   ],
+   "sellers": [
+    {
+     "manager": "Sarah Ketterer - Causeway Capital Management",
+     "action": "Sell 100.00%",
+     "kind": "sell"
+    }
+   ]
+  }
+ },
+ "WMT": {
+  "count": 7.0,
+  "rank": 91.0,
+  "pct": 0.00035999999999999997,
+  "holdPrice": 103.92,
+  "insider_buys": {
+   "n": 0,
+   "usd": 0.0
+  },
+  "insider_sells": {
+   "n": 46,
+   "usd": 1089707482.0
+  },
+  "activity": {
+   "quarter": "Q3 2026",
+   "buys": 1,
+   "adds": 1,
+   "reduces": 3,
+   "sells": 0,
+   "buyers": [
+    {
+     "manager": "Bill Nygren - Oakmark Funds",
+     "action": "Add 178.60%",
+     "kind": "add"
+    },
+    {
+     "manager": "Lee Ainslie - Maverick Capital",
+     "action": "Buy",
+     "kind": "buy"
+    }
+   ],
+   "sellers": [
+    {
+     "manager": "Mairs & Power Funds",
+     "action": "Reduce 1.90%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Dodge & Cox Funds",
+     "action": "Reduce 2.07%",
+     "kind": "reduce"
+    },
+    {
+     "manager": "Thomas Russo - Gardner Russo & Quinn",
+     "action": "Reduce 2.66%",
+     "kind": "reduce"
+    }
+   ]
+  }
+ }
+}

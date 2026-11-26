@@ -46,6 +46,10 @@ jobs:
         env:
           SEC_UA: ${{ secrets.SEC_UA }}
       - if: steps.gate.outputs.run == 'true'
+        name: Dataroma (superinversores e insiders)
+        run: python scripts/download_dataroma.py && python scripts/parse_dataroma.py
+        continue-on-error: true
+      - if: steps.gate.outputs.run == 'true'
         name: Señal + semáforo
         run: python make_signal.py
       - if: steps.gate.outputs.run == 'true'

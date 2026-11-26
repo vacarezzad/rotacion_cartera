@@ -75,6 +75,28 @@ def signal_files():
     return sorted(f for f in glob.glob(os.path.join(ROOT, "signals", "*.csv")) if os.path.basename(f)[:4].isdigit())
 
 
+def load_dataroma():
+    fp = os.path.join(ROOT, "data", "dataroma", "dataroma.json")
+    if not os.path.exists(fp):
+        return {}, None
+    d = json.load(open(fp))
+    qs = [v["activity"]["quarter"] for v in d.values() if v.get("activity") and v["activity"].get("quarter")]
+    key = lambda q: (int(q.split()[1]), int(q[1]))
+    return d, (max(qs, key=key) if qs else None)
+
+
+def dataroma_row(d, latest_q):
+    if not d:
+        return None
+    a = d.get("activity") or {}
+    fresh = a.get("quarter") == latest_q
+    return {"count": d.get("count"), "rank": d.get("rank"), "pct": d.get("pct"), "holdPrice": d.get("holdPrice"),
+            "insiderBuys": d.get("insider_buys"), "insiderSells": d.get("insider_sells"),
+            "quarter": latest_q, "buy": (a.get("buys", 0) + a.get("adds", 0)) if fresh else 0,
+            "sell": (a.get("sells", 0) + a.get("reduces", 0)) if fresh else 0,
+            "buyers": a.get("buyers", []) if fresh else [], "sellers": a.get("sellers", []) if fresh else []}
+
+
 def export_signal():
     files = signal_files()
     if not files:
@@ -83,6 +105,7 @@ def export_signal():
     date = os.path.basename(files[-1])[:-4]
     held = json.load(open(os.path.join(ROOT, "portfolio.json"))).get("held", [])
     picks = s.loc[s.en_cartera.astype(str).str.contains("✅"), "ticker"].tolist()
+    dr, dq = load_dataroma()
     rows = []
     for _, r in s.iterrows():
         c = close(r.ticker)
@@ -94,12 +117,12 @@ def export_signal():
                      "surprise": None if pd.isna(r["sorpresa_%"]) else r["sorpresa_%"] / 100,
                      "ret3m": r.ret_3m, "vsHigh": r.dist_max_52s, "pick": r.ticker in picks,
                      "held": r.ticker in held, "light": r.semaforo,
-                     "notes": notes(r.contexto),
+                     "notes": notes(r.contexto), "dataroma": dataroma_row(dr.get(r.ticker), dq),
                      "last": None if c is None else c.iloc[-1], "spark": spark})
     sell = [t for t in held if t not in picks]
     buy = [t for t in picks if t not in held]
     return {"date": date, "k": K, "picks": picks, "held": held, "buy": buy, "sell": sell,
-            "nextRebalance": str(next_rebalance(pd.Timestamp(date)).date()), "rows": rows}
+            "nextRebalance": str(next_rebalance(pd.Timestamp(date)).date()), "dataromaQuarter": dq, "rows": rows}
 
 
 def export_history():

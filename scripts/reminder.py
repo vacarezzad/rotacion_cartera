@@ -64,6 +64,26 @@ def main():
     sell = [t for t in held if t not in picks]
     keep = [t for t in held if t in picks]
     execd = reb + pd.offsets.BDay(1)
+    drp = os.path.join(ROOT, "data", "dataroma", "dataroma.json")
+    DR = json.load(open(drp)) if os.path.exists(drp) else {}
+    qs = [v["activity"]["quarter"] for v in DR.values() if v.get("activity") and v["activity"].get("quarter")]
+    DQ = max(qs, key=lambda q: (int(q.split()[1]), int(q[1]))) if qs else None
+
+    def superinv(t):
+        d = DR.get(t)
+        if not d:
+            return None
+        a = d.get("activity") or {}
+        fresh = a.get("quarter") == DQ
+        b = (a.get("buys", 0) + a.get("adds", 0)) if fresh else 0
+        v = (a.get("sells", 0) + a.get("reduces", 0)) if fresh else 0
+        n = int(d.get("count") or 0)
+        ib, isl = d.get("insider_buys") or {}, d.get("insider_sells") or {}
+        pl = lambda k, a, b_: f"{k} {a if k == 1 else b_}"
+        own = (f"{pl(n, 'superinversor lo tiene', 'superinversores lo tienen')} (puesto {int(d['rank'])})" if n
+               else "ningún superinversor lo tiene")
+        return (f"{own}; en {DQ}: {b} compran/suben, {v} venden/bajan; "
+                f"insiders 6m: {pl(ib.get('n', 0), 'compra', 'compras')}, {pl(isl.get('n', 0), 'venta', 'ventas')}")
 
     subject = f"Mañana se rota la cartera de CEDEARs ({larga(reb)})"
     body = [f"Hola Diego,", "",
@@ -74,6 +94,9 @@ def main():
         r = s[s.ticker == t].iloc[0]
         notes = "" if pd.isna(r.contexto) else f" · {r.contexto}"
         body.append(f"- **{t}** (#{int(r.puesto)}) {r.semaforo}{notes}")
+        si = superinv(t)
+        if si:
+            body.append(f"  - Dataroma: {si}")
     body.append("")
     if held:
         body += [f"**Qué hacer contra tu cartera anotada** ({', '.join(held)}):", "",
@@ -111,6 +134,9 @@ def main():
         if not pd.isna(r.contexto):
             for n in [x.strip() for x in str(r.contexto).split(";") if x.strip()]:
                 tg.append(f"   {TONO(n)} {esc(n)}")
+        si = superinv(t)
+        if si:
+            tg.append(f"   🏦 {esc(si[0].upper() + si[1:])}")
         tg.append("")
     if held:
         tg += [f"📋 <b>Contra tu cartera</b> ({esc(', '.join(held))})",

@@ -100,3 +100,13 @@ ul.notes li.warn::before { background: var(--warn); border-radius: 0; transform:
 ul.notes li.warn { color: var(--warn); font-weight: 500; }
 ul.notes.compact { gap: 2px; }
 ul.notes li.pos, ul.notes li.neg { color: var(--ink-2); }
+
+/* Superinversores (Dataroma) */
+.sup { display: grid; gap: 4px; border-top: 1px solid var(--line); padding-top: 10px; margin-top: 2px; font-size: 12px; line-height: 1.4; color: var(--ink-2); }
+.sup-title { color: var(--accent); font-size: 10.5px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; }
+.sup-line { margin: 0; }
+.sup-line.muted { color: var(--muted); }
+.sup-line b { font-weight: 600; }
+.sup-who summary { cursor: pointer; color: var(--accent); font-size: 12px; }
+.sup-who ul { margin-top: 6px; }
+.sup-cell { font-family: var(--font-mono); font-size: 12px; }

@@ -66,6 +66,7 @@ La carpeta `web/` es un sitio estático con el estilo de la suite Analiza: carte
 - `data/prices/`: OHLCV diario ajustado (yfinance, corriendo en GitHub Actions).
 - `data/earnings/`: fechas, estimaciones y sorpresas de EPS desde ~2002 (yfinance).
 - `data/edgar/`: hechos XBRL de SEC EDGAR con fecha de presentación (requiere el secret `SEC_UA` = "Nombre email").
+- `data/dataroma/dataroma.json`: superinversores (13F vía Dataroma: cuántos lo tienen, ranking, compras/ventas del último trimestre) e insiders de 6 meses. Solo contexto, no entra en el score.
 - `data/fundamentals.csv` y `data/fund_detail/`: snapshot actual (valuación, consenso, revisiones), solo para el semáforo.
 
 ## Estructura
