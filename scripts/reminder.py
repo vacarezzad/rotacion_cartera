@@ -12,7 +12,7 @@ import pandas as pd
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 REPO = os.environ.get("GITHUB_REPOSITORY", "vacarezzad/rotacion_cartera")
-SITE = os.environ.get("SITE_URL", "")
+SITE = os.environ.get("SITE_URL") or "https://rotacioncartera-web.vercel.app"
 MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre",
          "noviembre", "diciembre"]
 DIAS = ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"]
