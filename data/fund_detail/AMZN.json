@@ -31,14 +31,14 @@
    "Surprise(%)": 25.2
   },
   "2025-07-31 16:00:00-04:00": {
-   "EPS Estimate": 1.33,
+   "EPS Estimate": 1.32,
    "Reported EPS": 1.68,
-   "Surprise(%)": 26.13
+   "Surprise(%)": 27.19
   },
   "2025-05-01 16:00:00-04:00": {
    "EPS Estimate": 1.36,
    "Reported EPS": 1.59,
-   "Surprise(%)": 17.08
+   "Surprise(%)": 16.77
   }
  },
  "upgrades_downgrades": {
@@ -225,7 +225,7 @@
  "eps_trend": {
   "0q": {
    "current": 2.39514,
-   "7daysAgo": 2.39573,
+   "7daysAgo": 2.39666,
    "30daysAgo": 2.44778,
    "60daysAgo": 2.43607,
    "90daysAgo": 2.44116,
@@ -243,7 +243,7 @@
   },
   "0y": {
    "current": 12.79857,
-   "7daysAgo": 12.8017,
+   "7daysAgo": 12.79981,
    "30daysAgo": 12.92746,
    "60daysAgo": 12.90207,
    "90daysAgo": 12.82461,
@@ -252,7 +252,7 @@
   },
   "+1y": {
    "current": 10.67043,
-   "7daysAgo": 10.68502,
+   "7daysAgo": 10.69795,
    "30daysAgo": 10.58285,
    "60daysAgo": 10.52368,
    "90daysAgo": 10.50823,
@@ -263,19 +263,19 @@
  "growth_estimates": {
   "0q": {
    "stockTrend": 0.2775,
-   "indexTrend": 0.3018
+   "indexTrend": 0.3022
   },
   "+1q": {
    "stockTrend": 0.479,
-   "indexTrend": 0.2754
+   "indexTrend": 0.2749
   },
   "0y": {
    "stockTrend": 0.3393,
-   "indexTrend": 0.3368
+   "indexTrend": 0.3369
   },
   "+1y": {
    "stockTrend": 0.1378,
-   "indexTrend": 0.1688
+   "indexTrend": 0.1683
   },
   "LTG": {
    "stockTrend": null,

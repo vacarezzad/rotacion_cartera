@@ -233,16 +233,16 @@
    "methodology": "normalized"
   },
   "+1q": {
-   "current": 1.355,
-   "7daysAgo": 1.2345,
+   "current": 1.374,
+   "7daysAgo": 1.355,
    "30daysAgo": 1.2195,
-   "60daysAgo": 0.9275,
+   "60daysAgo": 0.9895,
    "90daysAgo": 0.9275,
    "currency": "USD",
    "methodology": "normalized"
   },
   "0y": {
-   "current": 4.16,
+   "current": 4.82,
    "7daysAgo": 4.16,
    "30daysAgo": 4.53,
    "60daysAgo": 4.41333,
@@ -251,7 +251,7 @@
    "methodology": "normalized"
   },
   "+1y": {
-   "current": 4.13333,
+   "current": 4.11,
    "7daysAgo": 4.265,
    "30daysAgo": 4.13667,
    "60daysAgo": 3.98667,
@@ -263,19 +263,19 @@
  "growth_estimates": {
   "0q": {
    "stockTrend": null,
-   "indexTrend": 0.3018
+   "indexTrend": 0.3022
   },
   "+1q": {
    "stockTrend": null,
-   "indexTrend": 0.2754
+   "indexTrend": 0.2749
   },
   "0y": {
-   "stockTrend": 0.4799,
-   "indexTrend": 0.3368
+   "stockTrend": 0.7147,
+   "indexTrend": 0.3369
   },
   "+1y": {
-   "stockTrend": -0.0064,
-   "indexTrend": 0.1688
+   "stockTrend": -0.14729999,
+   "indexTrend": 0.1683
   },
   "LTG": {
    "stockTrend": null,

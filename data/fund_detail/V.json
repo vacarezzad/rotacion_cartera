@@ -263,19 +263,19 @@
  "growth_estimates": {
   "0q": {
    "stockTrend": 0.145,
-   "indexTrend": 0.3018
+   "indexTrend": 0.3022
   },
   "+1q": {
    "stockTrend": 0.0951,
-   "indexTrend": 0.2754
+   "indexTrend": 0.2749
   },
   "0y": {
    "stockTrend": 0.133,
-   "indexTrend": 0.3368
+   "indexTrend": 0.3369
   },
   "+1y": {
    "stockTrend": 0.13949999,
-   "indexTrend": 0.1688
+   "indexTrend": 0.1683
   },
   "LTG": {
    "stockTrend": null,

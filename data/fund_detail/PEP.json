@@ -243,9 +243,9 @@
   },
   "0y": {
    "current": 8.3983,
-   "7daysAgo": 8.40868,
+   "7daysAgo": 8.3983,
    "30daysAgo": 8.39504,
-   "60daysAgo": 8.55878,
+   "60daysAgo": 8.55602,
    "90daysAgo": 8.55878,
    "currency": "USD",
    "methodology": "normalized"
@@ -263,19 +263,19 @@
  "growth_estimates": {
   "0q": {
    "stockTrend": -0.0085,
-   "indexTrend": 0.3018
+   "indexTrend": 0.3022
   },
   "+1q": {
    "stockTrend": -0.0050999997,
-   "indexTrend": 0.2754
+   "indexTrend": 0.2749
   },
   "0y": {
    "stockTrend": 0.0317,
-   "indexTrend": 0.3368
+   "indexTrend": 0.3369
   },
   "+1y": {
    "stockTrend": 0.0233,
-   "indexTrend": 0.1688
+   "indexTrend": 0.1683
   },
   "LTG": {
    "stockTrend": null,

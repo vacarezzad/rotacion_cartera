@@ -38,7 +38,7 @@
   "2025-04-24 16:00:00-04:00": {
    "EPS Estimate": 2.01,
    "Reported EPS": 2.81,
-   "Surprise(%)": 40.1
+   "Surprise(%)": 39.84
   }
  },
  "upgrades_downgrades": {
@@ -263,19 +263,19 @@
  "growth_estimates": {
   "0q": {
    "stockTrend": 0.15359999,
-   "indexTrend": 0.3018
+   "indexTrend": 0.3022
   },
   "+1q": {
    "stockTrend": 0.2204,
-   "indexTrend": 0.2754
+   "indexTrend": 0.2749
   },
   "0y": {
    "stockTrend": 0.21090001,
-   "indexTrend": 0.3368
+   "indexTrend": 0.3369
   },
   "+1y": {
    "stockTrend": 0.1685,
-   "indexTrend": 0.1688
+   "indexTrend": 0.1683
   },
   "LTG": {
    "stockTrend": null,

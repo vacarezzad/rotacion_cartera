@@ -23,7 +23,7 @@
   "2026-01-29 16:00:00-05:00": {
    "EPS Estimate": 2.67,
    "Reported EPS": 2.84,
-   "Surprise(%)": 6.34
+   "Surprise(%)": 6.25
   },
   "2025-10-30 16:00:00-04:00": {
    "EPS Estimate": 1.77,
@@ -33,7 +33,7 @@
   "2025-07-31 16:00:00-04:00": {
    "EPS Estimate": 1.43,
    "Reported EPS": 1.57,
-   "Surprise(%)": 10.12
+   "Surprise(%)": 9.48
   },
   "2025-05-01 16:00:00-04:00": {
    "EPS Estimate": 1.62,
@@ -263,19 +263,19 @@
  "growth_estimates": {
   "0q": {
    "stockTrend": 0.0248,
-   "indexTrend": 0.3018
+   "indexTrend": 0.3022
   },
   "+1q": {
    "stockTrend": 0.0699,
-   "indexTrend": 0.2754
+   "indexTrend": 0.2749
   },
   "0y": {
    "stockTrend": 0.048899997,
-   "indexTrend": 0.3368
+   "indexTrend": 0.3369
   },
   "+1y": {
    "stockTrend": 0.1224,
-   "indexTrend": 0.1688
+   "indexTrend": 0.1683
   },
   "LTG": {
    "stockTrend": null,

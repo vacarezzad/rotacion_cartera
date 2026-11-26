@@ -16,29 +16,29 @@
    "Surprise(%)": 3.39
   },
   "2026-05-07 16:00:00-04:00": {
-   "EPS Estimate": 8.2,
+   "EPS Estimate": 8.47,
    "Reported EPS": 8.23,
-   "Surprise(%)": 0.35
+   "Surprise(%)": -2.88
   },
   "2026-02-24 16:00:00-05:00": {
-   "EPS Estimate": 11.44,
+   "EPS Estimate": 11.43,
    "Reported EPS": 11.03,
-   "Surprise(%)": -3.56
+   "Surprise(%)": -3.52
   },
   "2025-10-28 20:00:00-04:00": {
-   "EPS Estimate": 9.3,
+   "EPS Estimate": 9.37,
    "Reported EPS": 8.32,
-   "Surprise(%)": -10.51
+   "Surprise(%)": -11.2
   },
   "2025-08-04 16:00:00-04:00": {
-   "EPS Estimate": 11.89,
+   "EPS Estimate": 11.75,
    "Reported EPS": 10.31,
-   "Surprise(%)": -13.26
+   "Surprise(%)": -12.24
   },
   "2025-05-07 16:00:00-04:00": {
-   "EPS Estimate": 8.27,
+   "EPS Estimate": 7.99,
    "Reported EPS": 9.74,
-   "Surprise(%)": 17.75
+   "Surprise(%)": 21.9
   }
  },
  "upgrades_downgrades": {
@@ -218,7 +218,7 @@
  "eps_trend": {
   "0q": {
    "current": 10.13711,
-   "7daysAgo": 10.05493,
+   "7daysAgo": 10.13711,
    "30daysAgo": 11.25233,
    "60daysAgo": 11.13156,
    "90daysAgo": 11.13156,
@@ -227,7 +227,7 @@
   },
   "+1q": {
    "current": 10.09166,
-   "7daysAgo": 10.135,
+   "7daysAgo": 10.09166,
    "30daysAgo": 10.82681,
    "60daysAgo": 10.82515,
    "90daysAgo": 10.82515,
@@ -236,19 +236,19 @@
   },
   "0y": {
    "current": 36.5907,
-   "7daysAgo": 36.49852,
+   "7daysAgo": 36.78206,
    "30daysAgo": 38.34781,
-   "60daysAgo": 38.02576,
-   "90daysAgo": 38.30553,
+   "60daysAgo": 37.82997,
+   "90daysAgo": 38.28576,
    "currency": "USD",
    "methodology": "gaap"
   },
   "+1y": {
    "current": 51.89361,
-   "7daysAgo": 52.7491,
+   "7daysAgo": 52.52316,
    "30daysAgo": 55.70303,
-   "60daysAgo": 55.76779,
-   "90daysAgo": 55.98684,
+   "60daysAgo": 55.35647,
+   "90daysAgo": 56.07379,
    "currency": "USD",
    "methodology": "gaap"
   }
@@ -256,19 +256,19 @@
  "growth_estimates": {
   "0q": {
    "stockTrend": -0.091000006,
-   "indexTrend": 0.3018
+   "indexTrend": 0.3022
   },
   "+1q": {
    "stockTrend": 0.16770001,
-   "indexTrend": 0.2754
+   "indexTrend": 0.2749
   },
   "0y": {
    "stockTrend": -0.0696,
-   "indexTrend": 0.3368
+   "indexTrend": 0.3369
   },
   "+1y": {
    "stockTrend": 0.4448,
-   "indexTrend": 0.1688
+   "indexTrend": 0.1683
   },
   "LTG": {
    "stockTrend": null,
