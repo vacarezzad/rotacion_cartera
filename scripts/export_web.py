@@ -174,7 +174,8 @@ def export_mine():
     t = load_trades()
     if t.empty:
         return {"trades": [], "positions": []}
-    pos = positions(t)
+    allpos = positions(t)
+    pos = allpos[allpos.cantidad > 0]
     out = []
     for tk, p in pos.iterrows():
         c = close(tk)
@@ -184,11 +185,12 @@ def export_mine():
         cost = p.costo_usd if p.usd_ok else None
         out.append({"ticker": tk, "qty": p.cantidad, "since": str(p.desde.date()), "costArs": p.costo_ars,
                     "costUsd": cost, "valueUsd": val, "pnlUsd": (val - cost) if val and cost else None,
-                    "pnlPct": (val / cost - 1) if val and cost else None, "realizedArs": p.realizado_ars})
+                    "pnlPct": (val / cost - 1) if val and cost else None, "realizedUsd": p.realizado_usd})
     tr = [{"date": str(r.fecha.date()), "ticker": r.ticker, "op": r.operacion, "qty": r.cantidad,
-           "priceArs": r.precio_ars, "ccl": r.ccl, "note": "" if pd.isna(r.get("nota")) else str(r.nota)}
+           "priceArs": r.precio_ars, "ccl": r.ccl, "cclImplied": bool(r.ccl_implicito),
+           "usd": r.cantidad * r.precio_ars / r.ccl if pd.notna(r.ccl) and r.ccl else None, "note": "" if pd.isna(r.get("nota")) else str(r.nota)}
           for _, r in t.sort_values("fecha", ascending=False).iterrows()]
-    return {"trades": tr, "positions": out}
+    return {"trades": tr, "positions": out, "realizedUsd": float(allpos.realizado_usd.sum())}
 
 
 def main():

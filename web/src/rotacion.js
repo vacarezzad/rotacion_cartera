@@ -242,16 +242,17 @@
       return block("mia", "Mi cartera real", "Acá se va a ver lo que compraste y vendiste de verdad, con su costo y resultado en USD.",
         el("p", { class: "status" }, "Todavía no cargaste operaciones. Cuando operes, sumá una fila por orden en ",
           el("a", { href: edit, class: "mi-link", text: "operaciones.csv" }),
-          " (fecha, ticker, compra/venta, cantidad, precio en pesos, CCL y ratio). La señal usa esas posiciones para el buffer del top 7."));
+          " (fecha, ticker, compra/venta, cantidad y precio en pesos; el CCL y el ratio se completan solos). Los resultados se muestran en dólares. La señal usa esas posiciones para el buffer del top 7."));
     }
     const P = m.positions;
     const cost = P.reduce((a, p) => a + (p.costUsd || 0), 0);
     const val = P.reduce((a, p) => a + (p.valueUsd || 0), 0);
     const figs = el("div", { class: "figures" },
       figure("Posiciones abiertas", fmt(P.length), P.map((p) => p.ticker).join(" · ")),
-      figure("Invertido", `US$ ${fmt(cost, 0)}`, "costo con el CCL de cada compra"),
+      figure("Invertido", `US$ ${fmt(cost, 0)}`, "pesos pagados ÷ CCL de cada compra"),
       figure("Valor hoy", val ? `US$ ${fmt(val, 0)}` : "s/d", "precio del subyacente × acciones equivalentes"),
-      figure("Resultado", val && cost ? pct(val / cost - 1, 1, true) : "s/d", val && cost ? `US$ ${fmt(val - cost, 0)}` : "", val >= cost ? "up" : "down"));
+      figure("Resultado", val && cost ? pct(val / cost - 1, 1, true) : "s/d", val && cost ? `US$ ${fmt(val - cost, 0)}` : "", val >= cost ? "up" : "down"),
+      figure("Realizado", m.realizedUsd ? `US$ ${fmt(m.realizedUsd, 0)}` : "US$ 0", "ganancia de lo ya vendido", (m.realizedUsd || 0) >= 0 ? "up" : "down"));
     const pos = table([
       { label: "Ticker", value: (r) => el("span", { class: "tk", text: r.ticker }) },
       { label: "Desde", value: (r) => date(r.since) },
@@ -259,6 +260,7 @@
       { label: "Costo ARS", num: true, value: (r) => `$ ${fmt(r.costArs, 0)}` },
       { label: "Costo USD", num: true, value: (r) => (r.costUsd == null ? "s/d" : fmt(r.costUsd, 0)) },
       { label: "Valor USD", num: true, value: (r) => (r.valueUsd == null ? "s/d" : fmt(r.valueUsd, 0)) },
+      { label: "Resultado USD", num: true, value: (r) => (r.pnlUsd == null ? "s/d" : fmt(r.pnlUsd, 0)), tone: (r) => r.pnlUsd },
       { label: "Resultado", num: true, value: (r) => pct(r.pnlPct, 1, true), tone: (r) => r.pnlPct },
     ], P);
     const tr = table([
@@ -267,12 +269,13 @@
       { label: "Operación", value: (r) => el("span", { class: `act ${r.op.startsWith("c") ? "buy" : "sell"}`, text: r.op.startsWith("c") ? "Compra" : "Venta" }) },
       { label: "Cantidad", num: true, value: (r) => fmt(r.qty) },
       { label: "Precio ARS", num: true, value: (r) => fmt(r.priceArs, 2) },
-      { label: "CCL", num: true, value: (r) => (r.ccl == null ? "s/d" : fmt(r.ccl, 2)) },
+      { label: "USD", num: true, value: (r) => (r.usd == null ? "s/d" : fmt(r.usd, 2)) },
+      { label: "CCL", num: true, value: (r) => (r.ccl == null ? "s/d" : fmt(r.ccl, 0) + (r.cclImplied ? "*" : "")) },
       { label: "Nota", value: (r) => r.note || "" },
     ], m.trades);
     return block("mia", "Mi cartera real", "Posiciones abiertas según tus operaciones (costo promedio ponderado). El valor se estima con el precio del subyacente en USD y el ratio del CEDEAR.",
       figs, pos, el("h3", { class: "sub", text: "Historial de operaciones" }), tr,
-      el("p", { class: "note" }, "Para sumar una operación, editá ", el("a", { href: edit, class: "mi-link", text: "operaciones.csv" }), " en GitHub."));
+      el("p", { class: "note" }, "Para sumar una operación, editá ", el("a", { href: edit, class: "mi-link", text: "operaciones.csv" }), " en GitHub. * CCL implícito: precio en pesos × ratio ÷ cierre del subyacente ese día."));
   }
 
   function metodo() {

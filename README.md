@@ -51,7 +51,7 @@ Detalle de cada experimento en `experiments/` y sus resultados en `results/`.
 
 1. Cada viernes el workflow `Datos + señal semanal` baja precios, earnings y EDGAR, y publica `signals/latest.md`.
 2. En la semana del rebalanceo, mirá `signals/latest.md`: vendé lo que salió del top 7, comprá lo que entra y re-equilibrá a 20%.
-3. Cargá cada orden ejecutada en `operaciones.csv` (una fila por orden): `fecha,ticker,operacion,cantidad,precio_ars,ccl,ratio,comision_ars,nota`, por ejemplo `2027-02-01,NVDA,compra,10,15000,1450,24,450,rebalanceo`. Con eso la señal sabe qué tenés (buffer del top 7) y la web muestra costo, valor y resultado en USD. Al guardar el archivo, la web se actualiza sola. `portfolio.json` queda solo como respaldo si `operaciones.csv` está vacío.
+3. Cargá cada orden ejecutada en `operaciones.csv` (una fila por orden): `fecha,ticker,operacion,cantidad,precio_ars,ccl,ratio,comision_ars,nota`. Alcanza con cargar en pesos: `ccl` y `ratio` pueden quedar vacíos, por ejemplo `2027-02-01,NVDA,compra,10,15000,,,450,rebalanceo`. El ratio sale de `data/cedear_ratios.csv` y el CCL se calcula implícito (precio en pesos × ratio ÷ cierre del subyacente ese día), así que costo y resultado quedan en dólares. Si completás `ccl` o `ratio`, se usan esos. Con eso la señal sabe qué tenés (buffer del top 7) y la web muestra costo, valor y resultado en USD. Al guardar el archivo, la web se actualiza sola. `portfolio.json` queda solo como respaldo si `operaciones.csv` está vacío.
 
 Manual: `pip install -r requirements.txt yfinance && python make_signal.py`.
 
