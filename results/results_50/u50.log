@@ -1,0 +1,78 @@
+[data] NVDA: 7005 filas desde 1999-01-22
+[data] GOOGL: 5604 filas desde 2004-08-19
+[data] AMD: 7270 filas desde 1998-01-02
+[data] QQQ: 6973 filas desde 1999-03-10
+[data] MELI: 4855 filas desde 2007-08-10
+[data] VIST: 1845 filas desde 2019-07-26
+[data] META: 3652 filas desde 2012-05-18
+[data] MSFT: 7270 filas desde 1998-01-02
+[data] AMZN: 7270 filas desde 1998-01-02
+[data] GLD: 5540 filas desde 2004-11-18
+[data] AVGO: 4354 filas desde 2009-08-06
+[data] MCD: 7270 filas desde 1998-01-02
+[data] TSM: 7270 filas desde 1998-01-02
+[data] ORCL: 7270 filas desde 1998-01-02
+[data] TSLA: 4129 filas desde 2010-06-29
+[data] MRNA: 2003 filas desde 2018-12-07
+[data] GLOB: 3109 filas desde 2014-07-18
+[data] AAPL: 7270 filas desde 1998-01-02
+[data] KO: 7270 filas desde 1998-01-02
+[data] BABA: 3065 filas desde 2014-09-19
+[data] INTC: 7270 filas desde 1998-01-02
+[data] PEP: 7270 filas desde 1998-01-02
+[data] PBR: 6613 filas desde 2000-08-10
+[data] V: 4703 filas desde 2008-03-19
+[data] IBM: 7270 filas desde 1998-01-02
+[data] WMT: 7270 filas desde 1998-01-02
+[data] JPM: 7270 filas desde 1998-01-02
+[data] ASML: 7270 filas desde 1998-01-02
+[data] MRVL: 6641 filas desde 2000-06-30
+[data] UNH: 7270 filas desde 1998-01-02
+[data] RIOT: 2681 filas desde 2016-03-31
+[data] NFLX: 6168 filas desde 2002-05-23
+[data] CAT: 7270 filas desde 1998-01-02
+[data] LLY: 7270 filas desde 1998-01-02
+[data] BBD: 6119 filas desde 2002-08-02
+[data] PG: 7270 filas desde 1998-01-02
+[data] VALE: 6212 filas desde 2002-03-21
+[data] QCOM: 7270 filas desde 1998-01-02
+[data] ADBE: 7270 filas desde 1998-01-02
+[data] NKE: 7270 filas desde 1998-01-02
+[data] JNJ: 7270 filas desde 1998-01-02
+[data] CRM: 5644 filas desde 2004-06-23
+[data] AMAT: 7270 filas desde 1998-01-02
+[data] AXP: 7270 filas desde 1998-01-02
+[data] C: 7270 filas desde 1998-01-02
+[data] GE: 7270 filas desde 1998-01-02
+[data] MA: 5159 filas desde 2006-05-25
+[data] ANF: 7270 filas desde 1998-01-02
+[data] SID: 7270 filas desde 1998-01-02
+[data] ITUB: 6230 filas desde 2002-02-25
+[data] SPY: 7270 filas desde 1998-01-02
+[data] ^VIX: 7272 filas desde 1998-01-02
+[data] ^TNX: 7260 filas desde 1998-01-02
+[50] activos: 50
+[50] regresión 63d: LightGBM
+[50] regresión 63d: Ridge
+[50] IC medio E4: 0.0218 (IC>0 en 55%)
+   estrategia  CAGR  Sharpe  MaxDD  CAGR_12_18  CAGR_19_26 años_>EW  t_vs_EW30
+     B&H EW50 0.233   1.156 -0.342       0.195       0.266     0/14     -1.508
+     B&H EW30 0.257   1.254 -0.309       0.214       0.296     9/14        NaN
+      B&H SPY 0.142   0.887 -0.337       0.123       0.159     2/14     -5.326
+Modelo 50 k=5 0.500   1.214 -0.566       0.248       0.772    11/14      2.935
+Modelo 50 k=8 0.365   1.076 -0.531       0.205       0.528     9/14      2.029
+Modelo 30 k=5 0.481   1.322 -0.365       0.359       0.606    12/14      3.522
+Modelo 30 k=8 0.396   1.284 -0.317       0.308       0.485    11/14      3.188
+[50] % de picks top5 que son de las 20 nuevas: 40.7%; más elegidas: {'ANF': 30, 'NFLX': 26, 'RIOT': 14, 'SID': 11, 'CRM': 9, 'GE': 8, 'LLY': 4, 'BBD': 3}
+[50] ranking hoy:
+ticker
+MRNA    0.987
+RIOT    0.950
+ANF     0.949
+INTC    0.917
+AMD     0.822
+CRM     0.800
+NVDA    0.765
+MRVL    0.761
+SID     0.748
+AMAT    0.735

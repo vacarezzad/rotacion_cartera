@@ -41,6 +41,7 @@ Le gana al B&H en 12 de 14 años y en ambas mitades (2012–18 y 2019–26).
 | Rotación de 21 ETFs (momentum, dual momentum, GTAA) | No le gana a SPY neto de costos. |
 | Timing con VIX/VIX3M, RSI(2) de Connors, turn-of-the-month | No le ganan al B&H ni sin costos; con costos mueren. |
 | Vol-targeting, core-satellite, dual momentum sobre acciones | Menos retorno que el B&H. |
+| Ampliar a 50 CEDEARs líquidos (`exp_50.py`) | CAGR 50% pero Sharpe 1,21 (vs 1,32), peor caída −57% (vs −37%) e IC 0,022 (vs 0,07): el modelo pierde poder de ranking y se carga de nombres muy volátiles (ANF, RIOT, SID). Se queda en 30. |
 | Bajar a 10% (o sacar) las acciones con semáforo rojo (`exp_red.py`) | Empeora: CAGR 41–43% (36% si se sacan) vs 48%. Los picks en rojo rindieron **más** que el resto (+23% vs +7% de exceso medio a 3 meses). |
 | Meter 8 features de earnings dentro del modelo | Empeora (sobreajuste); funciona mejor como ajuste simple al score. |
 
