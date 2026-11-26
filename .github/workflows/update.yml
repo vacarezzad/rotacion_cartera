@@ -50,6 +50,12 @@ jobs:
         run: python scripts/download_dataroma.py && python scripts/parse_dataroma.py
         continue-on-error: true
       - if: steps.gate.outputs.run == 'true'
+        name: Ratios de CEDEARs (Supabase)
+        run: python scripts/download_ratios.py
+        continue-on-error: true
+        env:
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+      - if: steps.gate.outputs.run == 'true'
         name: Señal + semáforo
         run: python make_signal.py
       - if: steps.gate.outputs.run == 'true'

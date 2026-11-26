@@ -19,11 +19,16 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install --no-cache-dir pandas numpy
+      - name: Ratios de CEDEARs (Supabase)
+        run: python scripts/download_ratios.py
+        continue-on-error: true
+        env:
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
       - run: python scripts/export_web.py
       - name: Commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add web/data
+          git add web/data data/cedear_ratios.csv
           git commit -m "web: operaciones $(date -u +%F) [skip ci]" || echo "sin cambios"
           for i in 1 2 3; do git pull --rebase -q && git push && break || sleep 10; done

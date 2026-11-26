@@ -12,7 +12,7 @@ import numpy as np
 import pandas as pd
 import sys
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from tml.positions import held_tickers, load_trades, positions  # noqa: E402
+from tml.positions import _ratio_on, _ratios, held_tickers, load_trades, positions  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "web", "data")
@@ -180,7 +180,8 @@ def export_mine():
     for tk, p in pos.iterrows():
         c = close(tk)
         last = None if c is None else float(c.iloc[-1])
-        shares = p.cantidad / p.ratio if p.ratio else None
+        ratio = _ratio_on(_ratios(), tk, pd.Timestamp.today()) or p.ratio  # ratio vigente hoy
+        shares = p.cantidad / ratio if ratio else None
         val = shares * last if shares and last else None
         cost = p.costo_usd if p.usd_ok else None
         out.append({"ticker": tk, "qty": p.cantidad, "since": str(p.desde.date()), "costArs": p.costo_ars,

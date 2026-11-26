@@ -8,7 +8,8 @@ Columnas de operaciones.csv (una fila por orden ejecutada en el broker):
   precio_ars    precio por CEDEAR en pesos
   ccl           dólar CCL (opcional: si falta, se usa el CCL implícito de la operación =
                 precio_ars × ratio / cierre del subyacente en USD ese día)
-  ratio         CEDEARs por acción (opcional: si falta, se toma de data/cedear_ratios.csv)
+  ratio         CEDEARs por acción (opcional: si falta, se toma el vigente ese día de la tabla
+                cedear_ccl_diario de Supabase, copiada en data/cedear_ratios.csv)
   comision_ars  comisión + derechos + IVA en pesos (opcional)
   nota          texto libre (opcional)
 Se carga todo en pesos; los resultados se expresan en dólares.
@@ -25,11 +26,23 @@ PATH = os.path.join(ROOT, "operaciones.csv")
 RATIOS = os.path.join(ROOT, "data", "cedear_ratios.csv")
 
 
-def _ratios() -> dict:
+def _ratios() -> pd.DataFrame:
+    """Ratios por fecha (bajados de Supabase, tabla cedear_ccl_diario, por scripts/download_ratios.py)."""
     if not os.path.exists(RATIOS):
-        return {}
+        return pd.DataFrame(columns=["ticker", "fecha", "ratio"])
     r = pd.read_csv(RATIOS)
-    return dict(zip(r.ticker.str.upper(), r.ratio.astype(float)))
+    r["ticker"] = r.ticker.str.upper()
+    r["fecha"] = pd.to_datetime(r.fecha if "fecha" in r else "1900-01-01")
+    return r.sort_values("fecha")
+
+
+def _ratio_on(rat: pd.DataFrame, ticker: str, fecha):
+    """Ratio vigente en la fecha de la operación; si es anterior al primer dato, el más viejo."""
+    r = rat[rat.ticker == ticker]
+    if r.empty:
+        return None
+    prev = r[r.fecha <= pd.Timestamp(fecha)]
+    return float((prev if len(prev) else r).ratio.iloc[-1 if len(prev) else 0])
 
 
 def _close_on(ticker: str, fecha) -> float | None:
@@ -54,7 +67,7 @@ def load_trades(path: str = PATH) -> pd.DataFrame:
         t[c] = pd.to_numeric(t.get(c), errors="coerce")
     t["comision_ars"] = t["comision_ars"].fillna(0)
     rat = _ratios()
-    t["ratio"] = [r if pd.notna(r) else rat.get(tk) for tk, r in zip(t.ticker, t.ratio)]
+    t["ratio"] = [r if pd.notna(r) else _ratio_on(rat, tk, f) for tk, r, f in zip(t.ticker, t.ratio, t.fecha)]
     t["ccl_implicito"] = False
     for i, r in t.iterrows():
         if (pd.isna(r.ccl) or r.ccl <= 0) and r.ratio:
