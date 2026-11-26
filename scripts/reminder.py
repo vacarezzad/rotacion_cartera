@@ -99,8 +99,8 @@ def main():
     # Telegram (HTML): mismo contenido que el mail, con símbolos.
     esc = lambda x: str(x).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
     TONO = lambda n: ("⚠️" if "balance" in n.lower() else
-                      "🔻" if any(w in n.lower() for w in ["baja", "bajan", "sin ganancias", "negativo", "debajo"]) else
-                      "🔺" if any(w in n.lower() for w in ["alta", "suben", "arriba"]) else "•")
+                      "📉" if any(w in n.lower() for w in ["baja", "bajan", "sin ganancias", "negativo", "debajo"]) else
+                      "📈" if any(w in n.lower() for w in ["alta", "suben", "arriba"]) else "•")
     tg = [f"🔄 <b>Mañana se rota la cartera de CEDEARs</b>", "",
           f"📅 Rebalanceo: <b>{larga(reb)}</b> (señal al cierre)",
           f"🛒 Ejecutar: apertura del <b>{larga(execd)}</b>", "",
