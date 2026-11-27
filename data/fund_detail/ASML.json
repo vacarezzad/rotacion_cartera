@@ -235,8 +235,8 @@
    "methodology": "normalized"
   },
   "0y": {
-   "current": 41.41393,
-   "7daysAgo": 41.20818,
+   "current": 41.38058,
+   "7daysAgo": 41.18402,
    "30daysAgo": 38.34441,
    "60daysAgo": 38.1896,
    "90daysAgo": 38.05023,
@@ -244,8 +244,8 @@
    "methodology": "normalized"
   },
   "+1y": {
-   "current": 56.43418,
-   "7daysAgo": 55.929,
+   "current": 56.94492,
+   "7daysAgo": 56.43974,
    "30daysAgo": 51.73157,
    "60daysAgo": 51.70991,
    "90daysAgo": 51.08756,
@@ -256,19 +256,19 @@
  "growth_estimates": {
   "0q": {
    "stockTrend": 1.0965,
-   "indexTrend": 0.3022
+   "indexTrend": 0.3042
   },
   "+1q": {
    "stockTrend": 0.8095,
-   "indexTrend": 0.2749
+   "indexTrend": 0.275
   },
   "0y": {
-   "stockTrend": 0.676,
-   "indexTrend": 0.3369
+   "stockTrend": 0.6746,
+   "indexTrend": 0.33740002
   },
   "+1y": {
-   "stockTrend": 0.36270002,
-   "indexTrend": 0.1683
+   "stockTrend": 0.3761,
+   "indexTrend": 0.16780001
   },
   "LTG": {
    "stockTrend": null,
