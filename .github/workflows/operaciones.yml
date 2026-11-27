@@ -29,6 +29,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add web/data data/cedear_ratios.csv
+          git add web/data data/cedear_ratios.csv data/ccl_history.csv
           git commit -m "web: operaciones $(date -u +%F) [skip ci]" || echo "sin cambios"
           for i in 1 2 3; do git pull --rebase -q && git push && break || sleep 10; done

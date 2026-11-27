@@ -6,8 +6,11 @@ Columnas de operaciones.csv (una fila por orden ejecutada en el broker):
   operacion     compra | venta
   cantidad      cantidad de CEDEARs
   precio_ars    precio por CEDEAR en pesos
-  ccl           dólar CCL (opcional: si falta, se usa el CCL implícito de la operación =
+  ccl           dólar CCL (opcional: si falta, se usa el CCL de ese día de la tabla ccl_history de
+                Supabase, copiada en data/ccl_history.csv; si tampoco hay, el implícito =
                 precio_ars × ratio / cierre del subyacente en USD ese día)
+  precio_ars    se puede cargar con la comisión incluida (compra: lo pagado ÷ cantidad;
+                venta: lo cobrado neto ÷ cantidad) y dejar comision_ars vacía
   ratio         CEDEARs por acción (opcional: si falta, se toma el vigente ese día de la tabla
                 cedear_ccl_diario de Supabase, copiada en data/cedear_ratios.csv)
   comision_ars  comisión + derechos + IVA en pesos (opcional)
@@ -45,6 +48,21 @@ def _ratio_on(rat: pd.DataFrame, ticker: str, fecha):
     return float((prev if len(prev) else r).ratio.iloc[-1 if len(prev) else 0])
 
 
+CCL_FILE = os.path.join(ROOT, "data", "ccl_history.csv")
+
+
+def _ccl_series() -> pd.Series:
+    if not os.path.exists(CCL_FILE):
+        return pd.Series(dtype=float)
+    c = pd.read_csv(CCL_FILE, parse_dates=["fecha"])
+    return c.set_index("fecha")["ccl"].astype(float).sort_index()
+
+
+def _ccl_on(ccl: pd.Series, fecha):
+    c = ccl.loc[:pd.Timestamp(fecha)]
+    return float(c.iloc[-1]) if len(c) and (pd.Timestamp(fecha) - c.index[-1]).days <= 7 else None
+
+
 def _close_on(ticker: str, fecha) -> float | None:
     fp = os.path.join(ROOT, "data", "prices", f"{ticker}.csv")
     if not os.path.exists(fp):
@@ -68,19 +86,27 @@ def load_trades(path: str = PATH) -> pd.DataFrame:
     t["comision_ars"] = t["comision_ars"].fillna(0)
     rat = _ratios()
     t["ratio"] = [r if pd.notna(r) else _ratio_on(rat, tk, f) for tk, r, f in zip(t.ticker, t.ratio, t.fecha)]
-    t["ccl_implicito"] = False
+    t["ccl_fuente"] = ["manual" if pd.notna(c) and c > 0 else "" for c in t.ccl]
+    ccl = _ccl_series()
     for i, r in t.iterrows():
-        if (pd.isna(r.ccl) or r.ccl <= 0) and r.ratio:
+        if r.ccl_fuente:
+            continue
+        v = _ccl_on(ccl, r.fecha)
+        if v:
+            t.at[i, "ccl"], t.at[i, "ccl_fuente"] = v, "ccl"
+        elif r.ratio:
             px = _close_on(r.ticker, r.fecha)
             if px:
-                t.at[i, "ccl"] = r.precio_ars * r.ratio / px
-                t.at[i, "ccl_implicito"] = True
+                t.at[i, "ccl"], t.at[i, "ccl_fuente"] = r.precio_ars * r.ratio / px, "implicito"
     return t.sort_values("fecha").reset_index(drop=True)
 
 
 def positions(trades: pd.DataFrame) -> pd.DataFrame:
-    """Posiciones abiertas: cantidad, costo total ARS y USD (promedio ponderado), ratio, primera compra."""
-    rows = {}
+    """Posiciones: cantidad, costo total ARS y USD (promedio ponderado), ratio, primera compra.
+
+    El detalle de cada venta (cobrado, costo y ganancia real en ARS y USD) queda en df.attrs["ventas"].
+    """
+    rows, ventas = {}, []
     for _, r in trades.iterrows():
         p = rows.setdefault(r.ticker, {"cantidad": 0.0, "costo_ars": 0.0, "costo_usd": 0.0, "usd_ok": True,
                                        "ratio": None, "desde": r.fecha, "realizado_ars": 0.0,
@@ -101,13 +127,23 @@ def positions(trades: pd.DataFrame) -> pd.DataFrame:
             q = min(r.cantidad, p["cantidad"]) if p["cantidad"] > 0 else 0
             if q > 0:
                 frac = q / p["cantidad"]
-                p["realizado_ars"] += q * r.precio_ars - r.comision_ars - p["costo_ars"] * frac
-                if pd.notna(r.ccl) and r.ccl > 0:
-                    p["realizado_usd"] += (q * r.precio_ars - r.comision_ars) / r.ccl - p["costo_usd"] * frac
+                cobrado = q * r.precio_ars - r.comision_ars
+                g_ars = cobrado - p["costo_ars"] * frac
+                p["realizado_ars"] += g_ars
+                v = {"fecha": r.fecha, "ticker": r.ticker, "cantidad": q, "cobrado_ars": cobrado,
+                     "costo_ars": p["costo_ars"] * frac, "ganancia_ars": g_ars, "desde": p["desde"],
+                     "cobrado_usd": None, "costo_usd": None, "ganancia_usd": None}
+                if pd.notna(r.ccl) and r.ccl > 0 and p["usd_ok"]:
+                    v["cobrado_usd"] = cobrado / r.ccl
+                    v["costo_usd"] = p["costo_usd"] * frac
+                    v["ganancia_usd"] = v["cobrado_usd"] - v["costo_usd"]
+                    p["realizado_usd"] += v["ganancia_usd"]
+                ventas.append(v)
                 p["costo_ars"] *= 1 - frac
                 p["costo_usd"] *= 1 - frac
                 p["cantidad"] -= q
     df = pd.DataFrame.from_dict(rows, orient="index")
+    df.attrs["ventas"] = ventas
     if df.empty:
         return df
     df.index.name = "ticker"

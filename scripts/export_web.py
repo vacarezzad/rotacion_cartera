@@ -173,7 +173,7 @@ def export_mine():
     """Operaciones reales y posiciones abiertas (valuadas con el precio del subyacente cuando hay ratio)."""
     t = load_trades()
     if t.empty:
-        return {"trades": [], "positions": []}
+        return {"trades": [], "positions": [], "sales": []}
     allpos = positions(t)
     pos = allpos[allpos.cantidad > 0]
     out = []
@@ -188,10 +188,17 @@ def export_mine():
                     "costUsd": cost, "valueUsd": val, "pnlUsd": (val - cost) if val and cost else None,
                     "pnlPct": (val / cost - 1) if val and cost else None, "realizedUsd": p.realizado_usd})
     tr = [{"date": str(r.fecha.date()), "ticker": r.ticker, "op": r.operacion, "qty": r.cantidad,
-           "priceArs": r.precio_ars, "ccl": r.ccl, "cclImplied": bool(r.ccl_implicito),
+           "priceArs": r.precio_ars, "totalArs": r.cantidad * r.precio_ars + (r.comision_ars if r.operacion.startswith("c") else -r.comision_ars),
+           "ccl": r.ccl, "cclSource": r.ccl_fuente,
            "usd": r.cantidad * r.precio_ars / r.ccl if pd.notna(r.ccl) and r.ccl else None, "note": "" if pd.isna(r.get("nota")) else str(r.nota)}
           for _, r in t.sort_values("fecha", ascending=False).iterrows()]
-    return {"trades": tr, "positions": out, "realizedUsd": float(allpos.realizado_usd.sum())}
+    sales = [{"date": str(v["fecha"].date()), "ticker": v["ticker"], "qty": v["cantidad"], "since": str(v["desde"].date()),
+              "proceedsArs": v["cobrado_ars"], "costArs": v["costo_ars"], "pnlArs": v["ganancia_ars"],
+              "proceedsUsd": v["cobrado_usd"], "costUsd": v["costo_usd"], "pnlUsd": v["ganancia_usd"],
+              "pnlPct": (v["ganancia_usd"] / v["costo_usd"]) if v["costo_usd"] else None}
+             for v in reversed(allpos.attrs.get("ventas", []))]
+    return {"trades": tr, "positions": out, "sales": sales, "realizedUsd": float(allpos.realizado_usd.sum()),
+            "realizedArs": float(allpos.realizado_ars.sum())}
 
 
 def main():
