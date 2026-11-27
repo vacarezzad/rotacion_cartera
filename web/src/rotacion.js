@@ -275,6 +275,7 @@
       f.total_ars.value = r.cantidad && r.precio_ars ? +totalOf(r).toFixed(2) : "";
       if (r.ccl || r.ratio) adv.open = true;
     }
+    hooks.removeTicker = (t) => save({ action: "deleteTicker", row: { ticker: t } }, `Borrada la posición de ${t} con todas sus operaciones.`);
     hooks.sell = (p) => {
       reset(); editing = null;
       f.operacion.value = "venta"; f.ticker.value = p.ticker; f.cantidad.value = p.qty; f.cantidad.max = p.qty;
@@ -362,7 +363,15 @@
         { label: "Valor USD", num: true, value: (r) => (r.valueUsd == null ? "s/d" : fmt(r.valueUsd, 0)) },
         { label: "Resultado USD", num: true, value: (r) => (r.pnlUsd == null ? "s/d" : fmt(r.pnlUsd, 0)), tone: (r) => r.pnlUsd },
         { label: "Resultado", num: true, value: (r) => pct(r.pnlPct, 1, true), tone: (r) => r.pnlPct },
-        { label: "", value: (r) => el("button", { type: "button", class: "btn ghost sm", text: "Vender", onclick: () => hooks.sell?.(r) }) },
+        { label: "", value: (r) => el("span", { class: "abm-actions" },
+            el("button", { type: "button", class: "btn ghost sm", text: "Vender", onclick: () => hooks.sell?.(r) }),
+            el("button", { type: "button", class: "btn ghost sm", text: "Borrar", title: "Borra todas las operaciones de este ticker (para corregir una carga)",
+              onclick: (e) => {
+                const b = e.currentTarget;
+                if (b.dataset.confirm) return hooks.removeTicker?.(r.ticker);
+                b.dataset.confirm = "1"; b.textContent = "¿Borrar todo?"; b.className = "btn danger sm";
+                setTimeout(() => { delete b.dataset.confirm; b.textContent = "Borrar"; b.className = "btn ghost sm"; }, 4000);
+              } })) },
       ], P));
     }
     const S = m.sales || [];

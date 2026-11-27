@@ -74,6 +74,12 @@ module.exports = async (req, res) => {
       if (!Number.isInteger(index) || index < 0 || index >= rows.length) return res.status(400).json({ error: "Fila inexistente" });
       if (action === "update") { rows[index] = clean(row); msg = `operaciones: modifica ${rows[index].ticker} (${rows[index].fecha})`; }
       else { const [r] = rows.splice(index, 1); msg = `operaciones: baja ${r.operacion} ${r.cantidad} ${r.ticker} (${r.fecha})`; }
+    } else if (action === "deleteTicker") {
+      const t = String(row?.ticker || "").trim().toUpperCase();
+      const n = rows.length;
+      for (let i = rows.length - 1; i >= 0; i--) if (rows[i].ticker === t) rows.splice(i, 1);
+      if (rows.length === n) return res.status(400).json({ error: `No hay operaciones de ${t}` });
+      msg = `operaciones: borra la posición ${t} (${n - rows.length} operaciones)`;
     } else return res.status(400).json({ error: "Acción inválida" });
     rows.sort((a, b) => a.fecha.localeCompare(b.fecha));
     const put = await gh("PUT", { message: msg, content: Buffer.from(toCsv(rows)).toString("base64"), sha: cur.sha, branch: BRANCH });
