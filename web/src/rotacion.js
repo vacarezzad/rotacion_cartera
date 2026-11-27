@@ -394,7 +394,13 @@
     ];
     const half = Math.ceil(items.length / 2);
     const dl = (arr) => el("dl", {}, arr.flatMap(([a, b]) => [el("dt", { text: a }), el("dd", { text: b })]));
-    return block("metodo", "Cómo funciona", null, el("div", { class: "method" }, dl(items.slice(0, half)), dl(items.slice(half))));
+    const body = el("div", { class: "method", id: "metodo-body", hidden: true }, dl(items.slice(0, half)), dl(items.slice(half)));
+    const btn = el("button", { type: "button", class: "btn ghost", "aria-expanded": "false", "aria-controls": "metodo-body", text: "Ver cómo funciona",
+      onclick: () => { const open = body.hidden; body.hidden = !open; btn.setAttribute("aria-expanded", String(open)); btn.textContent = open ? "Ocultar" : "Ver cómo funciona"; } });
+    // Si se entra por el link #metodo del menú, se abre.
+    const openIfHash = () => { if (location.hash === "#metodo" && body.hidden) btn.click(); };
+    window.addEventListener("hashchange", openIfHash); setTimeout(openIfHash, 0);
+    return block("metodo", "Cómo funciona", null, btn, body);
   }
 
   // Resalta en el subnav la sección visible.

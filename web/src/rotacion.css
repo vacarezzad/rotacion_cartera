@@ -123,3 +123,5 @@ ul.notes li.pos, ul.notes li.neg { color: var(--ink-2); }
 .abm-actions { display: inline-flex; gap: 6px; }
 button.btn.sm { padding: 4px 10px; font-size: 12px; }
 button.btn.danger { background: var(--put); color: #fff; }
+.method[hidden] { display: none; }
+#metodo > .btn { justify-self: start; }
